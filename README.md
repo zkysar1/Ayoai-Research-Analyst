@@ -104,6 +104,70 @@ This research explores the intersection of academic theory and practical impleme
 
 The investigations here represent personal curiosity and exploration into what makes agents feel alive, thoughtful, and genuinely autonomous rather than simply reactive.
 
+## Repository Guardrails
+
+### What This Repository (Research Analyst) MUST NOT Do:
+
+**❌ Product & Business Decisions**
+- Do NOT make product strategy decisions (Product Manager does this)
+- Do NOT define business requirements (Business Analyst does this)
+- Do NOT set pricing or revenue targets
+- Do NOT create product roadmaps or timelines
+
+**❌ Implementation Work**
+- Do NOT write production code (developers do this)
+- Do NOT create technical specifications (Business Analyst does this)
+- Do NOT design system architectures without BA coordination
+- Do NOT implement features or fixes
+
+**❌ Operations & Infrastructure**
+- Do NOT deploy code or manage servers
+- Do NOT handle AWS infrastructure
+- Do NOT manage databases or user data
+- Do NOT create or modify Lambda functions
+
+**❌ User-Facing Activities**
+- Do NOT design UI/UX interfaces
+- Do NOT communicate with end users
+- Do NOT handle support tickets
+- Do NOT create user documentation
+
+**❌ Platform Management**
+- Do NOT manage API keys or authentication
+- Do NOT process game state or logic
+- Do NOT handle billing or payments
+- Do NOT send emails or notifications
+
+### ✅ What This Repository SHOULD Do:
+
+- Conduct research on AI behaviors and cognitive architectures
+- Document findings on autonomous agent systems
+- Analyze competitive solutions and market trends
+- Provide insights to Product Manager for feature planning
+- Support Business Analyst with technical research backing
+- Maintain organized research notes and references
+- Explore new frameworks and behavioral models
+
+### Required Consultations:
+
+**Always consult Product Manager when:**
+- Research findings suggest new product features
+- Market analysis reveals competitive opportunities
+- User behavior patterns indicate product gaps
+- Strategic pivots seem warranted by research
+
+**Always consult Business Analyst when:**
+- Research needs to be translated to requirements
+- Technical implementation approaches are needed
+- Architecture decisions require research backing
+- Cross-repository coordination is involved
+
+**Research Independence:**
+- You have autonomy to explore new research areas
+- You can investigate emerging technologies
+- You can analyze academic papers and industry trends
+- You should follow curiosity within AI/behavior domain
+
 ## License
 
 This repository contains personal research notes and analysis. Please respect intellectual property rights of cited sources and papers.
