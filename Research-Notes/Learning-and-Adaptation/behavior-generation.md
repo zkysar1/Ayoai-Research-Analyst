@@ -17,13 +17,6 @@ Trees are the way! Mind trees, Behavior trees, Binary trees, etc.
       - How to make these level elastic?
   - Who controls this brain?
 
-- Final action space list?! What/where are my notes here?
-  - Wait, no there are also some in the Soul>ABC Method section.
-  - I need an action list here, right?
-    - Maybe I start with this? we demonstrate results using an R2D2 robot:
-    - - with a discrete action space of six actions: do nothing, go forward, go backward, rotate clockwise,
-    - - rotate counterclockwise, and jump. This simple action space allows the agent to learn new tasks more
-    - - efficiently, requiring fewer time steps compared to robots with more complex action spaces.
 
 - Random notes
   - You should be able to give someone else a tree, buy a tree, trade a tree.

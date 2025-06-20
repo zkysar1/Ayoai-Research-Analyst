@@ -8,41 +8,29 @@ This document covers research on cognitive architectures, consciousness models, 
 
 - The anticipation... animals can anticipate things. Hmmm
 
-- Wait, I need this same generative algorithm to work
-  - How is that going to work?
+- How to add a predicate like - if someone is chatting with you, it is rude to move away. So if we were working and starting moving away, we could no longer engage in conversation and that would end. So how are those complexities going to work in pddl?
 
-- One liner notes?
-  - How to add a predicate like - if someone is chatting with you, it is rude to move away. So if we were working and starting moving away, we could no longer engage in conversation and that would end. So how are those complexities going to work in pddl?
+- What are the things humans should do at the same time subconsciously? I need to know so I can think about the the right threads to use inside roblox. So I can think of the count of threads for one npc.
 
-  - What are the things humans should do at the same time subconsciously? I need to know so I can think about the the right threads to use inside roblox. So I can think of the count of threads for one npc.
+- I need multiple threads, and people can pay me for more than three. The three core are. Short term, mid term, long term. Can add mid level threads or something? How does that work? Or have the user designate what kind of thread so that is generative???
 
-  - I need multiple threads, and people can pay me for more than three. The three core are. Short term, mid term, long term. Can add mid level threads or something? How does that work? Or have the user designate what kind of thread so that is generative???
+- Need behavior tree in python? Meaning, say one of the actions picked for the plan needs to be actioned in cloud vs in roblox. Therefore, I need a behavior tree in python as well as in lua. I should have them operate in the same way with the same composite node. The benefit of this is I only have to lean one tree, and that tool and can be refused by me and my prompts fast.
 
-  - Need behavior tree in python? Meaning, say one of the actions picked for the plan needs to be actioned in cloud vs in roblox. Therefore, I need a behavior tree in python as well as in lua. I should have them operate in the same way with the same composite node. The benefit of this is I only have to lean one tree, and that tool and can be refused by me and my prompts fast.
+- Give the agent the ability to create these situation/antecedent. They can learn to love...
 
-  - Give the agent the ability to create these situation/antecedent. They can learn to love...
+- The first layer is spiritual, physical, emotional, and mental. Then there are things within those that affect weights. For mental, you have your goals, etc. For spiritual, you have your values like good or bad. For physical, you have your health, hunger, cleanliness. Emotional are your happiness/sadness things.
+- But what else did pat have as goals here? Family,
+  - Happiness =
+  - Health (body, mind, soul)
+  - Husband
+  - Father
+  - Family
+  - Friend
+  - Finances
 
-  - The first layer is spiritual, physical, emotional, and mental. Then there are things within those that affect weights. For mental, you have your goals, etc. For spiritual, you have your values like good or bad. For physical, you have your health, hunger, cleanliness. Emotional are your happiness/sadness things.
-    - But what else did pat have as goals here? Family,
-      - Happiness =
-      - Health (body, mind, soul)
-      - Husband
-      - Father
-      - Family
-      - Friend
-      - Finances
-
-  - Think like a squirrel, on how the npc's should learn.
+- Think like a squirrel, on how the npc's should learn.
 
 ### Immediate health
-
-- ?
-  - Abstract
-    - ?
-  - Zak thoughts
-    - ?
-
-### General Awareness
 
 - ?
   - Abstract
