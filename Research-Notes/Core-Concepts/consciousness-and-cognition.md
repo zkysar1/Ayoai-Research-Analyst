@@ -42,7 +42,7 @@ This document covers research on cognitive architectures, consciousness models, 
 
 - Maslow triangle <https://www.simplypsychology.org/maslow.html>
 
-- ![A screen shot of a video Description automatically generated](../../ZakResearchSurveyImages/media/image7.png)
+- ![A screen shot of a video Description automatically generated](../images/media/image7.png)
 
 **Ayoai Impact**: Maslow's hierarchy provides a framework for agent motivations. Characters in Ayoai could have dynamic needs that shift based on circumstances - a hungry character prioritizes food over social interaction, creating emergent, believable behavior patterns.
 
@@ -125,7 +125,7 @@ This document covers research on cognitive architectures, consciousness models, 
     - Recent studies of the applications of conversational AI tools, such as chatbots powered by large language models, to complex real-world knowledge work have shown limitations related to reasoning and multi-step problem solving. Specifically, while existing chatbots simulate shallow reasoning and understanding they are prone to errors as problem complexity increases. The failure of these systems to address complex knowledge work is due to the fact that they do not perform any actual cognition. In this position paper, we present Cognitive AI, a higher-level framework for implementing programmatically defined neuro-symbolic cognition above and outside of large language models. Specifically, we propose a dual-layer functional architecture for Cognitive AI that serves as a roadmap for AI systems that can perform complex multi-step knowledge work. We propose that Cognitive AI is a necessary precursor for the evolution of higher forms of AI, such as AGI, and specifically claim that AGI cannot be achieved by probabilistic approaches on their own. We conclude with a discussion of the implications for large language models, adoption cycles in AI, and commercial Cognitive AI development.
 
   - Zak Thoughts
-    - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image8.tmp)
+    - ![A diagram of a diagram Description automatically generated](../images/media/image8.tmp)
 
 **Ayoai Impact**: This paper directly supports Ayoai's architecture of behavior trees + LLMs. The "dual-layer functional architecture" mirrors Ayoai's approach:
 - Layer 1: LLMs for language understanding and generation
@@ -140,12 +140,12 @@ This validates that pure LLM approaches are insufficient for complex agent behav
     - Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.
 
   - Zak Thoughts
-    - ![A close-up of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image9.png)
-    - ![A diagram of a symbol working memory Description automatically generated](../../ZakResearchSurveyImages/media/image10.tmp)
-    - ![A white sheet with black text and black text Description automatically generated](../../ZakResearchSurveyImages/media/image11.png)
-    - ![A diagram of a diagram Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image12.png)
-    - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image13.png)
-    - ![A diagram of a computer Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image14.png)
+    - ![A close-up of a diagram Description automatically generated](../images/media/image9.png)
+    - ![A diagram of a symbol working memory Description automatically generated](../images/media/image10.tmp)
+    - ![A white sheet with black text and black text Description automatically generated](../images/media/image11.png)
+    - ![A diagram of a diagram Description automatically generated with medium confidence](../images/media/image12.png)
+    - ![A diagram of a diagram Description automatically generated](../images/media/image13.png)
+    - ![A diagram of a computer Description automatically generated with medium confidence](../images/media/image14.png)
 
 **Ayoai Impact**: CoALA provides a complete blueprint for Ayoai's cognitive architecture:
 - **Memory Components**: Maps to Ayoai's planned memory systems (STM/LTM)
@@ -184,8 +184,8 @@ The modular design allows Ayoai to incrementally add cognitive capabilities with
 
     - In terms of the witness vector of pure Awareness, in modern society, where we are obsessed with the self, the most likely problem is that it is underdeveloped relative to the other three vectors. So, the question is: Can you see this aspect of your consciousness, and do you truly know how to identify with it and connect to the here, now?
 
-    - ![Gregg Henriques](../../ZakResearchSurveyImages/media/image15.jpeg)
-    - ![A diagram of a person's brain Description automatically generated](../../ZakResearchSurveyImages/media/image16.png)
+    - ![Gregg Henriques](../images/media/image15.jpeg)
+    - ![A diagram of a person's brain Description automatically generated](../images/media/image16.png)
 
 **Ayoai Impact**: The four vectors model provides a sophisticated framework for agent personality:
 1. **Ego (I)**: Agent's self-narrative and justifications - implementable through LLM-generated internal monologues
@@ -204,9 +204,9 @@ This enables creating agents with varying personality profiles by adjusting vect
 
   - Zak thoughts
     - This is one of the most important papers here, and it should be a gold standard guiding star for us to follow. Pay attention to this stuff. . .
-    - ![A blue and white text on a blue and white background Description automatically generated](../../ZakResearchSurveyImages/media/image17.tmp)
-    - ![A diagram of a spider web Description automatically generated](../../ZakResearchSurveyImages/media/image18.tmp)
-    - ![A close-up of a text Description automatically generated](../../ZakResearchSurveyImages/media/image19.tmp)
+    - ![A blue and white text on a blue and white background Description automatically generated](../images/media/image17.tmp)
+    - ![A diagram of a spider web Description automatically generated](../images/media/image18.tmp)
+    - ![A close-up of a text Description automatically generated](../images/media/image19.tmp)
 
 **Ayoai Impact**: This paper provides scientific grounding for consciousness indicators that Ayoai can implement:
 - **Recurrent Processing**: Already present in Ayoai's perception-action loops
@@ -224,7 +224,7 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
     - In 2006, during a meeting of a working group of scientists in La Jolla, California at The Neurosciences Institute (NSI), Gerald Edelman described a roadmap towards the creation of a Conscious Artifact. As far as I know, this roadmap was not published. However, it did shape my thinking and that of many others in the years since that meeting. This short paper, which is based on my notes taken during the meeting, describes the key steps in this roadmap. I believe it is as groundbreaking today as it was more than 15 years ago.
 
   - Zak thoughts
-    - ![A table of a person's task Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image20.tmp)
+    - ![A table of a person's task Description automatically generated with medium confidence](../images/media/image20.tmp)
 
 **Ayoai Impact**: Edelman's roadmap aligns with Ayoai's development trajectory. The steps toward consciousness (perception → categorization → memory → value systems → planning) mirror the platform's architecture evolution. This validates the incremental approach to building sophisticated agents.
 
@@ -236,7 +236,7 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
     - Language models (LMs) can be directed to perform target tasks by using labeled examples or natural language prompts. But selecting examples or writing prompts for can be challenging--especially in tasks that involve unusual edge cases, demand precise articulation of nebulous preferences, or require an accurate mental model of LM behavior. We propose to use *LMs themselves* to guide the task specification process. In this paper, we introduce **Generative Active Task Elicitation (GATE)**: a learning framework in which models elicit and infer intended behavior through free-form, language-based interaction with users. We study GATE in three domains: email validation, content recommendation, and moral reasoning. In preregistered experiments, we show that LMs prompted to perform GATE (e.g., by generating open-ended questions or synthesizing informative edge cases) elicit responses that are often more informative than user-written prompts or labels. Users report that interactive task elicitation requires less effort than prompting or example labeling and surfaces novel considerations not initially anticipated by users. Our findings suggest that LM-driven elicitation can be a powerful tool for aligning models to complex human preferences and values.
 
   - Zak Thoughts
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image21.tmp)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image21.tmp)
 
 **Ayoai Impact**: GATE methodology could revolutionize how game developers configure agent personalities in Ayoai:
 - Instead of complex configuration files, developers converse with the system
@@ -253,10 +253,10 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
 
   - Zak Thoughts
     - Cool twitter post: <https://x.com/johnsonmxe/status/1800915125714747584?s=19>
-    - ![A close up of a text Description automatically generated](../../ZakResearchSurveyImages/media/image22.png)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image23.tmp)
-    - ![A diagram of a structure Description automatically generated](../../ZakResearchSurveyImages/media/image24.png)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image25.tmp)
+    - ![A close up of a text Description automatically generated](../images/media/image22.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image23.tmp)
+    - ![A diagram of a structure Description automatically generated](../images/media/image24.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image25.tmp)
 
 **Ayoai Impact**: While philosophically interesting, this framework suggests practical considerations:
 - Focus on computational efficiency (aligns with <500ms response time goal)
@@ -271,7 +271,7 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
     - All epistemic agents physically consist of parts that must somehow comprise an integrated cognitive self. Biological individuals consist of subunits (organs, cells, and molecular networks) that are themselves complex and competent in their own native contexts. How do coherent biological Individuals result from the activity of smaller sub-agents? To understand the evolution and function of metazoan creatures' bodies and minds, it is essential to conceptually explore the origin of multicellularity and the scaling of the basal cognition of individual cells into a coherent larger organism. In this article, I synthesize ideas in cognitive science, evolutionary biology, and developmental physiology toward a hypothesis about the origin of Individuality: "Scale-Free Cognition." I propose a fundamental definition of an Individual based on the ability to pursue goals at an appropriate level of scale and organization and suggest a formalism for defining and comparing the cognitive capacities of highly diverse types of agents. Any Self is demarcated by a computational surface -- the spatio-temporal boundary of events that it can measure, model, and try to affect. This surface sets a functional boundary - a cognitive "light cone" which defines the scale and limits of its cognition. I hypothesize that higher level goal-directed activity and agency, resulting in larger cognitive boundaries, evolve from the primal homeostatic drive of living things to reduce stress -- the difference between current conditions and life-optimal conditions. The mechanisms of developmental bioelectricity - the ability of all cells to form electrical networks that process information - suggest a plausible set of gradual evolutionary steps that naturally lead from physiological homeostasis in single cells to memory, prediction, and ultimately complex cognitive agents, via scale-up of the basic drive of infotaxis. Recent data on the molecular mechanisms of pre-neural bioelectricity suggest a model of how increasingly sophisticated cognitive functions emerge smoothly from cell-cell communication used to guide embryogenesis and regeneration. This set of hypotheses provides a novel perspective on numerous phenomena, such as cancer, and makes several unique, testable predictions for interdisciplinary research that have implications not only for evolutionary developmental biology but also for biomedicine and perhaps artificial intelligence and exobiology.
 
   - Zak Thoughts
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image26.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image26.tmp)
 
     - Eco-systems consist of groups that are comprised of organisms, which in turn are made of organs composed of tissues, which consist of cells made up of biochemical networks.
 
@@ -293,13 +293,13 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
 
     - The cognitive boundary of an Individual [a "Center of Concern" (Murase and Asakura, 2003)] is the most distant (in time and space) set of events that this system can measure and attempts to regulate in its goal-directed activity. It is a surface indicating what things this system can possibly care about (conversely, it defines preferences as the spatio-temporal domain of states that serve as inputs and outputs to the system). In advanced agents, it is also the boundary of the self-model. A range of such systems is illustrated in Figure 2: using one axis for time and one axis to represent three dimensions of space enables a semi-quantitative representation within which individuals of very variable cognitive capacity can be plotted in the same virtual space. Recent work in artificial life has already begun to characterize the cognitive domains of very diverse kinds of complex systems (Beer, 2014).
 
-    - ![Diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a Description automatically generated](../../ZakResearchSurveyImages/media/image27.png)
+    - ![Diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a Description automatically generated](../images/media/image27.png)
 
     - Figure 2. Arbitrary cognitive "Individuals" can be classified according to their computational boundary. (A) Each living system has a delimited "area of concern" -- a region of space-time, with the organism at its center, within which its cognitive apparatus functions to take measurements and act. The borders of its cognition are schematized on a semi-quantitative state space defined as follows. The vertical axis is time. Values below the individual's Now are past events, of which it may have a memory extending some duration in the past; values above the Now are future events, which it may be able to predict or anticipate to some distance in the future. The horizontal axis represents three dimensions of space. Each individual, based on its sensory and effector apparatus, and the complexity and organization of information-processing unit layers between them, can measure and attempt to modify conditions within some distance of itself. (B) The size and shape of this cognitive boundary defines the sophistication of the agent and determines the scale of its goal directedness. This scheme enables multiple agents, regardless of their composition/structure or origin (evolved, engineered) to be directly plotted on the same space. The shape of boundary defines each agent's "cognitive light cone" -- anything outside this region is mentally inaccessible to that system. Here are illustrated a few representative life forms. Primitive agents such as ticks may only have a very small area within which they can sense signals and operate -- immediately next to them, and without much memory or ability to anticipate future events. Dogs have significant memory, but very limited ability to plan for the future and can only really care about events in their local vicinity (it is not possible to get a dog to care about what will happen several miles away, or in 2 weeks). Humans exhibit a great diversity of cognitive boundary shapes but on average have a memory that lasts ~102 years, can anticipate decades into the future, and often plan and act to attempt to modify events on quite distant spatial scales (sometimes planetary or even beyond). A variety of as-yet unknown alien, engineered, and bio-synthetic life forms could occupy every conceivable corner of this option space. (C) In this scheme, Individuals can overlap -- the same biophysical system can support a number of coexisting, coupled Selves with different cognitive borders. A coordinated swarm of animals, the individual animals themselves, their organs, their cells, and even the metabolic and transcriptional networks inside the cells each have their own cognitive horizon. They cooperate or compete based on specific circumstances and each can be addressed semi-independently because of the differential goals they pursue (and thus, the different positive and negative reinforcements that can be brought to bear to modify events at a given level). All panels courtesy of Jeremy Guay of Peregrine Creative.
 
     - The edges of a given Agent's goal space define a sort of "computational light cone" -- the boundaries beyond which its cognitive system cannot operate. For example, a tick has a relatively small cognitive boundary, having very little memory or predictive power in the temporal direction, and sensing/acting very locally. A dog has much more temporal memory, some forward prediction ability, and a degree of spatial concern. However, it is likely impossible for a dog's cognitive apparatus to operate with notions about what is going to happen next month or in the adjacent town. Human minds can operate over goals of vastly greater spatial and temporal scales, and one can readily imagine artificial (organic or software-based) Selves with properties that define every possible shape in this space (and perhaps change their boundaries over evolutionary and individual timescales). As will be seen in the next section, expanding the horizon is what enables information (in the Shannon sense) to acquire meaning, because data become causally linked to distant and past experiences, and acquires implications for future expectations. The formalism also suggests semi-quantitative definitions of maximum cognitive rate (the speed at which information propagates across an agent's body); this and other similarities to the space-time diagrams of Relativity remain to be explored.
 
-    - ![A close-up of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image28.tmp)
+    - ![A close-up of a diagram Description automatically generated](../images/media/image28.tmp)
 
     - Summary of key ideas of Scale-Free Cognition
 

@@ -231,7 +231,7 @@ Recurring
 
  
 
-![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image308.png)
+![A screenshot of a computer Description automatically generated](../images/media/image308.png)
 
  
 
@@ -279,7 +279,7 @@ These categories are not mutually exclusive and can interact with one another to
 
   - Zak Thoughts
 
-    - ![A screenshot of a blue and white background Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image309.png)
+    - ![A screenshot of a blue and white background Description automatically generated with medium confidence](../images/media/image309.png)
 
 ## ABC Data Sheet
 
@@ -291,7 +291,7 @@ These categories are not mutually exclusive and can interact with one another to
 
   - Zak thoughts
 
-    - ![This series on behavioral support and addressing problem behaviors includes this post with a free, easy to use ABC data form. In addition I shared some tips for using it or any ABC data collection system.](../../ZakResearchSurveyImages/media/image310.jpeg)
+    - ![This series on behavioral support and addressing problem behaviors includes this post with a free, easy to use ABC data form. In addition I shared some tips for using it or any ABC data collection system.](../images/media/image310.jpeg)
 
 **Ayoai Impact**: ABC analysis provides:
 - 5-step behavior change method

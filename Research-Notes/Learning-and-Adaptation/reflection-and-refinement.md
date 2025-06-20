@@ -49,7 +49,7 @@ Encourages LLM to reflect on failures and then refine the plan.
 
   - Zak thoughts
     - Has code!!! [https://github.com/madaan/self-refine](https://github.com/madaan/self-refine)
-    - ![A diagram of a model Description automatically generated](../../ZakResearchSurveyImages/media/image181.png)![A screenshot of a computer code Description automatically generated](../../ZakResearchSurveyImages/media/image182.png)
+    - ![A diagram of a model Description automatically generated](../images/media/image181.png)![A screenshot of a computer code Description automatically generated](../images/media/image182.png)
 
 **Ayoai Impact**: Self-refine enables iterative improvement:
 - No additional training required
@@ -71,8 +71,8 @@ Encourages LLM to reflect on failures and then refine the plan.
     - Has code!!! [https://github.com/noahshinn/reflexion](https://github.com/noahshinn/reflexion)
       - This looks like really good code, no install, a couple agents to play with. It looks like it gives you the reflection part and the history part - good amount of code to use?!? . . .
     - Reflexion has several advantages compared to more traditional RL approaches like policy or valuebased learning: 1) it is lightweight and doesn't require finetuning the LLM, 2) it allows for more nuanced forms of feedback (e.g. targeted changes in actions), compared to scalar or vector rewards that are challenging to perform accurate credit assignment with, 3) it allows for a more explicit and interpretable form of episodic memory over prior experiences, and 4) it provides more explicit hints for actions in future episodes. At the same time, it does have the disadvantages of relying on the power of the LLM's self-evaluation capabilities (or heuristics) and not having a formal guarantee for success. However, as LLM capabilities improve, we only expect this paradigm to get better over time
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image183.png)
-    - ![A diagram of reflection and reflection Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image184.png)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image183.png)
+    - ![A diagram of reflection and reflection Description automatically generated with medium confidence](../images/media/image184.png)
 
 **Ayoai Impact**: Reflexion is perfect for game agents:
 - Linguistic feedback instead of weight updates
@@ -95,7 +95,7 @@ Encourages LLM to reflect on failures and then refine the plan.
     - Has code!!! [https://github.com/microsoft/ProphetNet/tree/master/CRITIC](https://github.com/microsoft/ProphetNet/tree/master/CRITIC)
       - Wow this code looks clean. Hmm, can a critic and a Reflexion merge?
     - How to verify though? They use external tools, not sure I want to rely on that. . .
-    - ![A diagram of a black box Description automatically generated](../../ZakResearchSurveyImages/media/image185.png)
+    - ![A diagram of a black box Description automatically generated](../images/media/image185.png)
 
 **Ayoai Impact**: CRITIC provides external validation:
 - Tool-based verification of agent actions
@@ -117,8 +117,8 @@ Encourages LLM to reflect on failures and then refine the plan.
     - Has code!!! [https://github.com/microsoft/RecAI](https://github.com/microsoft/RecAI)
       - There are some really cool prompts in here and in the paper appendix.
     - The comprehensive framework of InteRecAgent is depicted in Figure 1. Fundamentally, LLMs function as the brain, while recommendation models serve as tools that supply domain-specific knowledge. Users engage with an LLM using natural language. The LLM interprets users' intentions and determines whether the current conversation necessitates the assistance of tools. For instance, in a casual chitchat, the LLM will respond based on its own knowledge; whereas for in-domain recommendations, the LLM initiates a chain of tool calls and subsequently generates a response by observing the execution results of the tools. Consequently, the quality of recommendations relies heavily on the tools, making the composition of tools a critical factor in overall performance. To ensure seamless communication between users and InteRecAgent, covering both casual conversation and item recommendations, we propose a minimum set of tools that encompass the following aspects:
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image186.png)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image187.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image186.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image187.png)
 
 **Ayoai Impact**: InteRecAgent shows LLM-as-brain pattern:
 - LLMs orchestrate specialized tools
@@ -162,8 +162,8 @@ Encourages LLM to reflect on failures and then refine the plan.
     - Here is chroma, they said voyager used it for memory retrieval. What is chroma? [https://twitter.com/jasonjoyride/status/1748793393214640453?s=19](https://twitter.com/jasonjoyride/status/1748793393214640453?s=19)
     - Has code!!! [https://github.com/MineDojo/Voyager](https://github.com/MineDojo/Voyager)
     - The input prompt to GPT-4 consists of several components: (1) Directives encouraging diverse behaviors and imposing constraints, such as "My ultimate goal is to discover as many diverse things as possible ... The next task should not be too hard since I may not have the necessary resources or have learned enough skills to complete it yet."; (2) The agent's current state, including inventory, equipment, nearby blocks and entities, biome, time, health and hunger bars, and position; (3) Previously completed and failed tasks, reflecting the agent's current exploration progress and capabilities frontier; (4) Additional context: We also leverage GPT-3.5 to self-ask questions based on the agent's current state and exploration progress and self-answer questions. We opt to use GPT-3.5 instead of GPT-4 for standard NLP tasks due to budgetary considerations.
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image188.png)
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image189.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image188.png)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image189.png)
     - Interesting prompts
       - The input prompt to GPT-4 consists of several components: (1) Directives encouraging diverse behaviors and imposing constraints (so that the proposed task is achievable and verifiable): See Sec. A.3.4 for the full prompt; (2) The agent's current state: • Inventory: A dictionary of items with counts, for example, {'cobblestone': 4, 'furnace': 1, 'stone_pickaxe': 1, 'oak_planks': 7, 'dirt': 6, 'wooden_pickaxe': 1, 'crafting_table': 1, 'raw_iron': 4, 'coal': 1}; • Equipment: Armors or weapons equipped by the agents; • Nearby blocks: A set of block names within a 32-block distance to the agent, for example, 'dirt', 'water', 'spruce_planks', 'grass_block', 'dirt_path', 'sugar_cane', 'fern'; • Other blocks that are recently seen: Blocks that are not nearby or in the inventory; • Nearby entities: A set of entity names within a 32-block distance to the agent, for example, 'pig', 'cat', 'villager', 'zombie'; • A list of chests that are seen by the agent: Chests are external containers where the agent can deposit items. If a chest is not opened before, its content is "Unknown". Otherwise, the items inside each chest are shown to the agent. • Biome: For example, 'plains', 'flower_forest', 'meadow', 'river', 'beach', 'forest', 'snowy_slopes', 'frozen_peaks', 'old_growth_birch_forest', 'ocean', 'sunflower_plains', 'stony_shore'; • Time: One of 'sunrise', 'day', 'noon', 'sunset', 'night', 'midnight'; • Health and hunger bars: The max value is 20; • Position: 3D coordinate (x, y, z) of the agent's position in the Minecraft world; (3) Previously completed and failed tasks; (4) Additional context: See Sec. A.3.2; (5) Chain-of-thought prompting [46] in response: We request GPT-4 to first reason about the current progress and then suggest the next task.
       - Many other awesome prompts I need to take from here. Probably some of the best prompts.
@@ -185,7 +185,7 @@ Encourages LLM to reflect on failures and then refine the plan.
 
   - Zak thoughts
     - No code.
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image190.png)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image190.png)
 
 **Ayoai Impact**: Action learning expands capabilities:
 - Agents learn new actions from experience

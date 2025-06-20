@@ -61,9 +61,9 @@ https://www.gdcvault.com/play/1012416/Behavior-Trees-Three-Ways-of
 
 At the higher level you have the above pic, on the top few layers. But the below low level sequences will be at bottom of tree. To have the tree more like states, like cover, you could get locked into the tree . . . Its not trying to figure out if anything broke or whatever. So for each behavior , it it monitors if assumptions have changed. You want your nodes forward looking.  
 
-![A white text on a black background Description automatically generated](../../ZakResearchSurveyImages/media/image198.png)
+![A white text on a black background Description automatically generated](../images/media/image198.png)
 
-![A white background with black text Description automatically generated](../../ZakResearchSurveyImages/media/image199.png)
+![A white background with black text Description automatically generated](../images/media/image199.png)
 
 A tree is not a planner. A planner plans some moves ahead, whereas the tree reacts to things. Hmm . . ..
 

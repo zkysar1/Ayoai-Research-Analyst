@@ -89,7 +89,7 @@ When adding new research:
    [Research content, quotes, analysis]
    
    ### Screenshots/Figures
-   ![Description](../ZakResearchSurveyImages/media/imageXXX.png)
+   ![Description](/images/media/imageXXX.png)
    ```
 
 4. **Update this README** if you create new files

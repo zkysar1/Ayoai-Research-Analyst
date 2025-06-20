@@ -254,9 +254,9 @@ Employ an external planner to elevate the planning procedure, while the LLM main
   - Zak thoughts
     - No code though -- hmm
     - Wow, ok this one is cool - it introduces an "action selector?" Hmmm: The Action Selector (AS) module decides the agent's immediate next action. It takes the planner's output, a set of plans, and selects an action from them. In our Alfworld experiments, the Action Selector simply selects the shortest plan returned. If no valid plans are returned, all sampled states were satisfying goal states, there is a mistake with the constructed domain/problem files, or the planner has failed to find a path to the goal. In the first case, we re-sample random world states and re-run the planners once.
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image149.png)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image149.png)
     - Sample prompt:
-      - ![A white paper with black text Description automatically generated](../../ZakResearchSurveyImages/media/image150.png)
+      - ![A white paper with black text Description automatically generated](../images/media/image150.png)
 
 **Ayoai Impact**: LLM-DP shows dynamic replanning capabilities:
 - Handles dynamic environments (critical for games)
@@ -286,9 +286,9 @@ Employ an external planner to elevate the planning procedure, while the LLM main
       - On the other hand, for the approach that utilizes PDDL models to validate LLM plans (i.e., LLM modulo planner back-prompted by VAL using LLMacquired domain model), we employ the state-of-the-art algorithm ReAct [60] with GPT-4 as the underlying LLM planner. However, we made two modifications to the prompt design. Firstly, we provide a detailed description of all actions in natural language, including parameters, preconditions, and effects. These descriptions are obtained by using another LLM to translate the generated PDDL domain model into natural language.
       - Furthermore, also in the Household domain, we observe that classical planners occasionally generate physically plausible but unconventional actions, such as placing a knife on a toaster when the knife is not being used. In contrast, the LLM planner rarely exhibits such actions, suggesting that LLMs possess knowledge of implicit human preferences. It would be meaningful to explore methods that more effectively combine the strengths of LLM planners and the correctness guarantee provided by symbolic domain models, particularly in determining which information from LLM plans should be preserved.
     - I do not have to use pddl, but I can use their design? Then if so maybe I am not tied to this design? OR maybe it is the exact language I was looking for?!
-      - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image151.png)
+      - ![A screenshot of a computer Description automatically generated](../images/media/image151.png)
     - Overview:
-      - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image152.png)
+      - ![A diagram of a diagram Description automatically generated](../images/media/image152.png)
 
 **Ayoai Impact**: LLM+PDDL provides comprehensive planning framework:
 - Human feedback integration for model correction
@@ -310,7 +310,7 @@ Employ an external planner to elevate the planning procedure, while the LLM main
     - symbolic planner
     - It outputs python which is interesting but not something I need. This is also just a planner - it does not create domain or problem files.
     - Wow - this is a llm planner - they did it and it looks decent. They used pddl format for sure. Why not use it?
-    - ![A diagram of a strategy Description automatically generated](../../ZakResearchSurveyImages/media/image153.png)
+    - ![A diagram of a strategy Description automatically generated](../images/media/image153.png)
 
 **Ayoai Impact**: Shows LLMs as generalized planners:
 - GPT-4 can generate planning programs
@@ -330,9 +330,9 @@ Employ an external planner to elevate the planning procedure, while the LLM main
     - No code?
     - symbolic planner
     - OMG, there are some awesome prompts I want to use in this paper, on each step they gave the prmpts, so we know all the things they wanted each actor to do. Hell yeah!!
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image154.png)
-    - ![A diagram of a diagram Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image155.png)
-    - ![A close up of a text Description automatically generated](../../ZakResearchSurveyImages/media/image156.png)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image154.png)
+    - ![A diagram of a diagram Description automatically generated with medium confidence](../images/media/image155.png)
+    - ![A close up of a text Description automatically generated](../images/media/image156.png)
 
 **Ayoai Impact**: Forecasting capabilities for predictive agents:
 - Agents can predict player behavior
@@ -352,7 +352,7 @@ Employ an external planner to elevate the planning procedure, while the LLM main
     - No code?
     - symbolic planner
     - Same as others, double check their prompts maybe.
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image157.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image157.png)
 
 **Ayoai Impact**: LLM-Planner demonstrates few-shot learning capabilities:
 - Less than 0.5% training data needed
@@ -371,7 +371,7 @@ Employ an external planner to elevate the planning procedure, while the LLM main
     - No code?
     - symbolic planner
     - Good idea about the imagination step, hmm.
-    - ![A diagram of a step process Description automatically generated](../../ZakResearchSurveyImages/media/image158.png)
+    - ![A diagram of a step process Description automatically generated](../images/media/image158.png)
 
 **Ayoai Impact**: Goal-directed dialogue is essential for NPC interactions:
 - Multi-turn conversation optimization
@@ -393,8 +393,8 @@ Employ an external planner to elevate the planning procedure, while the LLM main
   - Zak thoughts
     - Has code!! [https://github.com/azreasoners/LLM-ASP](https://github.com/azreasoners/LLM-ASP)
     - Overview: We refer to our framework as [LLM]+ASP where [LLM] denotes a large pre-trained network such as GPT-3, which we use as a semantic parser to generate input to the ASP reasoner. Specifically, we assume data instances of the form ⟨S, q, a⟩, where S is a context story in natural language, q is a natural language query associated with S, and a is the answer. We use an LLM to convert a problem description (that is, context S and query q) into atomic facts, which are then fed into the ASP solver along with background knowledge encoded as ASP rules. The output of the ASP solver is interpreted as the prediction for the given data instance.
-    - ![A diagram of a computer Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image159.png)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image160.png)![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image161.png)
+    - ![A diagram of a computer Description automatically generated with medium confidence](../images/media/image159.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image160.png)![A screenshot of a computer screen Description automatically generated](../images/media/image161.png)
 
 **Ayoai Impact**: ASP provides another formal reasoning approach:
 - Answer Set Programming for logical reasoning
@@ -429,8 +429,8 @@ Employ an external planner to elevate the planning procedure, while the LLM main
     - Has code!!! [https://github.com/zharry29/proc2pddl](https://github.com/zharry29/proc2pddl)
     - What is difference between closed-domain and open-domain simulated environments?! I am definitely going for open domain, but making a manager make it seem more closed to the this system, right?
     - Yikes: We show that Proc2PDDL is highly challenging, with GPT-3.5's success rate close to 0% and GPT-4's around 35%.
-    - ![A diagram of a problem file Description automatically generated](../../ZakResearchSurveyImages/media/image162.png)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image163.png)
+    - ![A diagram of a problem file Description automatically generated](../images/media/image162.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image163.png)
 
 **Ayoai Impact**: PROC2PDDL reveals current limitations:
 - Open-domain planning is still challenging
@@ -476,10 +476,10 @@ Employ an external planner to elevate the planning procedure, while the LLM main
     - Overview
       - Inspired by the dual process theory [39, 16], we propose a novel framework that enables agents to closely emulate how humans solve complex, open-world tasks. The dual-process theory posits that human cognition is composed of two distinct systems: System 1, characterized by rapid, intuitive, and automatic thinking; and System 2, which entails methodical, analytical, and deliberate thought processes. System 1 is reminiscent of seq2seq methods, which learn through imitation of oracle agents and primarily operate utilizing shallow action patterns. Conversely, System 2 bears resemblance to LLMs that excel in applying commonsense knowledge, engaging in step-by-step reasoning, devising subgoal strategies, and exercising self-reflection. Thus, our proposed method, SWIFTSAGE, is designed to enable both fast and slow thinking in complex interactive reasoning tasks. It effectively integrates the strengths of behavior cloning (representing System 1) and prompting LLMs (emulating System 2), resulting in significant enhancements in task completion performance and efficiency.
       - Specifically, SWIFTSAGE consists of two primary modules: the SWIFT module and the SAGE module. The SWIFT module is a small encoder-decoder LM, fine-tuned on a T5-large (770m) checkpoint using the searched oracle trajectories of training tasks. It encodes short-term memory components, such as previous actions, observations, visited locations, as well as the current environment state. Then, it decodes the next individual action. This module simulates the fast, intuitive thinking characteristic of System 1. The SAGE module, representing the deliberate thinking of System 2, utilizes LLMs, such as GPT-4, and is structured around two prompting stages: planning and grounding. In the planning stage, we prompt LLMs to locate necessary items, plan and track subgoals, as well as detect and fix potential exceptions and mistakes. In the grounding stage, we focus on utilizing LLMs to transform the output subgoals derived from the planning stage into a sequence of actions by demonstrating potential action templates. Unlike prior methods, where LLMs only generate the next immediate action, our procedures engage in longer-term action planning. To harmoniously integrate the SWIFT and SAGE modules, we developed a heuristic algorithm that determines when to (de)activate the SAGE module and how to combine the outputs effectively with an action buffer mechanism.
-      - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image164.png)
-      - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image165.png)
+      - ![A screenshot of a computer screen Description automatically generated](../images/media/image164.png)
+      - ![A screenshot of a computer program Description automatically generated](../images/media/image165.png)
     - Awesome task decomposition. . . Grounding stage. While the answers to Q1-Q5 provide valuable guidance for agents, they are not directly executable. Converting plans into valid actions that can be accepted by the environment remains a challenge. We then incorporate the LLM's outputs from the planning stage as part of the input for the grounding stage. Furthermore, we provide the recent action history of the past 10 time steps as context. Finally, we prompt LLMs to concentrate on the next subgoal and convert it into a list of actions (rather than a single action) to accomplish the next subgoal. Our formatting instructions enable the straightforward splitting and conversion of output actions from LLMs in the grounding stage back to their original action representations. We denote this list of actions generated by LLMs as the action buffer: B = {Aˆ t, Aˆ t+1, . . . }. One can opt to use only answers to Q4 and Q5 to reduce computational costs. Our small-scale ablation study indicates that incorporating answers to Q1-Q3 in the grounding stage proves beneficial, yielding a gain of about 2 points for short tasks on average
-      - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image166.png)![A close-up of a text Description automatically generated](../../ZakResearchSurveyImages/media/image167.png)
+      - ![A screenshot of a computer screen Description automatically generated](../images/media/image166.png)![A close-up of a text Description automatically generated](../images/media/image167.png)
     - Interesting note on memory I like:
       - Memory augmentation. Since the agent can only perceive objects in its current environment location, objects from previously visited locations are not displayed unless a prior 'look around' action has been executed. To augment memory for LLMs during planning and grounding, we also present the objects observed in previously visited locations. Additionally, we include the agent's location during each action in the action history, e.g., "pick up metal pot [location: kitchen]," to facilitate spatial reasoning for LLMs.
     - Interesting note on error handling:
@@ -505,7 +505,7 @@ Employ an external planner to elevate the planning procedure, while the LLM main
   - Zak thoughts
     - No code
     - Overview
-      - ![A diagram of a language model Description automatically generated](../../ZakResearchSurveyImages/media/image168.png)
+      - ![A diagram of a language model Description automatically generated](../images/media/image168.png)
     - Damn, looks expensive but super cool. . . This is the reward system, wow super easy
 
 **Ayoai Impact**: Self-rewarding opens continuous improvement:

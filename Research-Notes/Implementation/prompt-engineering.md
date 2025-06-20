@@ -14,19 +14,19 @@
 
     - https://x.com/learnprompting/status/1800931910404784380?s=19
 
-    - ![A diagram of a text based techniques Description automatically generated](../../ZakResearchSurveyImages/media/image342.tmp)
+    - ![A diagram of a text based techniques Description automatically generated](../images/media/image342.tmp)
 
-    - ![A diagram of a diagram Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image343.tmp)
+    - ![A diagram of a diagram Description automatically generated with medium confidence](../images/media/image343.tmp)
 
-    - ![A diagram of a number Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image344.tmp)
+    - ![A diagram of a number Description automatically generated with medium confidence](../images/media/image344.tmp)
 
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image345.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image345.tmp)
 
-    - ![A diagram of a group of people Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image346.tmp)
+    - ![A diagram of a group of people Description automatically generated with medium confidence](../images/media/image346.tmp)
 
-    - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image347.tmp)
+    - ![A diagram of a process Description automatically generated](../images/media/image347.tmp)
 
-    - ![A diagram of a structure Description automatically generated](../../ZakResearchSurveyImages/media/image348.tmp)
+    - ![A diagram of a structure Description automatically generated](../images/media/image348.tmp)
 
 **Ayoai Impact**: Comprehensive prompt taxonomy:
 - 58 text-only techniques
@@ -71,7 +71,7 @@
 
 ### 26 Guiding Principals
 
-![A close-up of a checklist Description automatically generated](../../ZakResearchSurveyImages/media/image349.tmp)
+![A close-up of a checklist Description automatically generated](../images/media/image349.tmp)
 
 ### JSON Extraction Example
 
@@ -141,11 +141,11 @@ For each data point that remains null, continue to ask the user for each data po
 **A Language Agent for Autonomous Driving** Role: You are the brain of an autonomous vehicle (a.k.a. ego-vehicle). In this step, you need to extract necessary information from the driving scenario. The information you extracted must be useful to the next-step motion planning. Necessary information might include the following: - Detections: The detected objects that you need to pay attention to. - Predictions: The estimated future motions of the detected objects. - Maps: Map information includes traffic lanes and road boundaries. - Occunpancy: Occupancy implies whether a location has been occupied by other objects. Task - You should think about what types of information (Detections, Predictions, Maps, Occupancy) you need to extract from the driving scenario. - Detections and Predictions are quite important for motion planning. You should call at least one of them if necessary. - Maps information are also important. You should pay more attention to road shoulder and lane divider information to your current ego-vehicle location. - I will guide you through the thinking process step by step. *****Context Information:***** Current State: - Velocity (vx,vy): (-0.01,0.92) - Heading Angular Velocity (v_yaw): (0.00) - Acceleration (ax,ay): (-0.00,-0.50) - Can Bus: (-0.74,0.14) - Heading Speed: (0.95) - Steering: (-0.02) Historical Trajectory (last 2 seconds): [(-0.07,-6.43), (-0.05,-4.34), (-0.02,-2.32), (-0.01,-0.91)] Mission Goal: FORWARD
 ```
 
-![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image350.png)
+![A screenshot of a computer program Description automatically generated](../images/media/image350.png)
 
 ### Chain-of-Thought Example
 
-![Standard Prompting Model Input Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now? A: The answer is 11. Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have? Model ut x A: The answer is 27. Chain-of-Thought Prompting Model Input Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now? The answer is 11. Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have? Model Output A: théZåféféHa app es ongnay. ey us O to make lunch. So they had 23 - 20 = 3. The The answer is 9.](../../ZakResearchSurveyImages/media/image351.jpeg)
+![Standard Prompting Model Input Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now? A: The answer is 11. Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have? Model ut x A: The answer is 27. Chain-of-Thought Prompting Model Input Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now? The answer is 11. Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have? Model Output A: théZåféféHa app es ongnay. ey us O to make lunch. So they had 23 - 20 = 3. The The answer is 9.](../images/media/image351.jpeg)
 
 > Wow great example of chaon of thought
 >

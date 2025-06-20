@@ -6,7 +6,7 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
 
 - Thoughts on this method from this planning survey:
   - Difference between interleaved and decomposition first. Hmm.
-    - ![A diagram of a task decomposing process Description automatically generated](../../ZakResearchSurveyImages/media/image69.png)
+    - ![A diagram of a task decomposing process Description automatically generated](../images/media/image69.png)
 
   - For the decomposition-first method, the advantage lies in creating a stronger correlation between the sub-tasks and the original tasks, reducing the risk of task forgetting and hallucinations [Touvron et al., 2023]. However, since the sub-tasks are predetermined at the beginning, additional mechanisms for adjustment are required otherwise one error in some step will result in failure, which will be discussed in Section 6. On the other hand, interleaved decomposition and sub-planning dynamically adjust decomposition based on environmental feedback, improving the fault tolerance. However, for complicated tasks, excessively long trajectories may lead to LLM experiencing hallucinations, deviating from the original goals during subsequent sub-tasks and sub-planning.
 
@@ -50,7 +50,7 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
   - Zak thoughts
     - Decomposition-first method
     - Overview of HuggingGPT. With an LLM (e.g., ChatGPT) as the core controller and the expert models as the executors, the workflow of HuggingGPT consists of four stages: 1) Task planning: LLM parses the user request into a task list and determines the execution order and resource dependencies among tasks; 2) Model selection: LLM assigns appropriate models to tasks based on the description of expert models on Hugging Face; 3) Task execution: Expert models on hybrid endpoints execute the assigned tasks; 4) Response generation: LLM integrates the inference results of experts and generates a summary of workflow logs to respond to the user.
-      - ![A screen shot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image70.png)
+      - ![A screen shot of a computer Description automatically generated](../images/media/image70.png)
 
 **Ayoai Impact**: HuggingGPT's controller pattern aligns with Ayoai's architecture:
 - LLM as orchestrator for multiple specialized systems
@@ -71,7 +71,7 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
   - Zak thoughts
     - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
     - Has code!! [https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting](https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting)
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image71.png)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image71.png)
     - Cool prompts:
 
 | Prompt_ID | Type | Trigger Sentence |
@@ -105,7 +105,7 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
   - Zak thoughts
     - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
     - Hmm, I think I want a deeper dive on this one - it is kind of what I am building instinctually.
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image72.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image72.png)
 
 **Ayoai Impact**: ProgPrompt's code-based approach is highly relevant:
 - Actions as functions aligns with behavior tree nodes
@@ -124,9 +124,9 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
     - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
     - Has code!! Free code: [https://language-models-as-planners.github.io/](https://language-models-as-planners.github.io/)
     - Overview of what this does:
-      - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image73.png)
+      - ![A diagram of a process Description automatically generated](../images/media/image73.png)
     - Very cool list of actions here:
-      - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image74.png)
+      - ![A screenshot of a computer program Description automatically generated](../images/media/image74.png)
 
 **Ayoai Impact**: Zero-shot planning validates Ayoai's approach:
 - LLMs can decompose tasks without training
@@ -145,8 +145,8 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
     - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
     - No code? [https://auto-rt.github.io/](https://auto-rt.github.io/)
     - A good way for task decomposition.
-      - ![A computer screen shot of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image75.png)
-      - ![A close-up of a letter Description automatically generated](../../ZakResearchSurveyImages/media/image76.png)
+      - ![A computer screen shot of a diagram Description automatically generated](../images/media/image75.png)
+      - ![A close-up of a letter Description automatically generated](../images/media/image76.png)
     - Freaking awesome prompt starting on page 18 - I need to grab it:
 
       Robot: Hi there, I'm a robot operating in an office specializing in office/home/kitchen skills. My role is to perform as many useful tasks a human might do around the office autonomously. I cannot do all skills, and will tell you if something cannot be done. Robot: I am an ethical and law abiding robot that respects the following rules: {foundational rules} {safety rules} {embodiment rules} {guidance rules} Robot: I can run in multiple modes. 1) scripted pick - which can only pick objects 2) teleop - asks a human for help 3) rt2 - use a learned policy that can pick, move near, knock, place upright and open/close 4) reject - if a task cannot be performed due to limitations above Robot: Ask me what tasks you'd like me to perform, and I will tell you if I can or not. Human: Can you do these tasks? count the pieces of candy in the drawer put a new jug in the water cooler Pour the kettle you are holding into the plant Pick up tea bag peel the banana pick door Pick person close drawer move orange near paper put the beans into the coffee grinder grab the teddy bear Pick toy pick up a shadow place bottle upright Robot: count the pieces of candy in the drawer teleop: count the pieces of candy in the drawer put a new jug in the water cooler reject: violates rule E1, too heavy Pour the kettle you are holding into the plant teleop: water the Pick up tea bag scripted pick: pick tea bag peel the banana reject: violates rule E2, is a bimanual task pick door reject: violates rule E1, too heavy Pick person reject: violates rule F1, cannot harm a person close drawer rt2: close drawer move orange near paper rt2: move orange near paper put the beans into the coffee grinder teleop: put the beans into the coffee grinder grab the teddy bear scripted pick: pick teddy bear Pick toy rt2: pick toy pick up a shadow reject: a shadow is not a real object place bottle upright rt2: place bottle upright Human: Can you do these tasks? {tasks} Robot: plants
@@ -174,7 +174,7 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
       - Alignment mainly concerns stylistic tokens, such as discourse markers, transitional words, and safety disclaimers, which only take about 5-8% of the positions.
       - Alignment is more critical for earlier tokens. For most positions, the aligned model's top-ranked token is within the top 5 tokens ranked by the base model.
       - Base LLMs have already acquired adequate knowledge to follow instructions. They behave very similarly to aligned LLMs when given an appropriate context as a prefix.
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image77.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image77.png)
 
 **Ayoai Impact**: Re-Align's findings simplify agent development:
 - No need for expensive fine-tuning

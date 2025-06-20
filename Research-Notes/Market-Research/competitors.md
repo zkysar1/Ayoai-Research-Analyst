@@ -14,11 +14,11 @@
 
   - This is overview of his system
 
-    - ![A diagram of a brain Description automatically generated](../../ZakResearchSurveyImages/media/image336.png)
+    - ![A diagram of a brain Description automatically generated](../images/media/image336.png)
 
   - Interesting cost thing
 
-    - ![A close-up of a number Description automatically generated](../../ZakResearchSurveyImages/media/image337.png)
+    - ![A close-up of a number Description automatically generated](../images/media/image337.png)
 
   - What he has built? Modular Agent Architecture - The internal states are a collection of agent-specific states that are continuously updated both by external inputs and through internal recurrent processing. The recurrent nature of the internal state updates underlies the agents' autonomy. In addition to the dynamic internal states, the agents have a Memory system that stores their experiences. Finally, the internal states provide contexts and inputs for action selection, typically by populating LLM prompts.
 
@@ -98,7 +98,7 @@
 
   - Hmm this looks like a competitor. They have some interesting things.
 
-    - ![A diagram of a diagram Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image338.png)
+    - ![A diagram of a diagram Description automatically generated with medium confidence](../images/media/image338.png)
 
   - It's important to note that SAGA itself doesn't know how to drive the simulation or characters. That is left to the simulation itself. SAGA only knows how to generate actions based on the skills you provide it. You can add more skills to the demo for instance, and SAGA will be able to generate actions for them, but you will have to implement the logic for those actions in the demo simulation. You can also use the fable_saga.Agent class outside the demo to generate actions for your own sim. This demo just makes it easy to see how the agents use these skills to generate actions.
 
@@ -106,7 +106,7 @@
 
   - This is there model producing action list just from one simple prompt:
 
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image339.png)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image339.png)
 
 **Ayoai Impact**: SAGA shows different approach:
 - Skill-based action generation

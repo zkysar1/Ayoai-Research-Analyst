@@ -44,7 +44,7 @@ Use this template:
 - What would need to be adapted?
 
 ### Screenshots/Figures
-![Description](../../ZakResearchSurveyImages/media/imageXXX.png)
+![Description](../images/media/imageXXX.png)
 
 ### Code/Examples
 ```language
@@ -80,7 +80,7 @@ Change image paths from:
 ```
 To:
 ```
-![Description](../../ZakResearchSurveyImages/media/image1.png)
+![Description](../images/media/image1.png)
 ```
 
 ### Step 4: Add Context Header
@@ -148,7 +148,7 @@ Let's say you find a paper on "Hierarchical Memory Networks for Agents":
 - Tier 3: Long-term storage (compressed experiences)
 
 ### Screenshots
-![Memory hierarchy diagram](../../ZakResearchSurveyImages/media/image363.png)
+![Memory hierarchy diagram](../images/media/image363.png)
 ```
 
 4. **Update the README** if you created a new file

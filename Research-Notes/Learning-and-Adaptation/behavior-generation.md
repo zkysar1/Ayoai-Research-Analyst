@@ -62,25 +62,25 @@ Trees are the way! Mind trees, Behavior trees, Binary trees, etc.
 - Mimicking Human-Level Performance with SPIN (Self-Play fIne-tuNing)
 
   - Abstract
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image171.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image171.png)
 
   - Zak thoughts
     - They also mentioned the other paper I already loooked at, called self learning!
     - wow this blog post on actions!! Need to give this a reread. It did what I was thinking, around making memory retrieval and other things just another action. Whereas plans are not actions. hmm
-      - ![A diagram of a machine Description automatically generated](../../ZakResearchSurveyImages/media/image172.png)
+      - ![A diagram of a machine Description automatically generated](../images/media/image172.png)
     - There is an awesome scoring system prompt in there
     - Very cool blog on agent actions!! [https://superagi.com/towards-agi-part-2/](https://superagi.com/towards-agi-part-2/)
       - Grounding - external actions: The SayCan (Ahn et al., 2022) paper, introduced the fundamental capability of actions. They called it Grounding which is the process of connecting the natural language and abstract knowledge to the internal representation of the real world. In simpler terms, Grounding is about interacting with external world.
       - But there are also internal actions: It's easy to assume that all actions involve interacting with the external world. This assumption was the major limitation of SayCan agents. They could perform various actions (551, to be exact, such as "find the apple" or "go to the table"), but all these actions were of the same type: Grounding. However, if we examine human behavior, we'll notice that many of our actions are internal, including thinking, memorization, recall, and reflection. This insight inspired the next generation of agents, which are equipped with the reasoning capabilities of LLMs. The next significant advancement was the ReAct paper (Yao et al., 2022b), introducing a new type of action: Reasoning. The action space of ReAct included two kinds of actions: External actions, such as Grounding and Internal actions, like Reasoning. ReAct, standing for Reasoning + Action, seems to imply that the term 'Action' refers solely to Grounding, and Reasoning is not an Action. However, the next generation of agents introduced more internal actions, acknowledging Reasoning as a type of action. The latest generation of agent architectures had Long-Term-Memory (LTM) as a first class module. To take full-advantage of LTM they introduced two new actions: Retrieval (Reading from Memory) and Learning (Writing into Memory). Both these actions are internal, because they do not interact with the external world.
-      - ![A diagram of a diagram Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image173.png)
+      - ![A diagram of a diagram Description automatically generated with medium confidence](../images/media/image173.png)
       - Now, one might wonder whether there are more action types that will be added to the Action Space. The answer is both "Yes" and "No". "No", because most systems, whether human or computer, only have these four fundamental action types. However, "Yes", because these fundamental action types can be combined to create multiple Composite Action Types. For instance, planning is a composite action type that can be implemented by combining two fundamental actions -- reasoning and retrieval.
       - In the Generative Agents paper, the agents try to imitate human behaviour. Every interaction with the external world is getting logged into the memory stream. When an agent has to plan its day, it retrieves the past events from its memory (Retrieval) and then calls an LLM (Reasoning) to create the plan. Thus, Planning is a higher order action which leverages two fundamental actions -- Reasoning and Retrieval. Now, the question arises. What are the implications of identifying Planning as a new Action type.
         - https://github.com/joonspk-research/generative_agents
-        - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image174.png)
+        - ![A diagram of a process Description automatically generated](../images/media/image174.png)
       - Every time we add a new type of Action in the Action-Space, the execution flow of the agent needs to be modified. To illustrate this, let's compare two agent designs -- a ReAct Agent and a Planner Agent.
-        - ![A diagram of a tool Description automatically generated](../../ZakResearchSurveyImages/media/image175.png)
+        - ![A diagram of a tool Description automatically generated](../images/media/image175.png)
       - Compare the above diagram with the following diagram which represents the logic of a Planner based agent:
-        - ![A diagram of a plan Description automatically generated](../../ZakResearchSurveyImages/media/image176.png)
+        - ![A diagram of a plan Description automatically generated](../images/media/image176.png)
       - Notice how the decision-making process, also known as agent design, changes when we incorporate new components, such as planning. Similarly, adding tools to interact with long-term memory will also alter the agent design. Conversely, the inclusion of another tool like a Google search tool won't modify the agent design, as it's just another tool for Grounding. In conclusion, if the addition of any tool or capability results in changes to the execution flow, we are most probably introducing new Fundamental or Composite Action types.
       - In the ReAct design, typically only one tool is called at a time. This means when a new event happens, you cannot execute multiple actions (say learning and grounding). If we draw inspiration from humans, we will realise that humans often take actions in parallel. Whenever we see new information, we use it to decide our next step (reasoning), we remember any similar instance from the past (retrieval), we save this new experience for future reference (learning) and we also interact with the external world (grounding). Interestingly, OpenAI's function calling has added support for parallel function calling. MemGPT is one of the few agent frameworks which is trying to leverage parallel function calling in its agent design. It's also among the earliest frameworks to support long-term-memory. For those interested in delving deeper into memory-related actions (Learning and Retrieval), MemGPT serves as an excellent starting point.
 
@@ -99,9 +99,9 @@ Trees are the way! Mind trees, Behavior trees, Binary trees, etc.
 
   - Zak Thoughts
     - Has code!!
-    - ![A diagram of a computer process Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image177.tmp)
-    - ![A diagram of a tree Description automatically generated](../../ZakResearchSurveyImages/media/image178.png)
-    - ![A screenshot of a test Description automatically generated](../../ZakResearchSurveyImages/media/image179.png)
+    - ![A diagram of a computer process Description automatically generated with medium confidence](../images/media/image177.tmp)
+    - ![A diagram of a tree Description automatically generated](../images/media/image178.png)
+    - ![A screenshot of a test Description automatically generated](../images/media/image179.png)
 
 **Ayoai Impact**: LATS unifies all agent capabilities:
 - MCTS for behavior tree search
@@ -118,7 +118,7 @@ Trees are the way! Mind trees, Behavior trees, Binary trees, etc.
 
   - Zak Thoughts
     - No code?
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image180.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image180.tmp)
 
 **Ayoai Impact**: Natural language reward specification:
 - Users describe desired behaviors in text
@@ -214,9 +214,9 @@ Behavior Trees: Three Ways of Cultivating Strong AI
 
 At the higher level you have the above pic, on the top few layers. But the below low level sequences will be at bottom of tree. To have the tree more like states, like cover, you could get locked into the tree . . . Its not trying to figure out if anything broke or whatever. So for each behavior , it it monitors if assumptions have changed. You want your nodes forward looking.  
 
-![A white text on a black background Description automatically generated](../../ZakResearchSurveyImages/media/image198.png)
+![A white text on a black background Description automatically generated](../images/media/image198.png)
 
-![A white background with black text Description automatically generated](../../ZakResearchSurveyImages/media/image199.png)
+![A white background with black text Description automatically generated](../images/media/image199.png)
 
 A tree is not a planner. A planner plans some moves ahead, whereas the tree reacts to things. Hmm . . ..
 
@@ -237,8 +237,8 @@ A tree is not a planner. A planner plans some moves ahead, whereas the tree reac
     - Trains RL model. <https://mila.quebec/en/article/motif-intrinsic-motivation-from-artificial-intelligence-feedback>
     - Has code!!! <https://github.com/facebookresearch/motif>
     - Where do rewards come from? An artificial intelligence agent introduced into a new environment without prior knowledge has to start from a blank slate. What is good and what is bad in this environment? Which actions will lead to better outcomes or yield new information? Imagine tasking an agent with the goal of opening a locked door. The first time the agent finds a key, it will have no idea whether this could be useful for achieving the goal of opening a door: it has to learn this fact by interaction.
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image200.png)
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image201.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image200.png)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image201.png)
 
 **Ayoai Impact**: Intrinsic motivation for exploration:
 - LLM preferences as rewards
@@ -273,7 +273,7 @@ A tree is not a planner. A planner plans some moves ahead, whereas the tree reac
 
   - Zak thoughts
     - Our approach to modeling human behavior is to consider the human as a device with a large number of internal mental states, each with its own particular control behavior and interstate transition probabilities. Perhaps the canonical example of this type of model would be a bank of standard linear controllers (e.g., Kalman lters plus a simple control law), each using different dynamics and measurements, sequenced together with a Markov network of probabilistic transitions. The states of the model can be hierarchically organized to describe both short-term and longer-term behaviors; for instance, in the case of driving an automobile, the longer-term behaviors might be passing, following, and turning, while shorter-term behaviors would be maintaining lane position and releasing the brake. Such a model of human behavior could be used to produce improved human-machine systems. If the machine could recognize the human's behavior or, even better, if it could anticipate the human's behavior, it could adjust itself to serve the human's needs better. To accomplish this, the machine would need to be able to determine which of the human's control states was currently active and to predict transitions between control states. It could then congure itself to achieve its best overall performance.
-    - ![A diagram of a person's process Description automatically generated](../../ZakResearchSurveyImages/media/image202.tmp)
+    - ![A diagram of a person's process Description automatically generated](../images/media/image202.tmp)
 
 **Ayoai Impact**: Markov models for behavior:
 - 95% prediction accuracy
@@ -290,7 +290,7 @@ A tree is not a planner. A planner plans some moves ahead, whereas the tree reac
 
   - Zak thoughts
     - In this work, we propose LLM-POET, a modification of EnhancedPOET in which the environment generating CPPN is replaced with a LLM. The LLM takes as input a prompt that describes an environment in natural language and outputs a string representation of an Evolution Gym environment. In addition, we introduce an environment mutation method, making use of few-shot prompting and the LLM's ability to understand interesting environment mutations.
-    - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image203.tmp)
+    - ![A diagram of a process Description automatically generated](../images/media/image203.tmp)
 
 **Ayoai Impact**: Co-evolution of agents and environments:
 - LLMs generate diverse environments
@@ -308,8 +308,8 @@ A tree is not a planner. A planner plans some moves ahead, whereas the tree reac
   - Zak Thoughts
     - Has code! <https://selfgoal-agent.github.io/>
     - In conclusion, we demonstrate that SELFGOAL significantly improves agent performance by dynamically generating and refining a hierarchical GoalTree of contextual subgoals based on interactions with the environments. Experiments show that this method is effective in both competitive and cooperative scenarios, outperforming baseline approaches. Moreover, GoalTree can be continually updated as agents with SELFGOAL further engage with the environments, enabling them to navigate complex environments with greater precision and adaptability.
-    - ![featured](../../ZakResearchSurveyImages/media/image204.jpeg)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image205.png)
+    - ![featured](../images/media/image204.jpeg)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image205.png)
 
 **Ayoai Impact**: Dynamic goal decomposition:
 - Hierarchical GoalTree structure

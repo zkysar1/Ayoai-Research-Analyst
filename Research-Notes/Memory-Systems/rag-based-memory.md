@@ -58,13 +58,13 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
     - Super cool use of llms. Something I could borrow is that is the tree mechanism of the agents environment. Read that tree structure and how they keep it up to date.
     - Has code!!! [https://github.com/joonspk-research/generative_agents](https://github.com/joonspk-research/generative_agents)
       - Wait there are some awesome memory code in here and stuff
-    - ![A screenshot of a video game Description automatically generated](../../ZakResearchSurveyImages/media/image49.png)
-    - ![A diagram of a memory stream Description automatically generated](../../ZakResearchSurveyImages/media/image50.png)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image51.png)
+    - ![A screenshot of a video game Description automatically generated](../images/media/image49.png)
+    - ![A diagram of a memory stream Description automatically generated](../images/media/image50.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image51.png)
     - The full prompt appears below: On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following piece of memory. Memory: buying groceries at The Willows Market and Pharmacy Rating:
 
     - Reflection
-      - ![A diagram of a company Description automatically generated](../../ZakResearchSurveyImages/media/image52.png)
+      - ![A diagram of a company Description automatically generated](../images/media/image52.png)
 
     - Interesting plan prompt at end, hmm, take advantage of this!
 
@@ -94,8 +94,8 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Zak thoughts
     - Has Code!!! [https://github.com/zhongwanjun/MemoryBank-SiliconFriend](https://github.com/zhongwanjun/MemoryBank-SiliconFriend)
     - Cool ideas about memory, but do not use code because too detailed. I like the different styles of memory that they are keeping, because the different styles have different retention policies. Hey, isn't this a a task leaf node for a behavior tree that I am thinking? I need to think harder about that, hmmm!!
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image53.png)
-    - ![A screenshot of a chat Description automatically generated](../../ZakResearchSurveyImages/media/image54.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image53.png)
+    - ![A screenshot of a chat Description automatically generated](../images/media/image54.png)
 
 **Ayoai Impact**: MemoryBank's Ebbinghaus Forgetting Curve implementation is crucial:
 - Natural memory decay over time (human-like forgetting)
@@ -119,8 +119,8 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
     - This blog said this is the perfect spot to start with long term memory!!! [https://superagi.com/towards-agi-part-2/](https://superagi.com/towards-agi-part-2/)
     - Memory-GPT (or MemGPT in short) is a system that intelligently manages different memory tiers in LLMs in order to effectively provide extended context within the LLM's limited context window. For example, MemGPT knows when to push critical information to a vector database and when to retrieve it later in the chat, enabling perpetual conversations.
     - Wait, this code has some freaking awesome prompts at the end for each of its actors it has working. Hmm, super freaking interesting.
-    - ![A diagram of a workflow Description automatically generated](../../ZakResearchSurveyImages/media/image55.png)
-    - ![A screenshot of a chat Description automatically generated](../../ZakResearchSurveyImages/media/image56.png)
+    - ![A diagram of a workflow Description automatically generated](../images/media/image55.png)
+    - ![A screenshot of a chat Description automatically generated](../images/media/image56.png)
 
 **Ayoai Impact**: MemGPT's OS-inspired memory hierarchy is perfect for Ayoai:
 - RAM = Working memory for current scene/interaction
@@ -143,7 +143,7 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
     - Has code!!! [https://github.com/OpenDFM/Rememberer](https://github.com/OpenDFM/Rememberer)
     - Reasoning is remembering. As declared by Seifert et al. [1997], the episodic memory of the experiences from past episodes plays a crucial role in the complex decision-making processes of human [Suddendorf and Corballis, 2007]. By recollecting the experiences from past episodes, the human can learn from success to repeat it and learn from failure to avoid it. Similarly, an agent should optimize its policy for a decision-making task with the help of reminiscence of the interaction experiences. In this work, we primarily investigate how to utilize large language models (LLMs) as agents and equip them with interaction experiences to solve sequential decision-making tasks.
     - The reinforcement learning stuff they did though was weird, so this paper was kind of not as useful. I still really like the idea of short term and long term memory though, for sure.
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image57.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image57.png)
 
 **Ayoai Impact**: REMEMBER's Q-value approach offers unique benefits:
 - Learn from both successes AND failures
@@ -160,8 +160,8 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
 
   - Zak thoughts
     - Ugh, I do not get this one. Is it because it's late? This one is very intense though. I feel like I like the idea of it but I should create it my way and not try to follow his way.
-    - ![A diagram of a graph Description automatically generated](../../ZakResearchSurveyImages/media/image58.png)
-    - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image59.png)
+    - ![A diagram of a graph Description automatically generated](../images/media/image58.png)
+    - ![A diagram of a process Description automatically generated](../images/media/image59.png)
 
 **Ayoai Impact**: Knowledge graphs could enhance Ayoai's relationship tracking:
 - Explicit representation of agent relationships
@@ -178,7 +178,7 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
 
   - Zak thoughts
     - Has code!!! [https://github.com/aiwaves-cn/agents](https://github.com/aiwaves-cn/agents)
-    - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image60.png)
+    - ![A diagram of a diagram Description automatically generated](../images/media/image60.png)
 
 **Ayoai Impact**: This framework validates Ayoai's modular approach:
 - Planning, memory, tools, and communication as separate modules
@@ -195,8 +195,8 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
 
   - Zak Thoughts
     - <https://craftjarvis.github.io/RAT/> Has code!!!
-    - ![A chart with text and images Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image61.png)
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image62.png)
+    - ![A chart with text and images Description automatically generated with medium confidence](../images/media/image61.png)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image62.png)
 
 **Ayoai Impact**: RAT's iterative refinement is valuable for agent planning:
 - Retrieve relevant memories during each planning step
@@ -212,8 +212,8 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
     - Large Language Models (LLM) have shown remarkable language capabilities fueling attempts to integrate them into applications across a wide range of domains. An important application area is question answering over private enterprise documents where the main considerations are data security, which necessitates applications that can be deployed on-prem, limited computational resources and the need for a robust application that correctly responds to queries. Retrieval-Augmented Generation (RAG) has emerged as the most prominent framework for building LLM-based applications. While building a RAG is relatively straightforward, making it robust and a reliable application requires extensive customization and relatively deep knowledge of the application domain. We share our experiences building and deploying an LLM application for question answering over private organizational documents. Our application combines the use of RAG with a finetuned open-source LLM. Additionally, our system, which we call Tree-RAG (T-RAG), uses a tree structure to represent entity hierarchies within the organization. This is used to generate a textual description to augment the context when responding to user queries pertaining to entities within the organization's hierarchy. Our evaluations, including a Needle in a Haystack test, show that this combination performs better than a simple RAG or finetuning implementation. Finally, we share some lessons learned based on our experiences building an LLM application for real-world use.
 
   - Zak Thoughts
-    - ![A diagram of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image63.tmp)
-    - ![A diagram of a service center Description automatically generated](../../ZakResearchSurveyImages/media/image64.tmp)
+    - ![A diagram of a computer Description automatically generated](../images/media/image63.tmp)
+    - ![A diagram of a service center Description automatically generated](../images/media/image64.tmp)
 
 **Ayoai Impact**: T-RAG's hierarchical approach maps well to game structures:
 - Tree structure for faction/guild hierarchies
@@ -230,8 +230,8 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
 
   - Zak thoughts
     - Has code!!! <https://github.com/OSU-NLP-Group/HippoRAG>
-    - ![A diagram of a brain Description automatically generated](../../ZakResearchSurveyImages/media/image65.tmp)
-    - ![A diagram of a brain Description automatically generated](../../ZakResearchSurveyImages/media/image66.tmp)
+    - ![A diagram of a brain Description automatically generated](../images/media/image65.tmp)
+    - ![A diagram of a brain Description automatically generated](../images/media/image66.tmp)
 
 **Ayoai Impact**: HippoRAG's brain-inspired architecture is revolutionary:
 - Mimics hippocampus/neocortex memory systems

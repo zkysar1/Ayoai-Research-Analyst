@@ -33,8 +33,8 @@ How has not many papers involved tool use and planning? We need to add this sect
 
   - Zak Thoughts
     - H
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image67.png)
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image68.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image67.png)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image68.png)
 
 **Ayoai Impact**: Tool use is essential for game agent capabilities:
 - Tools = external programs/functions agents can invoke

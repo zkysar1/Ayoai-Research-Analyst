@@ -38,7 +38,7 @@ your engine and your world. We\'re going to be telling you about what\'s
 going on under the hood.
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image1.tmp){width="4.270865048118985in"
+generated](../../images/media2/image1.tmp){width="4.270865048118985in"
 height="3.072939632545932in"}
 
 So, as with all good things, this comes with a bit of a disclaimer. The
@@ -52,7 +52,7 @@ heart of thorns. Go running out of here. Going. Oh, my God. Oh my. Heart
 of Thorns is going to do this. That may not necessarily be the case.
 
 ![A close-up of a white page Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image2.tmp){width="4.729201662292214in"
+generated](../../images/media2/image2.tmp){width="4.729201662292214in"
 height="2.838561898512686in"}
 
 What we\'d really like to focus on is what the architecture itself is
@@ -74,7 +74,7 @@ Interestingly enough, with a even stricter performance and memory budget
 than we originally had.
 
 ![A close-up of a list of skills Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image3.tmp){width="5.796917104111986in"
+generated](../../images/media2/image3.tmp){width="5.796917104111986in"
 height="2.973979658792651in"}
 
 The other thing that we wanted to. On was improving the designer quality
@@ -112,7 +112,7 @@ maintaining state information about what\'s going on in the world as
 agents perform their actions.
 
 ![A white text with red text Description automatically generated with
-medium confidence](../../../ZakResearchSurveyImages/media2/image4.tmp){width="4.4271161417322835in"
+medium confidence](../../images/media2/image4.tmp){width="4.4271161417322835in"
 height="3.22919072615923in"}
 
 So getting onto the architecture itself, there\'s actually four
@@ -128,7 +128,7 @@ characters this feel that they had a better presence in the world That
 they were aware of. And so we\'ll go through each of these in turn here.
 
 ![A diagram of a diagram Description automatically generated with medium
-confidence](../../../ZakResearchSurveyImages/media2/image5.tmp){width="6.0469192913385825in"
+confidence](../../images/media2/image5.tmp){width="6.0469192913385825in"
 height="1.8229297900262467in"}
 
 First of all, the infinite access utility system is the core decision
@@ -221,35 +221,35 @@ can\'t even see him? So all of those are inputs that we might be
 concerned with.
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image6.tmp){width="5.9844192913385825in"
+generated](../../images/media2/image6.tmp){width="5.9844192913385825in"
 height="3.2552318460192478in"}
 
 ![A graph on a white background Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image7.tmp){width="6.734424759405075in"
+generated](../../images/media2/image7.tmp){width="6.734424759405075in"
 height="2.9843963254593175in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image8.tmp){width="6.760465879265092in"
+generated](../../images/media2/image8.tmp){width="6.760465879265092in"
 height="2.807311898512686in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image9.tmp){width="6.729215879265092in"
+generated](../../images/media2/image9.tmp){width="6.729215879265092in"
 height="3.395858486439195in"}
 
 ![A white text with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image10.tmp){width="5.588582677165355in"
+generated](../../images/media2/image10.tmp){width="5.588582677165355in"
 height="3.4062751531058617in"}
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image11.tmp){width="5.260454943132109in"
+generated](../../images/media2/image11.tmp){width="5.260454943132109in"
 height="3.22919072615923in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image12.tmp){width="5.802125984251968in"
+generated](../../images/media2/image12.tmp){width="5.802125984251968in"
 height="3.697944006999125in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image13.tmp){width="6.364630358705162in"
+generated](../../images/media2/image13.tmp){width="6.364630358705162in"
 height="3.3906496062992124in"}
 
 So the code for this is actually really straightforward, but we want to
@@ -278,19 +278,19 @@ again in the. Engine and once again. Just compute his current health
 divided by his maximum health, and we have our normalized result.
 
 ![A white paper with text on it Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image14.tmp){width="4.989619422572178in"
+generated](../../images/media2/image14.tmp){width="4.989619422572178in"
 height="2.932312992125984in"}
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image15.tmp){width="6.000043744531934in"
+generated](../../images/media2/image15.tmp){width="6.000043744531934in"
 height="1.343759842519685in"}
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image16.tmp){width="6.0417104111986in"
+generated](../../images/media2/image16.tmp){width="6.0417104111986in"
 height="2.713561898512686in"}
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image17.tmp){width="6.593798118985127in"
+generated](../../images/media2/image17.tmp){width="6.593798118985127in"
 height="3.140647419072616in"}
 
 So that\'s where the input information comes. Now inputs as we mentioned
@@ -328,15 +328,15 @@ the 1st 5 seconds after I did something else. We can reference other
 decisions.
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image18.tmp){width="5.9167104111986in"
+generated](../../images/media2/image18.tmp){width="5.9167104111986in"
 height="3.4948173665791775in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image19.tmp){width="6.3750470253718285in"
+generated](../../images/media2/image19.tmp){width="6.3750470253718285in"
 height="3.1771062992125985in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image20.tmp){width="6.432339238845144in"
+generated](../../images/media2/image20.tmp){width="6.432339238845144in"
 height="2.744811898512686in"}
 
 So an example of how this looks in code is we\'re going to look at the
@@ -351,7 +351,7 @@ math at the bottom, which renormalizes into those. And then we can clamp
 that result and we have our final input.
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image21.tmp){width="6.604214785651793in"
+generated](../../images/media2/image21.tmp){width="6.604214785651793in"
 height="3.151065179352581in"}
 
 So I talked earlier about these parameters up here for the response
@@ -392,15 +392,15 @@ of these and then start tweaking it to get exactly what the type of
 behavior you wanted out of a particular decision.
 
 ![A yellow square with question marks on it Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image22.tmp){width="6.34379593175853in"
+generated](../../images/media2/image22.tmp){width="6.34379593175853in"
 height="2.2500164041994752in"}
 
 ![A screen shot of a graph Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image23.tmp){width="6.234420384951881in"
+generated](../../images/media2/image23.tmp){width="6.234420384951881in"
 height="3.3437740594925636in"}
 
 ![A graph of a curve Description automatically generated with medium
-confidence](../../../ZakResearchSurveyImages/media2/image24.tmp){width="6.364630358705162in"
+confidence](../../images/media2/image24.tmp){width="6.364630358705162in"
 height="3.5833595800524933in"}
 
 So that\'s inputs and how they map into considerations. We\'re going to
@@ -415,7 +415,7 @@ axe or move to safe spot, or play emote wave. Those are the types of
 actions. That are linked to decisions.
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image25.tmp){width="4.0885717410323705in"
+generated](../../images/media2/image25.tmp){width="4.0885717410323705in"
 height="2.7708541119860017in"}
 
 So from a code design standpoint, this is actually pretty interesting
@@ -428,7 +428,7 @@ this is empowered by the code and content division that we. About
 earlier.
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image26.tmp){width="4.411490594925635in"
+generated](../../images/media2/image26.tmp){width="4.411490594925635in"
 height="2.432309711286089in"}
 
 So some decisions can have parameters as well. Some of them actually
@@ -445,7 +445,7 @@ moving the scenario socket ambient poi. So that\'s the only ones that
 this decision is going to consider.
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image27.tmp){width="6.229212598425197in"
+generated](../../images/media2/image27.tmp){width="6.229212598425197in"
 height="3.067730752405949in"}
 
 So as an example of one of these parameterized decisions on the code
@@ -457,7 +457,7 @@ have to do is tell the game engine have this character say this chatter
 line based on what? Gave us.
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image28.tmp){width="6.531298118985127in"
+generated](../../images/media2/image28.tmp){width="6.531298118985127in"
 height="3.2031485126859143in"}
 
 So that\'s the output of the system. It\'s fairly simple. Now the inputs
@@ -498,15 +498,15 @@ zero to 1 by multiplying the weight later. We definitely are giving
 boosts to things like the skill usage like the the emergencies,
 etcetera.
 
-![](../../../ZakResearchSurveyImages/media2/image29.tmp){width="5.974001531058618in"
+![](../../images/media2/image29.tmp){width="5.974001531058618in"
 height="3.4948173665791775in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image30.tmp){width="5.203162729658793in"
+generated](../../images/media2/image30.tmp){width="5.203162729658793in"
 height="3.770860673665792in"}
 
 ![A diagram of weights and multiplying Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image31.tmp){width="6.651090332458443in"
+generated](../../images/media2/image31.tmp){width="6.651090332458443in"
 height="3.166689632545932in"}
 
 So the code for this is actually really short and elegant. We\'ll start
@@ -524,7 +524,7 @@ final result and we can just return that as soon as we\'re done with all
 the considerations.
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image32.tmp){width="6.671923665791776in"
+generated](../../images/media2/image32.tmp){width="6.671923665791776in"
 height="3.1718985126859143in"}
 
 So those are the two types of dses, the skill and the non skill, and
@@ -559,15 +559,15 @@ pretty much. That\'s his. That\'s the things that he can do in the
 world.
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image33.tmp){width="5.005244969378827in"
+generated](../../images/media2/image33.tmp){width="5.005244969378827in"
 height="2.1770997375328083in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image34.tmp){width="5.348997156605424in"
+generated](../../images/media2/image34.tmp){width="5.348997156605424in"
 height="3.1718985126859143in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image35.tmp){width="4.776076115485564in"
+generated](../../images/media2/image35.tmp){width="4.776076115485564in"
 height="3.7239851268591426in"}
 
 So to make a decision, all we have to do is go through a decision maker
@@ -585,11 +585,11 @@ important for us in this project. Thankfully, it was also very simple to
 accomplish.
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image36.tmp){width="6.093794838145232in"
+generated](../../images/media2/image36.tmp){width="6.093794838145232in"
 height="3.098980752405949in"}
 
 ![A white background with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image37.tmp){width="2.7343952318460194in"
+generated](../../images/media2/image37.tmp){width="2.7343952318460194in"
 height="2.234390857392826in"}
 
 So what we do is in those DSCS or in the decision makers rather DSCS are
@@ -609,7 +609,7 @@ lot of. Only brief checks are necessary, even just by checking the
 weight that we\'re going to multiply it by, you can\'t win. On.
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image38.tmp){width="6.4479636920384955in"
+generated](../../images/media2/image38.tmp){width="6.4479636920384955in"
 height="3.5000251531058617in"}
 
 So if we go back to the DSC scoring code for a minute, you can see that
@@ -628,11 +628,11 @@ a lot of standard tricks like memory caching or memory pooling and
 caching for handling redundant queries for the same information.
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image39.tmp){width="6.260462598425197in"
+generated](../../images/media2/image39.tmp){width="6.260462598425197in"
 height="3.151065179352581in"}
 
 ![A close-up of a person\'s face Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image40.tmp){width="3.1458562992125985in"
+generated](../../images/media2/image40.tmp){width="3.1458562992125985in"
 height="1.947930883639545in"}
 
 So those are decision makers and skill sets and those two objects are
@@ -674,19 +674,19 @@ that way we have that sense of context of only use certain things when
 you\'re in certain areas. You never even have to worry about.
 
 ![A white background with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image41.tmp){width="3.6302351268591426in"
+generated](../../images/media2/image41.tmp){width="3.6302351268591426in"
 height="2.3020997375328083in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image42.tmp){width="5.890668197725284in"
+generated](../../images/media2/image42.tmp){width="5.890668197725284in"
 height="3.067730752405949in"}
 
 ![A screenshot of a computer program Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image43.tmp){width="6.192753718285214in"
+generated](../../images/media2/image43.tmp){width="6.192753718285214in"
 height="3.1458562992125985in"}
 
 ![A list of items on a white background Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image44.tmp){width="4.640659448818898in"
+generated](../../images/media2/image44.tmp){width="4.640659448818898in"
 height="3.109397419072616in"}
 
 So the second component we want to talk about is modular influence maps
@@ -705,11 +705,11 @@ your general area around you. Does a concentration of something exist?
 Big is that concentration. I can just ask the IMAP system for that.
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image45.tmp){width="3.9375284339457566in"
+generated](../../images/media2/image45.tmp){width="3.9375284339457566in"
 height="2.2812664041994752in"}
 
 ![A white text with black text Description automatically generated with
-medium confidence](../../../ZakResearchSurveyImages/media2/image46.tmp){width="3.489608486439195in"
+medium confidence](../../images/media2/image46.tmp){width="3.489608486439195in"
 height="3.062521872265967in"}
 
 So the system that we worked with is built out of two basic components.
@@ -746,17 +746,17 @@ you can tell that there\'s a lot of combined threat sitting in that
 area. Very, very dense.
 
 ![A diagram of a diagram Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image47.tmp){width="4.322948381452319in"
+generated](../../images/media2/image47.tmp){width="4.322948381452319in"
 height="3.703151793525809in"}
 
 ![A graph with a green arrow pointing to a graph Description
 automatically
-generated](../../../ZakResearchSurveyImages/media2/image48.tmp){width="6.484422572178477in"
+generated](../../images/media2/image48.tmp){width="6.484422572178477in"
 height="3.098980752405949in"}
 
 ![A video game screen capture of a group of people walking on a sidewalk
 Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image49.tmp){width="5.473998250218723in"
+generated](../../images/media2/image49.tmp){width="5.473998250218723in"
 height="3.5521095800524933in"}
 
 So we started with a grid based system. It was originally part of an
@@ -783,7 +783,7 @@ here. But I can\'t see anyone. And so it\'s really confusing at that.
 Point. So that\'s why we had to step away from that a little bit.
 
 ![A white paper with red text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image50.tmp){width="4.562533902012248in"
+generated](../../images/media2/image50.tmp){width="4.562533902012248in"
 height="3.093772965879265in"}
 
 So what we ended up doing was embracing a system called the Infinite
@@ -819,19 +819,19 @@ query because of all the math that\'s involved and the code that
 implements all this loses a lot of clarity and readability.
 
 ![A white text on a white background Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image51.tmp){width="5.125037182852143in"
+generated](../../images/media2/image51.tmp){width="5.125037182852143in"
 height="3.3646073928258966in"}
 
 ![A diagram of a network Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image52.tmp){width="6.515672572178477in"
+generated](../../images/media2/image52.tmp){width="6.515672572178477in"
 height="3.067730752405949in"}
 
 ![A graph showing the best point Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image53.tmp){width="4.875036089238845in"
+generated](../../images/media2/image53.tmp){width="4.875036089238845in"
 height="3.0416885389326334in"}
 
 ![A white background with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image54.tmp){width="5.963584864391951in"
+generated](../../images/media2/image54.tmp){width="5.963584864391951in"
 height="2.4791852580927385in"}
 
 So the Mike talked earlier about doing modular construction of these
@@ -935,31 +935,31 @@ effect on a specific person, we\'re saying where\'s the place to cast
 it? To blow a lot of them up, because that\'s fun.
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image55.tmp){width="5.9792104111986in"
+generated](../../images/media2/image55.tmp){width="5.9792104111986in"
 height="2.4427263779527557in"}
 
 ![A diagram with a blue line Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image56.tmp){width="6.270879265091864in"
+generated](../../images/media2/image56.tmp){width="6.270879265091864in"
 height="3.2968996062992124in"}
 
 ![A diagram of a map Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image57.tmp){width="6.505255905511811in"
+generated](../../images/media2/image57.tmp){width="6.505255905511811in"
 height="3.276065179352581in"}
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image58.tmp){width="6.364630358705162in"
+generated](../../images/media2/image58.tmp){width="6.364630358705162in"
 height="2.2291830708661418in"}
 
 ![A screenshot of a computer Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image59.tmp){width="6.463589238845144in"
+generated](../../images/media2/image59.tmp){width="6.463589238845144in"
 height="2.578144138232721in"}
 
 ![A white paper with red text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image60.tmp){width="5.229204943132109in"
+generated](../../images/media2/image60.tmp){width="5.229204943132109in"
 height="2.963562992125984in"}
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image61.tmp){width="3.9427373140857394in"
+generated](../../images/media2/image61.tmp){width="3.9427373140857394in"
 height="3.130230752405949in"}
 
 So the code for this in the grid version is actually really clean and
@@ -975,7 +975,7 @@ implementation of that function, which is crammed on this slide for.
 Enjoyment. That\'s that\'s not exactly readable so.
 
 ![A computer code on a white background Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image62.tmp){width="5.760459317585302in"
+generated](../../images/media2/image62.tmp){width="5.760459317585302in"
 height="3.411482939632546in"}
 
 So the third thing we wanted to talk about was the use of context.
@@ -1004,11 +1004,11 @@ context completely based on the presence or absence of A tag. And then
 scripts can do arbitrarily complex logic based on tags as well.
 
 ![A white paper with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image63.tmp){width="4.854201662292214in"
+generated](../../images/media2/image63.tmp){width="4.854201662292214in"
 height="3.26044072615923in"}
 
 ![A white background with black text Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image64.tmp){width="5.609416010498688in"
+generated](../../images/media2/image64.tmp){width="5.609416010498688in"
 height="3.3021073928258966in"}
 
 So content tags can be used in a lot of different. We can use it for
@@ -1041,7 +1041,7 @@ everything that we do thinking about him, we\'re gonna multiply it by
 1.5. He\'s gonna get a 50% bonus.
 
 ![A list of different types of tags Description automatically
-generated](../../../ZakResearchSurveyImages/media2/image65.tmp){width="6.265670384951881in"
+generated](../../images/media2/image65.tmp){width="6.265670384951881in"
 height="2.75001968503937in"}
 
 The last thing we\'re going to touch on isn\'t really part of the

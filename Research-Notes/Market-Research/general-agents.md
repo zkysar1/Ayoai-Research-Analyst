@@ -14,7 +14,7 @@ We eventually we need a section on agents
 
     - Has code!!
 
-    - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image311.png)
+    - ![A diagram of a process Description automatically generated](../images/media/image311.png)
 
 **Ayoai Impact**: Multi-agent voting improves performance:
 - Simple sampling-and-voting
@@ -34,11 +34,11 @@ We eventually we need a section on agents
 
     - This is actually a survey. No code here. It's huge, but repetitive to what I already have here.
 
-    - ![A diagram of a company Description automatically generated](../../ZakResearchSurveyImages/media/image312.tmp)
+    - ![A diagram of a company Description automatically generated](../images/media/image312.tmp)
 
-    - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image313.tmp)
+    - ![A diagram of a process Description automatically generated](../images/media/image313.tmp)
 
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image314.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image314.tmp)
 
 **Ayoai Impact**: Multimodal agent framework:
 - Visual + language + environmental inputs
@@ -62,17 +62,17 @@ We eventually we need a section on agents
 
     - Has code thought! https://github.com/Paitesanshi/LLM-Agent-Survey
 
-    - ![Growth Trend](../../ZakResearchSurveyImages/media/image315.png)
+    - ![Growth Trend](../images/media/image315.png)
 
-    - ![Architecture Design](../../ZakResearchSurveyImages/media/image316.png)
+    - ![Architecture Design](../images/media/image316.png)
 
-    - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image317.tmp)
+    - ![A diagram of a process Description automatically generated](../images/media/image317.tmp)
 
-    - ![A screenshot of a document Description automatically generated](../../ZakResearchSurveyImages/media/image318.tmp)
+    - ![A screenshot of a document Description automatically generated](../images/media/image318.tmp)
 
-    - ![A diagram of a computer language Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image319.tmp)
+    - ![A diagram of a computer language Description automatically generated with medium confidence](../images/media/image319.tmp)
 
-    - ![A black and white text with green and white text Description automatically generated](../../ZakResearchSurveyImages/media/image320.tmp)
+    - ![A black and white text with green and white text Description automatically generated](../images/media/image320.tmp)
 
 **Ayoai Impact**: Comprehensive agent survey with:
 - Unified agent framework
@@ -93,11 +93,11 @@ We eventually we need a section on agents
 
     - Also another list, huh, I wonder what is better maintained: https://github.com/git-disl/awesome-LLM-game-agent-papers
 
-    - ![A diagram of a game Description automatically generated](../../ZakResearchSurveyImages/media/image321.tmp)
+    - ![A diagram of a game Description automatically generated](../images/media/image321.tmp)
 
-    - ![A diagram of memory Description automatically generated](../../ZakResearchSurveyImages/media/image322.tmp)
+    - ![A diagram of memory Description automatically generated](../images/media/image322.tmp)
 
-    - ![A diagram of a learning process Description automatically generated](../../ZakResearchSurveyImages/media/image323.tmp)
+    - ![A diagram of a learning process Description automatically generated](../images/media/image323.tmp)
 
 **Ayoai Impact**: Game-specific agent architecture:
 - 6 functional components
@@ -118,7 +118,7 @@ We eventually we need a section on agents
 
     - Seems short
 
-    - ![A diagram of a structure Description automatically generated](../../ZakResearchSurveyImages/media/image324.png)
+    - ![A diagram of a structure Description automatically generated](../images/media/image324.png)
 
 **Ayoai Impact**: Layered agent architecture:
 - Multiple LLMs per layer
@@ -138,19 +138,19 @@ We eventually we need a section on agents
 
     - Website here: https://github.com/WooooDyy/LLM-Agent-Paper-List
 
-    - ![A cartoon of a town Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image325.tmp)
+    - ![A cartoon of a town Description automatically generated with medium confidence](../images/media/image325.tmp)
 
-    - ![A diagram of a process Description automatically generated](../../ZakResearchSurveyImages/media/image326.tmp)
+    - ![A diagram of a process Description automatically generated](../images/media/image326.tmp)
 
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image327.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image327.tmp)
 
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image328.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image328.tmp)
 
-    - ![A diagram of a program Description automatically generated](../../ZakResearchSurveyImages/media/image329.tmp)
+    - ![A diagram of a program Description automatically generated](../images/media/image329.tmp)
 
-    - ![A diagram of a group of individuals Description automatically generated](../../ZakResearchSurveyImages/media/image330.tmp)
+    - ![A diagram of a group of individuals Description automatically generated](../images/media/image330.tmp)
 
-    - ![A diagram of a system Description automatically generated](../../ZakResearchSurveyImages/media/image331.tmp)
+    - ![A diagram of a system Description automatically generated](../images/media/image331.tmp)
 
 **Ayoai Impact**: Philosophical foundation for agents:
 - Brain-perception-action framework
@@ -180,17 +180,17 @@ We eventually we need a section on agents
 
       - The agent learns to call external APIs for extra information that is missing from the model weights (often hard to change after pre-training), including current information, code execution capability, access to proprietary information sources and more.
 
-    - ![A diagram of a agent Description automatically generated](../../ZakResearchSurveyImages/media/image332.png)
+    - ![A diagram of a agent Description automatically generated](../images/media/image332.png)
 
   - Zak thoughts
 
     - Cool writeup! Not a paper, but a website, huh. . .
 
-    - ![A black and white page with text Description automatically generated](../../ZakResearchSurveyImages/media/image333.tmp)
+    - ![A black and white page with text Description automatically generated](../images/media/image333.tmp)
 
-    - ![A black and white text on a black background Description automatically generated](../../ZakResearchSurveyImages/media/image334.tmp)
+    - ![A black and white text on a black background Description automatically generated](../images/media/image334.tmp)
 
-    - ![A black and white text on a black background Description automatically generated](../../ZakResearchSurveyImages/media/image335.tmp)
+    - ![A black and white text on a black background Description automatically generated](../images/media/image335.tmp)
 
 **Ayoai Impact**: Core agent capabilities:
 - Planning with decomposition

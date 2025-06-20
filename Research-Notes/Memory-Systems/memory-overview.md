@@ -51,7 +51,7 @@ What about remembering other things? We need an actor per relationship?
     - Not sure I get it. . .
     - I do not really get, but I did not spend too much time. This is impressive, but it is too deep and specific. I can do that same later and in a different way.
     - It is interesting to note though - there may be some tie in here to my behavior tree where more than one npc can be controlled by one tree at a time. And those can run in parallel. For each relationship, and tree that is running, this narrative could be going on in the background? Hmmmm. It is just integration into personality, is all right? I think I already have this handled?
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image41.png)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image41.png)
 
 **Ayoai Impact**: Theory of Mind is crucial for believable social interactions:
 - Agents need to model what other agents know/believe
@@ -93,7 +93,7 @@ Embodied memory involves finetuning the LLM with the agent's historical experien
 
   - Zak thoughts
     - Finetune involved here.
-    - ![A map of a house Description automatically generated](../../ZakResearchSurveyImages/media/image42.png)
+    - ![A map of a house Description automatically generated](../images/media/image42.png)
 
 ### AgentTuning
 
@@ -107,8 +107,8 @@ Embodied memory involves finetuning the LLM with the agent's historical experien
 
   - Zak thoughts
     - Finetune involved here.
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image43.tmp)
-    - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image44.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image43.tmp)
+    - ![A screenshot of a computer program Description automatically generated](../images/media/image44.tmp)
 
 ### Twitter Notes
 
@@ -160,9 +160,9 @@ Embodied memory involves finetuning the LLM with the agent's historical experien
 
     - Love meta-memory, going to use that. I think collaborative (for me) can be mixed in under meta (capability) and log/raw (data received).
 
-    - ![A diagram of a memory Description automatically generated](../../ZakResearchSurveyImages/media/image45.png)
+    - ![A diagram of a memory Description automatically generated](../images/media/image45.png)
 
-    - ![A screenshot of a chat Description automatically generated](../../ZakResearchSurveyImages/media/image46.png)
+    - ![A screenshot of a chat Description automatically generated](../images/media/image46.png)
 
 **Ayoai Impact**: These Twitter insights provide practical memory architecture patterns:
 - Multi-layered memory system (log → raw → structured → contextual)
@@ -198,11 +198,11 @@ Embodied memory involves finetuning the LLM with the agent's historical experien
 
       - Confabulation is a kind of cognitive plasticity that emphasizes the present, the future, and the gestalt over the literal past---it occurs when a mind actively modifies and fits its beliefs to a current context, altering and reinterpreting memory data as needed to preserve various psychological elements in the story that it tells to others and to itself.
 
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image47.tmp)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image47.tmp)
 
     - "No man ever steps in the same river twice. For it's not the same river and he's not the same man." Heraclitus
 
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image48.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image48.tmp)
 
 **Ayoai Impact**: This philosophical perspective on memory is profound for agent design:
 - Memories should be dynamic, not static records

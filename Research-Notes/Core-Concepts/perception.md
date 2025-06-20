@@ -10,10 +10,10 @@ The players actions and their behavior trees are needed for multi agent interact
 - We will need to convert a player's actions (key strokes and such) into my current internal conical form
 - Get an llm to make me a player tracker in Roblox. Like, tell to the llm that I want to track every movement of that player...
 - OMNI-EPIC has nice game controls, I probably need to follow that!
-  - ![A screenshot of a video game Description automatically generated](../../ZakResearchSurveyImages/media/image1.png)
+  - ![A screenshot of a video game Description automatically generated](../images/media/image1.png)
 - Nah, the goal one looked awesome
   - <https://game-generation-public.web.app/>
-  - ![A screenshot of a video game Description automatically generated](../../ZakResearchSurveyImages/media/image2.png)
+  - ![A screenshot of a video game Description automatically generated](../images/media/image2.png)
 - As part of this, it is related to the "E" to interact.
 
 ## Ownership
@@ -67,8 +67,8 @@ Whether something is owned or not has impacts on planning.
 
   - Zak thoughts
     - Has Code!! <https://github.com/umair-nasir14/Word2World>
-    - ![image](../../ZakResearchSurveyImages/media/image3.png)
-    - ![A diagram of a computer system Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image4.png)
+    - ![image](../images/media/image3.png)
+    - ![A diagram of a computer system Description automatically generated with medium confidence](../images/media/image4.png)
 
 ### Planning with World Knowledge Model
 
@@ -79,8 +79,8 @@ Whether something is owned or not has impacts on planning.
 
   - Zak Thoughts
     - Seem cool. Has code!!! <https://github.com/zjunlp/WKM>
-    - ![A diagram of a model Description automatically generated](../../ZakResearchSurveyImages/media/image5.tmp)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image6.tmp)
+    - ![A diagram of a model Description automatically generated](../images/media/image5.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image6.tmp)
 
 ### Worldy Trackers
 

@@ -171,7 +171,7 @@ PAR arguments serve as parameters to the scope of specific subtree. They
 can be created as needed by the tree designer and can be reused in
 multiple places for the parameters to multiple tree leaf nodes. For
 example, we can designate an
-*arg*![](../../ZakResearchSurveyImages/media3/image1.jpg){width="4.3333333333333335e-2in"
+*arg*![](../images/media3/image1.jpg){width="4.3333333333333335e-2in"
 height="6.666666666666667e-3in"}*tiredness* PAR argument, and pass that
 same argument with respect to both the volume for a yawning sound, and
 the speed at which an agent should walk for two distinct nodes in a
@@ -344,7 +344,7 @@ into the larger structure. For instance, we encapsulate a 'pick up' PAR
 tree for bending over and grabbing an item from the ground in Fig. 1. On
 the left, we create a
 
-> ![](../../ZakResearchSurveyImages/media3/image2.png){width="4.656667760279965in"
+> ![](../images/media3/image2.png){width="4.656667760279965in"
 > height="1.0866666666666667in"}
 
 **Fig.1.** An encapsulation of a parameterized subtree as a PAR tree
@@ -384,7 +384,7 @@ which performs its children in random order). This is a distant analogue
 of CAROSA's aleatoric actions \[10\], though here simplified to
 triviality for the sake of illustration. Note
 
-> ![](../../ZakResearchSurveyImages/media3/image3.png){width="3.2933333333333334in"
+> ![](../images/media3/image3.png){width="3.2933333333333334in"
 > height="1.4033333333333333in"}
 
 **Fig.2.** The two agent trees for when each agent is not involved in an
@@ -432,7 +432,7 @@ assertion will succeed, so the selector will succeed and skip over its
 second child (i.e., the buyer will not pick up the flower pot and
 leave). At this point, the event terminates. If
 
-> ![](../../ZakResearchSurveyImages/media3/image4.png){width="4.65in" height="2.54in"}
+> ![](../images/media3/image4.png){width="4.65in" height="2.54in"}
 
 **Fig.3.** The PAR tree for the haggling event
 
@@ -475,7 +475,7 @@ etc.). Actions and assertions, gleaned from the tagged function
 signatures and data types in the agent model class, can be parameterized
 accordingly (using hardcoded values, data from agents or the world, or
 
-> ![](../../ZakResearchSurveyImages/media3/image5.jpg){width="4.35674978127734in"
+> ![](../images/media3/image5.jpg){width="4.35674978127734in"
 > height="2.3904997812773403in"}
 
 **Fig.4.** Building a PAR tree in Topiary

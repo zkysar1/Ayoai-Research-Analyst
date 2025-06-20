@@ -43,7 +43,7 @@ Multi-Plan Generation involves generating a dozen paths of plans to comprise the
   - Abstract:
     - Chain-of-thought prompting combined with pre-trained large language models has achieved encouraging results on complex reasoning tasks. In this paper, we propose a new decoding strategy, self-consistency, to replace the naive greedy decoding used in chain-of-thought prompting. It first samples a diverse set of reasoning paths instead of only taking the greedy one, and then selects the most consistent answer by marginalizing out the sampled reasoning paths. Self-consistency leverages the intuition that a complex reasoning problem typically admits multiple different ways of thinking leading to its unique correct answer. Our extensive empirical evaluation shows that self-consistency boosts the performance of chain-of-thought prompting with a striking margin on a range of popular arithmetic and commonsense reasoning benchmarks, including GSM8K (+17.9%), SVAMP (+11.0%), AQuA (+12.2%), StrategyQA (+6.4%) and ARC-challenge (+3.9%).
 
-    - ![A diagram of a model Description automatically generated](../../ZakResearchSurveyImages/media/image117.png)
+    - ![A diagram of a model Description automatically generated](../images/media/image117.png)
 
   - Descriptions from this planning survey:
     - Employs a simple intuition: the solutions for complex problems are rarely unique. In contrast to CoT, which generates a single path, Self-consistency obtains multiple distinct reasoning paths via sampling strategies embodied in the decoding process, such as temperature sampling, top-k sampling.
@@ -75,7 +75,7 @@ Multi-Plan Generation involves generating a dozen paths of plans to comprise the
     - Has code!! [https://github.com/princeton-nlp/tree-of-thought-llm](https://github.com/princeton-nlp/tree-of-thought-llm)
       - Code is to a library that needs to be installed, which I do not like, or do I care? Not sure yet.
       - The idea:
-        - ![A diagram of a tree Description automatically generated](../../ZakResearchSurveyImages/media/image118.png)
+        - ![A diagram of a tree Description automatically generated](../images/media/image118.png)
 
     - Great quote on why trees are awesome:
       - "Research on human problem-solving suggests that people search through a combinatorial problemspace -- a tree where the nodes represent partial solutions, and the branches correspond to operators that modify them [21, 22]. Which branch to take is determined by heuristics that help to navigate the problem-space and guide the problem-solver towards a solution. This perspective highlights two key shortcomings of existing approaches that use LMs to solve general problems: 1) Locally, they do not explore different continuations within a thought process -- the branches of the tree. 2) Globally, they do not incorporate any type of planning, lookahead, or backtracking to help evaluate these different options -- the kind of heuristic-guided search that seems characteristic of human problem-solving."
@@ -92,8 +92,8 @@ Multi-Plan Generation involves generating a dozen paths of plans to comprise the
       - 4. Search algorithm. Finally, within the ToT framework, one can plug and play different search algorithms depending on the tree structure. We explore two relatively simple search algorithms and leave more advanced ones (e.g. A* [11], MCTS [2]) for future work: (a) Breadth-first search (BFS) (Algorithm 1) maintains a set of the b most promising states per step. This is used for Game of 24 and Creative Writing where the tree depth is limit (T ≤ 3), and initial thought steps can be evaluated and pruned to a small set (b ≤ 5). (b) Depth-first search (DFS) (Algorithm 2) explores the most promising state first, until the final output is reached (t > T), or the state evaluator deems it impossible to solve the problem from the current s (V (pθ, {s})(s) ≤ vth for a value threshold vth). In the latter case, the subtree from s is pruned to trade exploration for exploitation. In both cases, DFS backtracks to the parent state of s to continue exploration.
 
       - Great examples:
-        - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image119.png)
-        - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image120.png)
+        - ![A screenshot of a computer screen Description automatically generated](../images/media/image119.png)
+        - ![A diagram of a diagram Description automatically generated](../images/media/image120.png)
 
 **Ayoai Impact**: ToT provides a complete framework for agent planning:
 - Thought decomposition maps to behavior tree node design
@@ -115,12 +115,12 @@ Multi-Plan Generation involves generating a dozen paths of plans to comprise the
   - Zak thoughts
     - I like how these guys laid this out. I also liked how the authors of that planning paper represented these in order.
     - Great graphs:
-    - ![A screenshot of a test Description automatically generated](../../ZakResearchSurveyImages/media/image121.png)
-    - ![A diagram of a tree of thoughts Description automatically generated](../../ZakResearchSurveyImages/media/image122.png)
+    - ![A screenshot of a test Description automatically generated](../images/media/image121.png)
+    - ![A diagram of a tree of thoughts Description automatically generated](../images/media/image122.png)
     - Wow this is a great graph. Look at the api for parser - I like how they have those different tasks. These would be the task leaf nodes that I like
-    - ![A screenshot of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image123.png)
+    - ![A screenshot of a diagram Description automatically generated](../images/media/image123.png)
     - Cool prompting strategies:
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image124.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image124.png)
 
 **Ayoai Impact**: GoT's graph structure is revolutionary for complex agent reasoning:
 - Allows merging multiple reasoning paths (not just trees)
@@ -146,16 +146,16 @@ Multi-Plan Generation involves generating a dozen paths of plans to comprise the
       - "Their underlying idea is simple: treat the LLM as a policy and query it directly for the next actions, given the history of past actions and observations. We call this strategy L-Policy, which exploits LLMs' vast commonsense knowledge to circumvent the challenge of searching a very large space."
       - "Alternatively, we may use LLMs' knowledge to build a world model and apply a planning algorithm to the model. The world model may contain, e.g., a belief over the target object's location, which biases the search and drastically improves search efficiency. We call this strategy L-Model. L-Model's performance depends on two critical preconditions: the accuracy of the world model and the efficiency of the planning algorithm. The former is a question of sample complexity for learning, and the latter is that of computational complexity."
       - This paper presents LLM-MCTS (shown in Fig 1):
-        - ![A diagram of a home Description automatically generated](../../ZakResearchSurveyImages/media/image125.png)
+        - ![A diagram of a home Description automatically generated](../images/media/image125.png)
 
     - Good result summary: this was my hypothesis when I gave it the world model before asking for which task.
       - F1. L-Model performs poorly. There are two possible reasons. One is model inaccuracy. The other is huge search space size, beyond the reach of even the state-of-the-art MCTS algorithm. Further experiments indicate that search space size is the main cause. F2. L-Policy performs reasonably with both GPT2 and GPT3.5, but the performance degrades quickly for novel, complex tasks. This generally corroborates with earlier results [22, 18, 2, 19]. F3. LLM-MCTS outperforms L-Model. This clearly shows the benefit of using the LLM as a heuristic policy to guide the search. F4. LLM-MCTS outperforms L-Policy, especially for novel, complex tasks. LLM-MCTS basically combines L-Model and L-Policy. Since the L-Model performs very poorly on its own, why does the combination outperform L-Policy? One explanation is that search space size is the main cause of L-Model's poor performance. The LLM-induced world model is sufficiently accurate, and tree search with this world model, when limited to the neighbourhood of the LLM-induced policy, provides the improved performance over L-Policy.
 
     - Has code!! [https://github.com/1989Ryan/llm-mcts](https://github.com/1989Ryan/llm-mcts)
     - Awesome prompts:
-      - ![A white text with black text Description automatically generated](../../ZakResearchSurveyImages/media/image126.png)
-      - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image127.png)
-      - ![A screenshot of a computer program Description automatically generated](../../ZakResearchSurveyImages/media/image128.png)
+      - ![A white text with black text Description automatically generated](../images/media/image126.png)
+      - ![A screenshot of a computer Description automatically generated](../images/media/image127.png)
+      - ![A screenshot of a computer program Description automatically generated](../images/media/image128.png)
 
 **Ayoai Impact**: LLM-MCTS is perfect for Ayoai's game agent planning:
 - Combines world model (game state) with policy (agent behavior)
@@ -208,18 +208,18 @@ This enables Ayoai agents to:
     - Also employ a tree structure to assist in multi-plan search. Unlike ToT, they employ the Monte Carlo Tree Search (MCTS) algorithm for search.
 
   - Zak thoughts
-    - ![A diagram of a robot Description automatically generated](../../ZakResearchSurveyImages/media/image129.png)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image130.png)
+    - ![A diagram of a robot Description automatically generated](../images/media/image129.png)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image130.png)
     - Strategies
       - Self-evaluation by the LLM. It's sometimes easier to recognize the errors in reasoning than avoid generating them in advance. Thus, it's beneficial to allow the LLM to criticize itself with the question "Is this reasoning step correct?", and use the next-word probability of the token "Yes" as a reward. The reward evaluates LLM's own estimation of the correctness of reasoning. Note that the specific problems for self-evaluation can be different depending on the tasks.
       - Task-specific heuristics. RAP also allows us to flexibly plug in other task-specific heuristics into the reward function. For example, in plan generation for Blocksworld, we compare the predicted current state of blocks with the goal to calculate a reward (Section 4.1). The reward encourages the plan of movements to actively pace towards the target.
       - Expansion. This phase expands the tree by adding new child nodes to the leaf node selected above. Given the state of the leaf node, we use the LLM (as agent) to sample d possible actions (e.g., subquestions in math reasoning), and then use the LLM (as world model) to predict the respective next state, resulting in d child nodes. Note that if the leaf node selected above is a terminal node (the end of a reasoning chain) already, we will skip expansion and jump to back-propagation.
     - Dang, ok, I need to read this in depth later, it details how the search algorithm of the tree will go. I need to review this before I finalize my tree. Look at back propagation to go back up the tree?
-      - ![A diagram of a company Description automatically generated](../../ZakResearchSurveyImages/media/image131.png)
+      - ![A diagram of a company Description automatically generated](../images/media/image131.png)
     - Back-propagation. Once we reach a terminal state in the above phases, we obtain a reasoning path from the root node to the terminal node. We now back-propagate the rewards on the path to update the Q value of each state-action pair along the path. Specifically, we update Q(s, a) by aggregating the rewards in all future steps of node s.
     - Once a predetermined number of MCTS iterations is reached, we terminate the algorithm and select the final reasoning trace from the constructed tree for evaluation. There are various ways for the selection. One is to start from the root node and iteratively choose the action with the highest Q value until reaching a terminal. Also, one can directly select the path from the iterations that yielded the highest reward, or opt to choose the leaf node (and the respective root-to-leaf path) that has been visited the most. In practice, we observed that the second strategy often yields the best results.
     - Specifically, we draw multiple sample answers from the world model, and use the proportion of the most frequent answer as the confidence. Higher confidence indicates that the state prediction is more consistent with the world knowledge of LLMs (Hao et al., 2023b), which typically leads to a more reliable reasoning step
-      - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image132.png)
+      - ![A screenshot of a computer Description automatically generated](../images/media/image132.png)
 
 **Ayoai Impact**: RAP's dual-role LLM approach is groundbreaking:
 - LLM as both world model AND reasoning agent
@@ -241,7 +241,7 @@ This enables Ayoai agents to:
 
   - Zak thoughts
     - Had interesting prompting but nothing really for me to use.
-      - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image132.png)
+      - ![A screenshot of a computer Description automatically generated](../images/media/image132.png)
 
 **Ayoai Impact**: LLM A* demonstrates pathfinding integration:
 - A* provides optimal path guarantees
@@ -258,8 +258,8 @@ This enables Ayoai agents to:
 
   - Zak Thoughts
     - No code, just a cool prompt strategy.
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image133.tmp)
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image134.tmp)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image133.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image134.tmp)
 
 **Ayoai Impact**: RankPrompt offers self-evaluation without extra resources:
 - Agents can rank their own plan quality
@@ -276,9 +276,9 @@ This enables Ayoai agents to:
 
   - Zak thoughts
     - Cool but maybe a nice to have?
-    - ![A page of a book with text and images of a person working on a car Description automatically generated](../../ZakResearchSurveyImages/media/image135.tmp)
-    - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image136.png)
-    - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image137.png)
+    - ![A page of a book with text and images of a person working on a car Description automatically generated](../images/media/image135.tmp)
+    - ![A diagram of a diagram Description automatically generated](../images/media/image136.png)
+    - ![A screenshot of a computer screen Description automatically generated](../images/media/image137.png)
 
 **Ayoai Impact**: MacGyver reveals creative problem-solving challenges:
 - Tests unconventional object usage (important for sandbox games)
@@ -295,7 +295,7 @@ This enables Ayoai agents to:
 
   - Zak Thoughts
     - I really like the idea of seeing if there was a violation in expectation on how the behavior tree did. Like, where do we get the expectation from though? Maybe LifingPolls?
-    - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image138.png)
+    - ![A diagram of a diagram Description automatically generated](../images/media/image138.png)
 
 **Ayoai Impact**: VoE is crucial for adaptive agent behavior:
 - Agents can learn when their predictions about players fail
@@ -307,7 +307,7 @@ This enables Ayoai agents to:
 ## Pairwise Better Than Score
 
 - Instead of using a score, asking the llm to choose is better. <https://x.com/hwchase17/status/1796269356625875049?s=19>
-  - ![](../../ZakResearchSurveyImages/media/image139.png)
+  - ![](../images/media/image139.png)
 
 **Ayoai Impact**: Simple but effective insight:
 - Use pairwise comparisons instead of absolute scoring
@@ -322,7 +322,7 @@ This enables Ayoai agents to:
     - The field of AI alignment is concerned with AI systems that pursue unintended goals. One commonly studied mechanism by which an unintended goal might arise is specification gaming, in which the designer-provided specification is flawed in a way that the designers did not foresee. However, an AI system may pursue an undesired goal even when the specification is correct, in the case of goal misgeneralization. Goal misgeneralization is a specific form of robustness failure for learning algorithms in which the learned program competently pursues an undesired goal that leads to good performance in training situations but bad performance in novel test situations. We demonstrate that goal misgeneralization can occur in practical systems by providing several examples in deep learning systems across a variety of domains. Extrapolating forward to more capable systems, we provide hypotheticals that illustrate how goal misgeneralization could lead to catastrophic risk. We suggest several research directions that could reduce the risk of goal misgeneralization for future systems.
 
   - Zak Thoughts
-    - ![A collage of images of various objects Description automatically generated](../../ZakResearchSurveyImages/media/image140.tmp)
+    - ![A collage of images of various objects Description automatically generated](../images/media/image140.tmp)
 
 **Ayoai Impact**: Critical safety consideration for game agents:
 - Agents might pursue unintended goals that seem correct
@@ -339,7 +339,7 @@ This enables Ayoai agents to:
 
   - Zak thoughts
     - Cool!
-    - ![A close-up of a paper Description automatically generated](../../ZakResearchSurveyImages/media/image141.tmp)
+    - ![A close-up of a paper Description automatically generated](../images/media/image141.tmp)
 
 **Ayoai Impact**: Three-fold introspection is perfect for robust agents:
 - Anticipatory reflection before actions (prevent failures)

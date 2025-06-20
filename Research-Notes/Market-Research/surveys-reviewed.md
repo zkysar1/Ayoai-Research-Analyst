@@ -16,7 +16,7 @@ I already read these surveys and put the papers the survey payer mentions in the
 
   - Cool actions, I need some of these.
 
-    - ![A diagram of a circular chart Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image302.png)
+    - ![A diagram of a circular chart Description automatically generated with medium confidence](../images/media/image302.png)
 
 **Ayoai Impact**: SIMA's action taxonomy provides:
 - Comprehensive action categories
@@ -44,17 +44,17 @@ I already read these surveys and put the papers the survey payer mentions in the
 
   - The current taxonomy for planning in llms according to this paper:
 
-    - ![A diagram of a diagram Description automatically generated](../../ZakResearchSurveyImages/media/image303.png)
+    - ![A diagram of a diagram Description automatically generated](../images/media/image303.png)
 
   - The level above planning? Perceiving the environment, planning, and executing actions. Planning,
 
     - as one of the most critical capabilities for agents....
 
-    - ![A text on a white background Description automatically generated](../../ZakResearchSurveyImages/media/image304.png)
+    - ![A text on a white background Description automatically generated](../images/media/image304.png)
 
   - Taxonomy chart summarized. . .
 
-    - ![A white sheet with black text Description automatically generated](../../ZakResearchSurveyImages/media/image305.png)
+    - ![A white sheet with black text Description automatically generated](../images/media/image305.png)
 
 **Ayoai Impact**: This survey provided the foundation:
 - Clear planning taxonomy
@@ -74,9 +74,9 @@ I already read these surveys and put the papers the survey payer mentions in the
 
   - Zak thoughts
 
-    - ![A diagram of a project Description automatically generated](../../ZakResearchSurveyImages/media/image306.tmp)
+    - ![A diagram of a project Description automatically generated](../images/media/image306.tmp)
 
-    - ![A diagram of memory Description automatically generated](../../ZakResearchSurveyImages/media/image307.tmp)
+    - ![A diagram of memory Description automatically generated](../images/media/image307.tmp)
 
 **Ayoai Impact**: Valuable visual summaries of:
 - Agent component architecture

@@ -10,9 +10,9 @@
 
   - Zak thoughts
 
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image340.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image340.tmp)
 
-    - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image341.tmp)
+    - ![A screenshot of a computer Description automatically generated](../images/media/image341.tmp)
 
 **Ayoai Impact**: Bidirectional communication framework:
 - Agents as listeners and speakers

@@ -169,16 +169,16 @@ Jennifer also created this comprehensive list of what an AI NPC can self-check:
 ### Visual Flow Examples
 
 - Jennifer also drew this as a flow trying to mimic a green light red light game.
-  - ![A diagram of a red square with green squares and black text Description automatically generated](../../ZakResearchSurveyImages/media/image29.png)
+  - ![A diagram of a red square with green squares and black text Description automatically generated](../images/media/image29.png)
 
 - I was thinking this at one point:
-  - ![A black screen with text and arrows Description automatically generated](../../ZakResearchSurveyImages/media/image30.png)
+  - ![A black screen with text and arrows Description automatically generated](../images/media/image30.png)
 
 - And this:
-  - ![A screenshot of a computer Description automatically generated](../../ZakResearchSurveyImages/media/image31.tmp)
+  - ![A screenshot of a computer Description automatically generated](../images/media/image31.tmp)
 
 - And this:
-  - ![A screenshot of a computer screen Description automatically generated](../../ZakResearchSurveyImages/media/image32.png)
+  - ![A screenshot of a computer screen Description automatically generated](../images/media/image32.png)
 
 ## Every Cognitive Bias in One Infographic
 
@@ -186,7 +186,7 @@ Jennifer also created this comprehensive list of what an AI NPC can self-check:
 
 - How should these be built into our process? Should these influence LifingPolls?
 
-![A diagram of a brain Description automatically generated](../../ZakResearchSurveyImages/media/image33.png)
+![A diagram of a brain Description automatically generated](../images/media/image33.png)
 
 **Ayoai Impact**: Cognitive biases are crucial for believable agent behavior. Instead of perfect rational actors, Ayoai agents could:
 - Exhibit confirmation bias when evaluating situations
@@ -221,10 +221,10 @@ This makes agents feel more human and creates interesting emergent behaviors.
   - Zak thoughts
     - I think we can use this in some way to make behavior more dynamic.
 
-    - ![A couple of cartoon characters Description automatically generated](../../ZakResearchSurveyImages/media/image34.tmp)
-    - ![A cartoon of women in different poses Description automatically generated with medium confidence](../../ZakResearchSurveyImages/media/image35.tmp)
-    - ![A person and person cartoon characters Description automatically generated](../../ZakResearchSurveyImages/media/image36.tmp)
-    - ![A cartoon characters of two people Description automatically generated](../../ZakResearchSurveyImages/media/image37.tmp)
+    - ![A couple of cartoon characters Description automatically generated](../images/media/image34.tmp)
+    - ![A cartoon of women in different poses Description automatically generated with medium confidence](../images/media/image35.tmp)
+    - ![A person and person cartoon characters Description automatically generated](../images/media/image36.tmp)
+    - ![A cartoon characters of two people Description automatically generated](../images/media/image37.tmp)
 
     - If 16 is too much, I could think about a higher layer abstraction layer. . . The concept of two opposite personality types can be interpreted in various ways depending on the psychological framework used. Here are two commonly referenced pairs from well-known personality theories:
 
@@ -237,7 +237,7 @@ This makes agents feel more human and creates interesting emergent behaviors.
         - Type B Personality: Characterized by a relaxed, patient, and easy-going nature. Type B individuals are generally more adaptable, less stressed, and often have a more balanced approach to life and work.
 
     - Personality disorder? <https://twitter.com/algekalipso/status/1772381561180274935?s=19>
-      - ![Image](../../ZakResearchSurveyImages/media/image38.jpeg)
+      - ![Image](../images/media/image38.jpeg)
 
 **Ayoai Impact**: The 16 personality types provide a robust framework for agent diversity:
 - Game developers can select from predefined personality archetypes
@@ -277,8 +277,8 @@ This makes agents feel more human and creates interesting emergent behaviors.
     - Despite the many use cases for large language models (LLMs) in creating personalized chatbots, there has been limited research on evaluating the extent to which the behaviors of personalized LLMs accurately and consistently reflect specific personality traits. We consider studying the behavior of LLM-based agents which we refer to as LLM personas and present a case study with GPT-3.5 and GPT-4 to investigate whether LLMs can generate content that aligns with their assigned personality profiles. To this end, we simulate distinct LLM personas based on the Big Five personality model, have them complete the 44-item Big Five Inventory (BFI) personality test and a story writing task, and then assess their essays with automatic and human evaluations. Results show that LLM personas' self-reported BFI scores are consistent with their designated personality types, with large effect sizes observed across five traits. Additionally, LLM personas' writings have emerging representative linguistic patterns for personality traits when compared with a human writing corpus. Furthermore, human evaluation shows that humans can perceive some personality traits with an accuracy of up to 80%. Interestingly, the accuracy drops significantly when the annotators were informed of AI authorship.
 
   - Zak thoughts
-    - ![A diagram of a story writing Description automatically generated](../../ZakResearchSurveyImages/media/image39.tmp)
-    - ![A screenshot of a paper Description automatically generated](../../ZakResearchSurveyImages/media/image40.tmp)
+    - ![A diagram of a story writing Description automatically generated](../images/media/image39.tmp)
+    - ![A screenshot of a paper Description automatically generated](../images/media/image40.tmp)
 
 **Ayoai Impact**: PersonaLLM validates that LLMs can consistently express personality traits:
 - Proves LLMs can maintain consistent personality profiles
