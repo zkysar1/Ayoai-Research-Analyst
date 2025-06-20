@@ -52,7 +52,7 @@ Competitive analysis and industry research:
 
 ### Project-Notes/
 Evolution of ideas and implementation strategies:
-- `thoughts-december-2023.md` - Historical planning decisions and architectural evolution
+- `running-ideas-2025.md` - Ongoing research concepts and future directions
 
 
 ## Overview
