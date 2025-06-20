@@ -627,3 +627,4 @@ heron. **References**
 12. Winter, K.: Formalising Behaviour Trees with CSP. In: Boiten, E.A.,
     Derrick, J.,Smith, G.P. (eds.) IFM 2004. LNCS, vol. 2999, pp.
     148--167. Springer, Heidelberg (2004)
+
