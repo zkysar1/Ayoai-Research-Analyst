@@ -1,12 +1,12 @@
 # Research Notes Organization
 
-This directory contains Zak's research notes reorganized from the original `ZakResearchSurvey.md` file for better navigation and ongoing research documentation.
+This directory contains comprehensive research notes on autonomous agent behavior, reorganized from the original survey document for better navigation and ongoing documentation.
 
 ## Directory Structure
 
 ### Core-Concepts/
 Fundamental concepts for autonomous agent behavior:
-- `perception.md` - World understanding, spatial perception, player tracking, ownership
+- `perception.md` - World understanding, spatial perception, ownership systems
 - `consciousness-and-cognition.md` - Core loops, cognitive mechanisms, consciousness models
 - `personality-systems.md` - Personality types, cognitive biases, belief systems
 
@@ -34,82 +34,153 @@ Practical implementation details:
 - `testing.md` - Testing strategies and frameworks
 - `prompt-engineering.md` - Prompt building techniques and archives
 - `cognitive-architecture.md` - NPC cognitive architecture with 22 verticles and 97 processes
-- `roblox-json-examples.md` - Roblox JSON data structures and message formats
+- `agent-capabilities.md` - Communication systems and tool use capabilities
 - `heartbeat-algorithm.md` - Core decision-making process for NPCs per game tick
 - `decision-augmentation.md` - Evidence-based decision making systems
 - `behavioral-analytics.md` - Pattern recognition and predictive modeling for NPC behavior
 - `npc-experience-tracking.md` - Journaling and experience systems for character depth
+- `Player Tracking.md` - Player detection, tracking systems, and agent-player interactions
+- `Parameterizing Behavior Trees.md` - Technical implementation of behavior tree parameterization
+- `Public Datasets.md` - Available datasets for training and testing
 
 ### Market-Research/
 Competitive analysis and industry research:
-- `competitors.md` - Analysis of Altera, Inworld, Soul Machines, etc.
-- `surveys-reviewed.md` - Academic surveys and papers reviewed
+- `competitors.md` - Analysis of Altera, Inworld, Soul Machines, and other key players
+- `surveys-reviewed.md` - Academic surveys and foundational papers
 - `general-agents.md` - General agent frameworks and architectures
+- `roblox-worlds.md` - Roblox-specific opportunities and game concepts
 
 ### Project-Notes/
-Personal reflections and evolving thoughts:
-- `thoughts-december-2023.md` - December 2023 reflections on planning and implementation
+Evolution of ideas and implementation strategies:
+- `thoughts-december-2023.md` - Historical planning decisions and architectural evolution
 
-## Migration Map from ZakResearchSurvey.md
 
-| Original Section | New Location | Lines |
-|-----------------|--------------|-------|
-| World Understanding & Perception | Core-Concepts/perception.md | 540-599 |
-| Player Tracking | Core-Concepts/perception.md | 542-571 |
-| Ownership | Core-Concepts/perception.md | 572-599 |
-| Core Loops of Every Soul | Core-Concepts/consciousness-and-cognition.md | 750-835 |
-| Cognition is All You Need | Core-Concepts/consciousness-and-cognition.md | 890-918 |
-| Specific Loops per personality | Core-Concepts/personality-systems.md | 1834-1876 |
-| Cognitive Biases | Core-Concepts/personality-systems.md | 2244-2264 |
-| Memory Systems (all subsections) | Memory-Systems/* | 2656-3726 |
-| Task Decomposition | Planning-and-Reasoning/task-decomposition.md | 4100-4596 |
-| Multi-Plan Selection | Planning-and-Reasoning/multi-plan-selection.md | 5303-6500 |
-| Planner-Aided Planning | Planning-and-Reasoning/planner-aided-planning.md | 6501-7350 |
-| Reflection and Refinement | Learning-and-Adaptation/reflection-and-refinement.md | 7816-8471 |
-| Behavior Generation | Learning-and-Adaptation/behavior-generation.md | 8472-9400 |
-| The Bitter Lesson & Dave Mark | Implementation/game-ai-architectures.md | 10025-10255 |
-| ABC Method | Implementation/abc-method.md | 10406-10863 |
-| General Agents | Market-Research/general-agents.md | 10864-11219 |
-| Competitors section | Market-Research/competitors.md | 11220-11703 |
-| Testing | Implementation/testing.md | 11704-11761 |
-| Prompt Building | Implementation/prompt-engineering.md | 11763-12609 |
-| Surveys Reviewed | Market-Research/surveys-reviewed.md | 10256-10379 |
-| Project Notes - December 2023 | Project-Notes/thoughts-december-2023.md | 9570-9650 |
+## Overview
 
-## How to Add New Research
+- **Research Items**: ~168 subsections covering all aspects of autonomous agents
+- **Visual Documentation**: 276 screenshots and diagrams
+- **Time Span**: December 2023 - present
+- **Primary Focus**: Autonomous agent behavior for gaming environments
 
-When adding new research:
+## Contributing New Research
 
-1. **Determine the category** - Which directory best fits your research topic?
-2. **Check existing files** - Does it belong in an existing file or need a new one?
-3. **Follow the format**:
-   ```markdown
-   ## Paper/Tool/Concept Name
-   
-   ### Overall Notes
-   - Key insights
-   - How it relates to Ayoai's autonomous behavior goals
-   
-   ### Details
-   [Research content, quotes, analysis]
-   
-   ### Screenshots/Figures
-   ![Description](/images/media/imageXXX.png)
-   ```
+### 1. Determine the Category
 
-4. **Update this README** if you create new files
-5. **Keep images** in the original `ZakResearchSurveyImages/media/` directory
+Choose the appropriate category based on primary focus:
 
-## Key Patterns to Maintain
+- **Perception/Sensing**: Environmental understanding → `Core-Concepts/perception.md`
+- **Consciousness/Cognition**: Cognitive architectures and models → `Core-Concepts/consciousness-and-cognition.md`
+- **Personality/Psychology**: Character traits and biases → `Core-Concepts/personality-systems.md`
+- **Memory**: Architecture and retrieval systems → `Memory-Systems/`
+- **Planning**: Decision-making and task decomposition → `Planning-and-Reasoning/`
+- **Learning**: Adaptation and self-improvement → `Learning-and-Adaptation/`
+- **Implementation**: Technical details and tools → `Implementation/`
+- **Market Analysis**: Competitive landscape → `Market-Research/`
+- **Project Evolution**: Design decisions and rationale → `Project-Notes/`
 
-1. **"Overall Notes" sections** - Start major topics with high-level context
-2. **Ayoai relevance** - Always connect research back to autonomous agent behavior
-3. **Visual documentation** - Include screenshots and diagrams where helpful
-4. **Dated reflections** - Add dates to evolving thoughts and insights
+### 2. Research Entry Format
 
-## Quick Reference
+```markdown
+## [Paper/Tool/Concept Name]
 
-- **Total research items**: ~168 subsections from original document
-- **Images**: 276 screenshots/diagrams (kept in original location)
-- **Time span**: December 2023 - present
-- **Focus**: Autonomous agent behavior for Roblox and similar environments
+**Source**: [URL or citation]
+**Date Added**: [YYYY-MM-DD]
+
+### Overall Notes
+- Key insight 1
+- Key insight 2
+- **Ayoai Relevance**: How this helps with autonomous agent behavior
+
+### Abstract/Summary
+[Original abstract or your summary]
+
+### Details
+[Your detailed notes, analysis, quotes]
+
+### Implementation Ideas
+- How could we use this in Ayoai?
+- What would need to be adapted?
+
+### Screenshots/Figures
+![Description](../images/media/imageXXX.png)
+
+### Code/Examples
+```language
+// Any code snippets
+```
+```
+
+### 3. File Creation Guidelines
+
+Create new files when:
+- Topics exceed 500 lines
+- Distinct subtopics contain 5+ research items
+- Navigation would be improved
+
+File naming: `descriptive-topic-name.md` (lowercase with hyphens)
+
+## Best Practices
+
+1. **Cross-Reference Related Research**
+   - Link between related topics
+   - Format: `[Topic Name](../Category/file.md#section)`
+
+2. **Date All Entries**
+   - Include creation date
+   - Update modification dates
+
+3. **Use Consistent Tags**
+   - `[TODO]` - Requires investigation
+   - `[IMPLEMENT]` - Ready for prototyping
+   - `[QUESTION]` - Open questions
+   - `[IDEA]` - Feature concepts
+
+4. **Image Management**
+   - Store in `images/media/` directory
+   - Sequential naming: `image###.png`
+   - Include descriptive alt text
+
+5. **Maintenance Schedule**
+   - Monthly: Consolidate related entries
+   - Quarterly: Reorganize large categories
+   - Annually: Archive outdated research
+
+## Example Research Entry
+
+Adding a paper on "Hierarchical Memory Networks for Agents":
+
+1. **Categorize**: This goes in `Memory-Systems/`
+2. **Check existing files**: Does it fit in `rag-based-memory.md`? If not, create `hierarchical-memory.md`
+3. **Format your entry**:
+```markdown
+## Hierarchical Memory Networks for Multi-Agent Systems
+
+**Source**: https://arxiv.org/abs/2024.example
+**Date Added**: 2024-11-08
+
+### Overall Notes
+- Introduces 3-tier memory hierarchy
+- Reduces memory search time by 70%
+- **Ayoai Relevance**: Could dramatically improve our agent response times in complex Roblox environments
+
+### Abstract
+[Paper abstract here]
+
+### Implementation Ideas
+- Tier 1: Immediate sensory buffer (last 30 seconds)
+- Tier 2: Working memory (current task context)
+- Tier 3: Long-term storage (compressed experiences)
+
+### Screenshots
+![Memory hierarchy diagram](../images/media/image363.png)
+```
+
+4. **Update this README** when creating new files
+
+## Navigation Tips
+
+When uncertain about placement:
+1. Review similar existing research
+2. Choose broader categories when unsure
+3. Note potential reorganization needs
+4. Address during monthly reviews
