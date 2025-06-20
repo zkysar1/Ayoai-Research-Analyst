@@ -458,89 +458,89 @@ So we are done. You can find me. So thanks folks. Appreciate it.
 
 ![A black and yellow text on a black background Description
 automatically
-generated](images/media/image1.png){width="5.850826771653543in"
+generated](../../../ZakResearchSurveyImages/media2/image1.png){width="5.850826771653543in"
 height="2.7565212160979877in"}
 
 ![A screenshot of a computer Description automatically
-generated](images/media/image2.png){width="4.878261154855643in"
+generated](../../../ZakResearchSurveyImages/media2/image2.png){width="4.878261154855643in"
 height="3.2792596237970253in"}
 
 ![A screenshot of a computer Description automatically
-generated](images/media/image3.png){width="6.1785968941382325in"
+generated](../../../ZakResearchSurveyImages/media2/image3.png){width="6.1785968941382325in"
 height="2.580042650918635in"}
 
 ![A diagram of action and action Description automatically
-generated](images/media/image4.png){width="6.439130577427822in"
+generated](../../../ZakResearchSurveyImages/media2/image4.png){width="6.439130577427822in"
 height="2.9044586614173227in"}
 
 ![A black background with yellow text Description automatically
-generated](images/media/image5.png){width="6.3138221784776904in"
+generated](../../../ZakResearchSurveyImages/media2/image5.png){width="6.3138221784776904in"
 height="3.2812193788276467in"}
 
 ![A graph on a black background Description automatically
-generated](images/media/image6.png){width="7.795651793525809in"
+generated](../../../ZakResearchSurveyImages/media2/image6.png){width="7.795651793525809in"
 height="3.8646194225721784in"}
 
 ![A screenshot of a computer Description automatically
-generated](images/media/image7.png){width="7.280860673665792in"
+generated](../../../ZakResearchSurveyImages/media2/image7.png){width="7.280860673665792in"
 height="3.4350240594925636in"}
 
 ![A graph and diagram on a black background Description automatically
-generated](images/media/image8.png){width="7.284763779527559in"
+generated](../../../ZakResearchSurveyImages/media2/image8.png){width="7.284763779527559in"
 height="3.4921806649168854in"}
 
 ![A screen shot of a graph Description automatically
-generated](images/media/image9.png){width="6.643478783902013in"
+generated](../../../ZakResearchSurveyImages/media2/image9.png){width="6.643478783902013in"
 height="3.4505325896762904in"}
 
 ![A screenshot of a computer Description automatically
-generated](images/media/image10.png){width="8.055581802274716in"
+generated](../../../ZakResearchSurveyImages/media2/image10.png){width="8.055581802274716in"
 height="4.674426946631671in"}
 
 ![A screenshot of a computer Description automatically
-generated](images/media/image11.png){width="9.47617125984252in"
+generated](../../../ZakResearchSurveyImages/media2/image11.png){width="9.47617125984252in"
 height="4.801359361329834in"}
 
 ![A black background with white text Description automatically
-generated](images/media/image12.png){width="9.253331146106737in"
+generated](../../../ZakResearchSurveyImages/media2/image12.png){width="9.253331146106737in"
 height="4.508424103237095in"}
 
 ![A graph on a black background Description automatically
-generated](images/media/image13.png){width="7.195651793525809in"
+generated](../../../ZakResearchSurveyImages/media2/image13.png){width="7.195651793525809in"
 height="3.2912182852143483in"}
 
 ![A graph on a black background Description automatically
-generated](images/media/image14.png){width="7.9321817585301835in"
+generated](../../../ZakResearchSurveyImages/media2/image14.png){width="7.9321817585301835in"
 height="3.7391907261592303in"}
 
 ![A graph with blue arrows and yellow text Description automatically
-generated](images/media/image15.png){width="6.971422790901137in"
+generated](../../../ZakResearchSurveyImages/media2/image15.png){width="6.971422790901137in"
 height="3.6014195100612425in"}
 
 ![A screenshot of a computer game Description automatically
-generated](images/media/image16.png){width="5.934782370953631in"
+generated](../../../ZakResearchSurveyImages/media2/image16.png){width="5.934782370953631in"
 height="3.4753226159230097in"}
 
 ![A black and yellow text Description automatically
-generated](images/media/image17.png){width="7.582385170603675in"
+generated](../../../ZakResearchSurveyImages/media2/image17.png){width="7.582385170603675in"
 height="4.468720472440945in"}
 
 ![A screenshot of a computer program Description automatically
-generated](images/media/image18.png){width="7.56956583552056in"
+generated](../../../ZakResearchSurveyImages/media2/image18.png){width="7.56956583552056in"
 height="3.7812018810148733in"}
 
 ![A diagram of a flow chart Description automatically
-generated](images/media/image19.png){width="7.5674726596675415in"
+generated](../../../ZakResearchSurveyImages/media2/image19.png){width="7.5674726596675415in"
 height="4.233575021872266in"}
 
 ![A black background with white text Description automatically
-generated](images/media/image20.png){width="7.596097987751531in"
+generated](../../../ZakResearchSurveyImages/media2/image20.png){width="7.596097987751531in"
 height="3.844897200349956in"}
 
 ![A screenshot of a computer Description automatically
-generated](images/media/image21.png){width="8.49963801399825in"
+generated](../../../ZakResearchSurveyImages/media2/image21.png){width="8.49963801399825in"
 height="4.284653324584427in"}
 
 ![A diagram of a structure Description automatically generated with
-medium confidence](images/media/image22.png){width="7.991610892388452in"
+medium confidence](../../../ZakResearchSurveyImages/media2/image22.png){width="7.991610892388452in"
 height="3.866908355205599in"}
