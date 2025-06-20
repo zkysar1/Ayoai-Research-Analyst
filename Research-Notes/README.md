@@ -30,10 +30,15 @@ Self-improvement and behavior generation:
 Practical implementation details:
 - `game-ai-architectures.md` - Dave Mark's utility AI, behavior trees, The Bitter Lesson
 - `abc-method.md` - Antecedent-Behavior-Consequence framework
+- `abc-npc-design.md` - Comprehensive ABC framework with table structures and decision-making
 - `testing.md` - Testing strategies and frameworks
 - `prompt-engineering.md` - Prompt building techniques and archives
 - `cognitive-architecture.md` - NPC cognitive architecture with 22 verticles and 97 processes
 - `roblox-json-examples.md` - Roblox JSON data structures and message formats
+- `heartbeat-algorithm.md` - Core decision-making process for NPCs per game tick
+- `decision-augmentation.md` - Evidence-based decision making systems
+- `behavioral-analytics.md` - Pattern recognition and predictive modeling for NPC behavior
+- `npc-experience-tracking.md` - Journaling and experience systems for character depth
 
 ### Market-Research/
 Competitive analysis and industry research:
