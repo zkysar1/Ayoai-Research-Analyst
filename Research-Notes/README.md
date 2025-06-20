@@ -50,11 +50,6 @@ Competitive analysis and industry research:
 - `general-agents.md` - General agent frameworks and architectures
 - `roblox-worlds.md` - Roblox-specific opportunities and game concepts
 
-### Project-Notes/
-Evolution of ideas and implementation strategies:
-- `running-ideas-2025.md` - Ongoing research concepts and future directions
-
-
 ## Overview
 
 - **Research Items**: ~168 subsections covering all aspects of autonomous agents
