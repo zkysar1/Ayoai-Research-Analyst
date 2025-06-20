@@ -96,7 +96,7 @@
 
 - SAGA: Skill to action generation for agents [https://blog.fabledev.com/blog/announcing-saga-skill-to-action-generation-for-agents-open-source](https://blog.fabledev.com/blog/announcing-saga-skill-to-action-generation-for-agents-open-source)
 
-  - Hmm this looks like a competitor. They have some interesting things.
+  - SAGA represents a significant competitive approach with distinct architectural choices:
 
     - ![A diagram of a diagram Description automatically generated with medium confidence](../images/media/image338.png)
 
@@ -143,7 +143,7 @@
 
 - https://www.parcha.com/
 
-- Cool article they did!
+- Production insights from their engineering blog:
 
   - https://www.parcha.com/blog/building-ai-agents-in-production
 
@@ -170,7 +170,7 @@
 
 - https://www.soulmachines.com/soul-machines-studio
 
-  - I think the npcs should have a central system too, that modes health and such like that? Or not?
+  - Focus on centralized health and state management systems for digital humans.
 
 **Ayoai Impact**: Focus on digital humans with central systems.
 
@@ -190,13 +190,11 @@
 
     - Use AI to plan your work, automatically. Be 137% more productive. Use the AI assistant for busy people and work teams. Task scheduling Get a personalized schedule each day, without manual planning Motion takes all of your projects and tasks, prioritizes and timeblocks them on your calendar, and dynamically optimizes your schedule dozens of times a day, all done automatically. Your plan will always be perfect and up-to-date.
 
-  - Zak Thoughts
+### Key Insights
 
-    - This is what I'm trying to have an npc answer, this is from the article: everyone should have a smart assistant that can tell them what's the next best thing to work on. The npc idea trys to answer that for the npc's behalf.
+Motion's approach to AI planning directly parallels NPC decision-making: "everyone should have a smart assistant that can tell them what's the next best thing to work on." This concept translates directly to NPCs determining their next optimal action based on goals and constraints.
 
-    - Dude, this idea has a lot of simularities with what we've talked about along the lines of predicting "next best move" (in this case, next best calandar invite to accomplish the goal, apparently).
-
-    - https://techcrunch.com/2022/09/19/2393012/
+https://techcrunch.com/2022/09/19/2393012/
 
 **Ayoai Impact**: Planning algorithms applicable to NPCs:
 - Dynamic schedule optimization
@@ -216,7 +214,7 @@
 
 ## Palantir 
 
-- Awesome football demo that is almost exactly what I'm building, yikes!!! On the Field with Palantir AIP: Football Demo: https://youtu.be/Xw_Z14oYubc?si=ZiStO4T85xq_xP4l
+- Palantir's football simulation demonstrates advanced multi-agent coordination capabilities highly relevant to game AI. On the Field with Palantir AIP: Football Demo: https://youtu.be/Xw_Z14oYubc?si=ZiStO4T85xq_xP4l
 
   - https://www.palantir.com/platforms/aip/
 

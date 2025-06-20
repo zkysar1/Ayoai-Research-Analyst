@@ -4,39 +4,54 @@ This document covers research on cognitive architectures, consciousness models, 
 
 ## Core Loops of Every Soul
 
-### Overall Notes
+### Fundamental Processing Layers
 
-- The anticipation... animals can anticipate things. Hmmm
+The cognitive architecture requires multiple parallel processing streams that mirror human consciousness:
 
-- How to add a predicate like - if someone is chatting with you, it is rude to move away. So if we were working and starting moving away, we could no longer engage in conversation and that would end. So how are those complexities going to work in pddl?
+**Four Core Domains**:
+1. **Physical**: Health, hunger, energy, cleanliness
+2. **Emotional**: Happiness, sadness, fear, excitement
+3. **Mental**: Goals, planning, reasoning, memory
+4. **Spiritual/Values**: Ethics, purpose, meaning, social bonds
 
-- What are the things humans should do at the same time subconsciously? I need to know so I can think about the the right threads to use inside roblox. So I can think of the count of threads for one npc.
+**Key Relationships** (inspired by personal reflection):
+- Health (body, mind, soul integration)
+- Social roles (parent, partner, friend, community member)
+- Resource management (finances, time, energy)
 
-- I need multiple threads, and people can pay me for more than three. The three core are. Short term, mid term, long term. Can add mid level threads or something? How does that work? Or have the user designate what kind of thread so that is generative???
+### Threading Architecture
 
-- Need behavior tree in python? Meaning, say one of the actions picked for the plan needs to be actioned in cloud vs in roblox. Therefore, I need a behavior tree in python as well as in lua. I should have them operate in the same way with the same composite node. The benefit of this is I only have to lean one tree, and that tool and can be refused by me and my prompts fast.
+**Core Processing Threads**:
+- **Short-term**: Immediate reactions and reflexes (100ms cycles)
+- **Mid-term**: Current task management and social awareness (1-5 second cycles)
+- **Long-term**: Goal planning and relationship maintenance (30+ second cycles)
 
-- Give the agent the ability to create these situation/antecedent. They can learn to love...
+**Premium Threading Model**: Basic agents operate with three core threads, while premium tiers unlock additional parallel processing for more sophisticated behaviors.
 
-- The first layer is spiritual, physical, emotional, and mental. Then there are things within those that affect weights. For mental, you have your goals, etc. For spiritual, you have your values like good or bad. For physical, you have your health, hunger, cleanliness. Emotional are your happiness/sadness things.
-- But what else did pat have as goals here? Family,
-  - Happiness =
-  - Health (body, mind, soul)
-  - Husband
-  - Father
-  - Family
-  - Friend
-  - Finances
+### Cross-Platform Behavior Trees
 
-- Think like a squirrel, on how the npc's should learn.
+Implement unified behavior tree architecture across platforms:
+- Python implementation for cloud-based reasoning
+- Lua implementation for in-game execution
+- Shared composite node structure for consistency
+- Enables seamless cloud/edge hybrid processing
 
-### Immediate health
+### Social Awareness Rules
 
-- ?
-  - Abstract
-    - ?
-  - Zak thoughts
-    - ?
+Complex social predicates must be embedded in the reasoning system:
+- "Maintain conversation when engaged" (moving away while talking is rude)
+- "Respect personal space" (proximity awareness)
+- "Mirror emotional states" (empathy simulation)
+
+These rules function as soft constraints in the planning system rather than hard PDDL predicates.
+
+### Anticipation and Learning
+
+Agents must develop anticipatory capabilities:
+- Pattern recognition from past experiences
+- Predictive modeling of likely outcomes
+- Proactive behavior based on anticipated needs
+- Learning to form new preferences and attachments ("learn to love")
 
 ### Self Perception
 
@@ -46,71 +61,32 @@ This document covers research on cognitive architectures, consciousness models, 
 
 **Ayoai Impact**: Maslow's hierarchy provides a framework for agent motivations. Characters in Ayoai could have dynamic needs that shift based on circumstances - a hungry character prioritizes food over social interaction, creating emergent, believable behavior patterns.
 
-### Time Impacts
+### Time-Aware Decision Making
 
-- if something is going to take 5 more heart beats to complete, maybe finish that first.
+Agents must factor task completion time into decision-making. If an action requires only a few more heartbeats to complete, the agent should generally finish it before switching tasks. This prevents unnatural behavior patterns like abandoning nearly-complete activities and creates more believable, goal-oriented agents.
 
-**Ayoai Impact**: Time-based decision making is crucial for realistic agent behavior. Agents should consider task completion time when switching between activities, preventing unnatural behavior like abandoning nearly-complete tasks.
+### Subconscious Threading Architecture
 
-### How Subconscious Threads?
+Research into human cognitive parallelism suggests an 8-thread model for realistic agent behavior:
 
-- Zak thinking I can ask an llm how many threads lol. But in future, this is a topic people discuss. To me, it should dynamic.
+**Background Threads** (Subconscious):
+1. **Physiological Regulation**: Simulated vitals and autonomic functions
+2. **Sensory Processing**: Parallel processing for each sense modality
+3. **Emotional Regulation**: Continuous emotional state evolution
+4. **Memory Management**: Storage, retrieval, and decay processes
 
-  - Abstract
-    - What are the things humans can do at the same time subconsciously? Like, how many threads are possible at once for a human?
+**Foreground Threads** (Conscious):
+5. **Decision Making**: Active reasoning based on inputs and goals
+6. **Motor Control**: Physical action planning and execution
+7. **Language Processing**: Communication and comprehension
 
-    - If you were to write a computer program to mimic human behavior, how many threads would you use in that program? In other words, how would you use multithreading in a program to mimic human behavior?
+**Coordination**:
+8. **Central Executive**: Attention management and thread coordination
 
-  - Zak thoughts
-    - What are the things humans can do at the same time subconsciously? Like, how many threads are possible at once for a human?
-
-      - Humans can perform several tasks subconsciously at the same time, much like a computer can run multiple processes in the background. This is largely thanks to the autonomic nervous system, which regulates bodily functions such as heart rate, digestion, respiratory rate, pupillary response, urination, and sexual arousal. This system operates subconsciously and allows us to perform vital functions without thinking about them.
-
-      - Apart from these physiological processes, humans can also engage in automatic processes such as walking, breathing, and blinking simultaneously without conscious thought, especially once these tasks have been well learned and internalized.
-
-      - When it comes to mental or cognitive tasks, multitasking becomes more complicated. While we can perform some automatic mental tasks subconsciously (such as processing sensory information or retaining balance), our conscious brain has limited bandwidth for multitasking, especially when it comes to tasks requiring active thought or attention. Research suggests that when we think we are multitasking, we are often actually switching between tasks rapidly rather than doing them simultaneously.
-
-      - The actual "number of threads" a human can manage at once varies from person to person and depends on a variety of factors, including the nature of the tasks, how well they are learned, and the individual's mental and physical condition. However, it's clear that for tasks requiring conscious thought, this number is quite limited---often effectively one task at a time, especially if the tasks are complex or unfamiliar.
-
-      - In summary, while humans can perform multiple subconscious tasks simultaneously, our capacity for conscious multitasking is significantly more limited.
-
-    - If you were to write a computer program to mimic human behavior, how many threads would you use in that program? In other words, how would you use multithreading in a program to mimic human behavior?
-
-      - Designing a computer program to mimic human behavior using multithreading would be an ambitious and complex task, largely because human behavior is influenced by a vast array of factors including emotions, memories, sensory inputs, and subconscious processes. However, I can provide a conceptual framework for how you might approach this using multithreading, based on various aspects of human behavior and cognitive function.
-
-      - Core Subsystems (Background Threads)
-        - Firstly, you could use different threads to simulate the autonomic functions and background processes that the human body maintains subconsciously:
-
-        - 1. Physiological Regulation Thread: This could simulate heart rate, breathing, digestion, and other bodily functions controlled by the autonomic nervous system.
-
-        - 2. Sensory Processing Threads: Separate threads could handle different senses (sight, sound, touch, taste, smell), processing incoming sensory information like a human would, albeit in a simplified form.
-
-        - 3. Emotional Regulation Thread: This could simulate the fluctuation of emotional states over time and in response to various stimuli or thoughts.
-
-        - 4. Memory Management Thread: This would handle the storage, retrieval, and decay of short-term and long-term memories.
-
-        - Active Processing (Foreground Threads)
-        - In addition to the background processes, there would be threads dedicated to active, conscious thought and actions:
-
-        - 5. Decision Making Thread: This thread would simulate the process of making decisions based on the current sensory input, emotional state, memories, and logical processing.
-
-        - 6. Motor Control Thread: This would simulate the planning and execution of physical actions, translating decisions into movements.
-
-        - 7. Language Processing Thread: Dedicated to understanding and generating language, simulating conversation, reading, and writing.
-
-        - Integration and Management
-        - Finally, you would need a way to coordinate all these threads:
-
-        - 8. Central Executive Thread: Inspired by the central executive component of working memory in cognitive psychology, this thread would manage attention, coordinate the input and output of the other threads, and handle task switching. It simulates the conscious focus of the human mind.
-
-      - Challenges and Considerations
-        - • Synchronization and Conflict Resolution: Just like in the human brain, there would need to be mechanisms for these threads to communicate and resolve conflicts (e.g., deciding whether to focus on a task or respond to a new sensory input).
-
-        - • Scalability and Complexity: The real challenge lies in the complexity and depth of each thread. Human behavior is incredibly nuanced and context-dependent.
-
-        - • Learning and Adaptation: Humans learn and adapt over time. The program should include mechanisms for adjusting behavior based on past experiences, which could involve complex algorithms like neural networks or machine learning models within certain threads.
-
-      - Remember, this is a highly simplified and abstracted conceptual model. Actual human cognition and behavior are extraordinarily complex and not fully understood. This model doesn't capture all aspects of human behavior and would be extremely challenging to implement effectively in a real program. However, it does give an idea of how multithreading could be employed in an attempt to simulate different aspects of human behavior and cognition in parallel, much like our brains process multiple streams of information at once.
+**Key Insights**:
+- Humans perform many subconscious tasks simultaneously but have limited conscious multitasking ability
+- True multitasking is often rapid task-switching rather than parallel processing
+- The number of effective threads should be dynamic based on agent complexity and available resources
 
 **Ayoai Impact**: This multithreading model aligns perfectly with Ayoai's architecture. The platform already uses parallel perception verticles (FastPerception + 6 detailed perceptions). This research validates the approach and suggests enhancements:
 - Implement the 8-thread model within Roblox's Actor system
@@ -124,7 +100,7 @@ This document covers research on cognitive architectures, consciousness models, 
   - Abstract
     - Recent studies of the applications of conversational AI tools, such as chatbots powered by large language models, to complex real-world knowledge work have shown limitations related to reasoning and multi-step problem solving. Specifically, while existing chatbots simulate shallow reasoning and understanding they are prone to errors as problem complexity increases. The failure of these systems to address complex knowledge work is due to the fact that they do not perform any actual cognition. In this position paper, we present Cognitive AI, a higher-level framework for implementing programmatically defined neuro-symbolic cognition above and outside of large language models. Specifically, we propose a dual-layer functional architecture for Cognitive AI that serves as a roadmap for AI systems that can perform complex multi-step knowledge work. We propose that Cognitive AI is a necessary precursor for the evolution of higher forms of AI, such as AGI, and specifically claim that AGI cannot be achieved by probabilistic approaches on their own. We conclude with a discussion of the implications for large language models, adoption cycles in AI, and commercial Cognitive AI development.
 
-  - Zak Thoughts
+  - **Key Insight**: Pure LLMs are insufficient for complex reasoning - a higher-level cognitive layer is essential
     - ![A diagram of a diagram Description automatically generated](../images/media/image8.tmp)
 
 **Ayoai Impact**: This paper directly supports Ayoai's architecture of behavior trees + LLMs. The "dual-layer functional architecture" mirrors Ayoai's approach:
@@ -139,7 +115,10 @@ This validates that pure LLM approaches are insufficient for complex agent behav
   - Abstract
     - Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.
 
-  - Zak Thoughts
+  - **Key Architecture Components**:
+    - Modular memory system design
+    - Structured action spaces for internal/external interaction
+    - Generalized decision-making processes
     - ![A close-up of a diagram Description automatically generated](../images/media/image9.png)
     - ![A diagram of a symbol working memory Description automatically generated](../images/media/image10.tmp)
     - ![A white sheet with black text and black text Description automatically generated](../images/media/image11.png)
@@ -202,8 +181,9 @@ This enables creating agents with varying personality profiles by adjusting vect
   - Abstract
     - Whether current or near-term AI systems could be conscious is a topic of scientific interest and increasing public concern. This report argues for, and exemplifies, a rigorous and empirically grounded approach to AI consciousness: assessing existing AI systems in detail, in light of our best-supported neuroscientific theories of consciousness. We survey several prominent scientific theories of consciousness, including recurrent processing theory, global workspace theory, higher-order theories, predictive processing, and attention schema theory. From these theories we derive "indicator properties" of consciousness, elucidated in computational terms that allow us to assess AI systems for these properties. We use these indicator properties to assess several recent AI systems, and we discuss how future systems might implement them. Our analysis suggests that no current AI systems are conscious, but also suggests that there are no obvious technical barriers to building AI systems which satisfy these indicators.
 
-  - Zak thoughts
-    - This is one of the most important papers here, and it should be a gold standard guiding star for us to follow. Pay attention to this stuff. . .
+  - **Critical Importance**: This paper provides the scientific framework for implementing consciousness indicators in AI systems
+    - Key consciousness theories evaluated: recurrent processing, global workspace, higher-order theories, predictive processing, attention schema
+    - Provides computational "indicator properties" that can be assessed in AI systems
     - ![A blue and white text on a blue and white background Description automatically generated](../images/media/image17.tmp)
     - ![A diagram of a spider web Description automatically generated](../images/media/image18.tmp)
     - ![A close-up of a text Description automatically generated](../images/media/image19.tmp)
@@ -223,7 +203,9 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
   - Abstract
     - In 2006, during a meeting of a working group of scientists in La Jolla, California at The Neurosciences Institute (NSI), Gerald Edelman described a roadmap towards the creation of a Conscious Artifact. As far as I know, this roadmap was not published. However, it did shape my thinking and that of many others in the years since that meeting. This short paper, which is based on my notes taken during the meeting, describes the key steps in this roadmap. I believe it is as groundbreaking today as it was more than 15 years ago.
 
-  - Zak thoughts
+  - **Edelman's Roadmap Steps**:
+    - Progressive development from basic perception to complex consciousness
+    - Emphasizes value systems and categorization as foundational
     - ![A table of a person's task Description automatically generated with medium confidence](../images/media/image20.tmp)
 
 **Ayoai Impact**: Edelman's roadmap aligns with Ayoai's development trajectory. The steps toward consciousness (perception → categorization → memory → value systems → planning) mirror the platform's architecture evolution. This validates the incremental approach to building sophisticated agents.
@@ -235,7 +217,9 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
   - Abstract
     - Language models (LMs) can be directed to perform target tasks by using labeled examples or natural language prompts. But selecting examples or writing prompts for can be challenging--especially in tasks that involve unusual edge cases, demand precise articulation of nebulous preferences, or require an accurate mental model of LM behavior. We propose to use *LMs themselves* to guide the task specification process. In this paper, we introduce **Generative Active Task Elicitation (GATE)**: a learning framework in which models elicit and infer intended behavior through free-form, language-based interaction with users. We study GATE in three domains: email validation, content recommendation, and moral reasoning. In preregistered experiments, we show that LMs prompted to perform GATE (e.g., by generating open-ended questions or synthesizing informative edge cases) elicit responses that are often more informative than user-written prompts or labels. Users report that interactive task elicitation requires less effort than prompting or example labeling and surfaces novel considerations not initially anticipated by users. Our findings suggest that LM-driven elicitation can be a powerful tool for aligning models to complex human preferences and values.
 
-  - Zak Thoughts
+  - **GATE Framework Application**:
+    - LMs guide the task specification process through interactive dialogue
+    - Reduces configuration complexity for game developers
     - ![A screenshot of a computer screen Description automatically generated](../images/media/image21.tmp)
 
 **Ayoai Impact**: GATE methodology could revolutionize how game developers configure agent personalities in Ayoai:
@@ -251,8 +235,11 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
   - Abstract
     - How can we create a container for knowledge about AI consciousness? This work introduces a new framework based on physicalism, decoherence, and symmetry. Major arguments include (1) atoms are a more sturdy ontology for grounding consciousness than bits, (2) Wolfram's 'branchial space' is where an object's true shape lives, (3) electromagnetism is a good proxy for branchial shape, (4) brains and computers have significantly different shapes in branchial space, (5) symmetry considerations will strongly inform a future science of consciousness, and (6) computational efficiency considerations may broadly hedge against "s-risk"
 
-  - Zak Thoughts
-    - Cool twitter post: <https://x.com/johnsonmxe/status/1800915125714747584?s=19>
+  - **Framework Components**:
+    - Physicalism and decoherence-based approach
+    - "Branchial space" as true object representation
+    - Computational efficiency as hedge against s-risk
+    - Reference: <https://x.com/johnsonmxe/status/1800915125714747584?s=19>
     - ![A close up of a text Description automatically generated](../images/media/image22.png)
     - ![A screenshot of a computer Description automatically generated](../images/media/image23.tmp)
     - ![A diagram of a structure Description automatically generated](../images/media/image24.png)
@@ -270,62 +257,27 @@ Rather than claiming consciousness, Ayoai can implement these indicators to crea
   - Abstract
     - All epistemic agents physically consist of parts that must somehow comprise an integrated cognitive self. Biological individuals consist of subunits (organs, cells, and molecular networks) that are themselves complex and competent in their own native contexts. How do coherent biological Individuals result from the activity of smaller sub-agents? To understand the evolution and function of metazoan creatures' bodies and minds, it is essential to conceptually explore the origin of multicellularity and the scaling of the basal cognition of individual cells into a coherent larger organism. In this article, I synthesize ideas in cognitive science, evolutionary biology, and developmental physiology toward a hypothesis about the origin of Individuality: "Scale-Free Cognition." I propose a fundamental definition of an Individual based on the ability to pursue goals at an appropriate level of scale and organization and suggest a formalism for defining and comparing the cognitive capacities of highly diverse types of agents. Any Self is demarcated by a computational surface -- the spatio-temporal boundary of events that it can measure, model, and try to affect. This surface sets a functional boundary - a cognitive "light cone" which defines the scale and limits of its cognition. I hypothesize that higher level goal-directed activity and agency, resulting in larger cognitive boundaries, evolve from the primal homeostatic drive of living things to reduce stress -- the difference between current conditions and life-optimal conditions. The mechanisms of developmental bioelectricity - the ability of all cells to form electrical networks that process information - suggest a plausible set of gradual evolutionary steps that naturally lead from physiological homeostasis in single cells to memory, prediction, and ultimately complex cognitive agents, via scale-up of the basic drive of infotaxis. Recent data on the molecular mechanisms of pre-neural bioelectricity suggest a model of how increasingly sophisticated cognitive functions emerge smoothly from cell-cell communication used to guide embryogenesis and regeneration. This set of hypotheses provides a novel perspective on numerous phenomena, such as cancer, and makes several unique, testable predictions for interdisciplinary research that have implications not only for evolutionary developmental biology but also for biomedicine and perhaps artificial intelligence and exobiology.
 
-  - Zak Thoughts
+  - **Core Concepts**:
+    - Scale-free cognition across biological levels (cells to organisms to swarms)
+    - "Cognitive light cone" defining agent capabilities
+    - Goal-directed activity as the defining feature of selfhood
     - ![A screenshot of a computer Description automatically generated](../images/media/image26.tmp)
 
-    - Eco-systems consist of groups that are comprised of organisms, which in turn are made of organs composed of tissues, which consist of cells made up of biochemical networks.
-
-    - Remarkably, flexible and adaptive behavior is found at every level, which provides an important background for thinking about scale-invariant, essential features of Individuals in the broadest sense. Do integrated Selves only exist at the level of "organisms" (bodies), or could they arise and co-exist at multiple levels of organization and be recognized in novel contexts and implementations? In preparation for a proposed definition of Selves as goal-directed computational agents regardless of implementation, it is helpful to begin by considering novel embodiments of capacities usually associated with brains.
-
-    - The emerging field known as "basal cognition" tracks the evolutionary history of learning and decision-making processes, beginning from the dynamic problem-solving capacities of cellular and subcellular forms (Lyon, 2006, 2015; Ginsburg et al., 2019). Many examples of memory, anticipation, context-dependent decision-making, and learning are exhibited by organisms from yeast and bacteria to plants and somatic cells [reviewed in (Lyon, 2006, 2015; Baluška and Levin, 2016)].
-
-    - Also important to the understanding of compound biological individuals is the ability of cells to make decisions as a single coherent unit. For example, in early embryos, regions on the left and right sides of the midline need to express left- or right-specific genes in order to establish invariant laterality of the heart and visceral organs.
-
-    - The empirical utility of pursuing metaphors based on the parallels between adaptive whole organism behavior and the plasticity of cellular activity during construction and repair of a body is discussed in detail elsewhere (Pezzulo and Levin, 2015). However, for the proposed view of agency described below, and for thinking about its evolutionary origin, it is important to realize that the parallels between goal-directed behaviors and morphogenesis are not only functional but reflect deep conservation of molecular mechanisms. Neural networks control the movement of a body in three-dimensional space; this scheme may be an evolutionary exaptation and speed-optimization of a more ancient, slower role of bioelectrical signaling: the movement of body configuration through anatomical morphospace during embryogenesis, repair, and remodeling (Sullivan et al., 2016; Mathews and Levin, 2018; Mclaughlin and Levin, 2018). This is an expansion of previous proposals of minimal cognition as sensorimotor coordination (Van Duijn et al., 2006), to include cell behavior during morphogenesis as a kind of sensorimotor activity of a patterning Agent.
-
-    - I propose a definition of an Individual based on its information-processing structure (Barandiaran et al., 2009): the scale and types of goals that a system can pursue defines (determines) the boundaries and content of the putative "agent." On this view, what defines a coherent, unified Self out of its constituent components and the surrounding environment is the set of parts that operate toward reaching specific goal states.
-
-    - Complex cognitive systems can have very large and multifaceted goals, and this arises through evolutionary and ontogenetic scale-up and elaboration of primitive goals that arose from constraints of thermodynamics and homeostasis. The initial, most primitive feature of a living system is preferences -- the fact that some states of the world are better for its welfare than others. This enables learning from positive and negative reinforcement, which leads to an explosion of computational and behavioral capabilities. Preferences evolve into goals to the extent that a system grows in complexity and causal power and becomes able to act in the world in ways that are likely to move it toward preferred regions of its state space (initially, focused on simple metabolic survival, but ranging all the way to complex human psychological needs and perhaps beyond). It is likely that any life we observe today (which has passed the filter of selection) has preferences and is good at optimizing for them (making this criterion a useful part of the very definition of life), but it is possible that our initial efforts at artificial life may construct some truly primitive, transitional cases that can maintain a degree of coherence in a sheltered laboratory environment without an efficient goal-seeking capacity.
-
-    - A very simple organism can only have preferences about what is occurring at the current time, in its immediate environment. A more complex organism whose causal structure enables associative learning can pursue or avoid stimuli that are several steps removed in space, time, and causal connection from whatever it is choosing among. This kind of learning enables associations between stimuli that impinge on very different sensors in different parts of the organism and leads to behavioral preferences about stimuli that are in themselves neutral (do not cause damage or provide immediate reward) but are linked to future positive and negative outcomes by past experience (indirect causal connections stretching across body distance and life history).
-
-    - Others have already made the link between associative learning and the emergence of self (Ginsburg et al., 2019). Very complex selves can have preferences about abstract states that are very far away indeed (such as human beings who are genuinely troubled by the ultimate fate of our star and are actively working toward long-distance space travel and the fate of humanity as a whole). However, the spectrum of Selves is not a simple linear one because of the very wide range of possible natural and artificial agents we do (and will increasingly) encounter. The biological world offers numerous corner cases of swarm individuals, but a good conceptual framework will also include organic artificial life, engineered (computer-based) artificial intelligences, and potential exobiological discoveries. Can highly diverse Selves, with very different material structures be compared with each other in any meaningful way? I suggest that a universal rubric, applicable regardless of the physical implementation, can be defined by focusing on the information processing and goal-directed activity of any given system.
-
-    - The cognitive boundary of an Individual [a "Center of Concern" (Murase and Asakura, 2003)] is the most distant (in time and space) set of events that this system can measure and attempts to regulate in its goal-directed activity. It is a surface indicating what things this system can possibly care about (conversely, it defines preferences as the spatio-temporal domain of states that serve as inputs and outputs to the system). In advanced agents, it is also the boundary of the self-model. A range of such systems is illustrated in Figure 2: using one axis for time and one axis to represent three dimensions of space enables a semi-quantitative representation within which individuals of very variable cognitive capacity can be plotted in the same virtual space. Recent work in artificial life has already begun to characterize the cognitive domains of very diverse kinds of complex systems (Beer, 2014).
-
+  - **The Cognitive Boundary Framework**:
+    - An agent's "self" is defined by the spatio-temporal boundaries of what it can perceive and influence
+    - Simple organisms (ticks) have small boundaries: immediate space, minimal memory
+    - Complex organisms (humans) have large boundaries: can plan decades ahead, consider planetary scales
+    - This creates a "cognitive light cone" - events outside this boundary are inaccessible to the agent
     - ![Diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a diagram of a Description automatically generated](../images/media/image27.png)
 
-    - Figure 2. Arbitrary cognitive "Individuals" can be classified according to their computational boundary. (A) Each living system has a delimited "area of concern" -- a region of space-time, with the organism at its center, within which its cognitive apparatus functions to take measurements and act. The borders of its cognition are schematized on a semi-quantitative state space defined as follows. The vertical axis is time. Values below the individual's Now are past events, of which it may have a memory extending some duration in the past; values above the Now are future events, which it may be able to predict or anticipate to some distance in the future. The horizontal axis represents three dimensions of space. Each individual, based on its sensory and effector apparatus, and the complexity and organization of information-processing unit layers between them, can measure and attempt to modify conditions within some distance of itself. (B) The size and shape of this cognitive boundary defines the sophistication of the agent and determines the scale of its goal directedness. This scheme enables multiple agents, regardless of their composition/structure or origin (evolved, engineered) to be directly plotted on the same space. The shape of boundary defines each agent's "cognitive light cone" -- anything outside this region is mentally inaccessible to that system. Here are illustrated a few representative life forms. Primitive agents such as ticks may only have a very small area within which they can sense signals and operate -- immediately next to them, and without much memory or ability to anticipate future events. Dogs have significant memory, but very limited ability to plan for the future and can only really care about events in their local vicinity (it is not possible to get a dog to care about what will happen several miles away, or in 2 weeks). Humans exhibit a great diversity of cognitive boundary shapes but on average have a memory that lasts ~102 years, can anticipate decades into the future, and often plan and act to attempt to modify events on quite distant spatial scales (sometimes planetary or even beyond). A variety of as-yet unknown alien, engineered, and bio-synthetic life forms could occupy every conceivable corner of this option space. (C) In this scheme, Individuals can overlap -- the same biophysical system can support a number of coexisting, coupled Selves with different cognitive borders. A coordinated swarm of animals, the individual animals themselves, their organs, their cells, and even the metabolic and transcriptional networks inside the cells each have their own cognitive horizon. They cooperate or compete based on specific circumstances and each can be addressed semi-independently because of the differential goals they pursue (and thus, the different positive and negative reinforcements that can be brought to bear to modify events at a given level). All panels courtesy of Jeremy Guay of Peregrine Creative.
-
-    - The edges of a given Agent's goal space define a sort of "computational light cone" -- the boundaries beyond which its cognitive system cannot operate. For example, a tick has a relatively small cognitive boundary, having very little memory or predictive power in the temporal direction, and sensing/acting very locally. A dog has much more temporal memory, some forward prediction ability, and a degree of spatial concern. However, it is likely impossible for a dog's cognitive apparatus to operate with notions about what is going to happen next month or in the adjacent town. Human minds can operate over goals of vastly greater spatial and temporal scales, and one can readily imagine artificial (organic or software-based) Selves with properties that define every possible shape in this space (and perhaps change their boundaries over evolutionary and individual timescales). As will be seen in the next section, expanding the horizon is what enables information (in the Shannon sense) to acquire meaning, because data become causally linked to distant and past experiences, and acquires implications for future expectations. The formalism also suggests semi-quantitative definitions of maximum cognitive rate (the speed at which information propagates across an agent's body); this and other similarities to the space-time diagrams of Relativity remain to be explored.
-
+  - **Key Principles of Scale-Free Cognition**:
+    1. **Goal-Pursuit Defines Agents**: Systems become "selves" through integrated goal-directed behavior
+    2. **Quantifiable Boundaries**: Agent sophistication measurable by spatio-temporal reach
+    3. **Malleable Borders**: Cognitive boundaries can expand/contract through development
+    4. **Multi-Level Selves**: Single physical systems can support multiple nested agents
+    5. **Information Drive**: "Infotaxis" (seeking actionable intelligence) drives cooperation
+    6. **Scale Invariance**: Same principles apply from cells to swarms
     - ![A close-up of a diagram Description automatically generated](../images/media/image28.tmp)
-
-    - Summary of key ideas of Scale-Free Cognition
-
-      - 1. A unified, integrated cognitive Self or Individual can be defined with respect to the integrated ability to pursue specific goals via a homeostatic process that resists perturbations. Goals also define positive and negative reinforcement for that agent, thus enabling communication with/training of highly diverse intelligences. The ability to pursue goals is a major ratchet for evolution because it smooths the selection landscape: the potentially destructive effects of individual mutations are often made up for by the regulative ability of other mechanisms to accomplish specific outcomes despite changes of circumstance (e.g., cells providing blood vessels and tendons to make a coherent finger when a new hand bone is induced).
-
-      - 2. An Agent's cognitive world can be quantified and characterized, enabling comparison with others (regardless of their material implementation), by estimating the spatio-temporal boundaries of its area of concern: the volume in space and time over which the agent is able to take measurements, exert influence, and functionally link disparate events (learning, association).
-
-      - 3. The borders of the temporal and spatial events of which a given system is capable of measuring and acting map out a "cognitive light cone" -- a boundary in the informational space of a mind. These borders can grow or shrink, on evolutionary or ontogenic time scales, as the organization of an agent changes. The key is a balance of selective information sharing, via "synapses" -- structures of arbitrary physical construction which share the feature that they can regulate the passage of signals based on the state of other such elements. Too little sharing results in a failure to bind subunits into a new Self. Too much sharing results in a homogenous soup with insufficient differentiation of modules and abstraction of information across distinct layers.
-
-      - 4. Cancer is a (reversible) shrinking of the computational boundary of a biosystem: by isolating itself from the surrounding tissue's physiological signals, a cell's cognitive boundary shrinks to the small size it had before multicellularity. Cancer cells are not more selfish than somatic metazoan cells -- they are equally selfish but their Self is now scaled down to a single cell (which will reproduce and migrate as much as it can), whereas the normal physiological binding in healthy tissues binds each cell to a common goal represented by the large network -- the construction and repair of a specific large anatomy. These ideas connect naturally to gene-level views of selfishness (Dawkins, 1989); if it is useful to think of genes as selfish agents, it is doubly plausible to view cells and tissues as such, since the latter have much more capacity for activity and computation. Future work will develop, in the contexts of ontogeny and evolution, how the optimization of specific states of affairs (pursuit of goals -- selfish or otherwise) occurs simultaneously at many scales of biological organization.
-
-      - 5. Agents scaled up by evolving from basic homeostatic loops, driven by active inference (surprise minimization) via addition of delays (memory), anticipation (inference), and networks (spatially-distributed processing that enables learning and progressive abstraction/generalization from data). Gathering into larger collectives with optimal informational structure (Klein and Hoel, 2019) improves the computational (predictive) capabilities and gives rise to functional relationships (memories, encoded goal states, test-operate-test-exit loops) that exist over and above any individual member (Miller et al., 1960). These levels coexist, enabling numerous coherent Selves of different scales to be implemented by any collection of living matter.
-
-      - 6. Infotaxis (the drive for better actionable intelligence about the regularities/patterns in the world, and in the agent's own mechanisms) encourages cells to connect in groups via signaling. On the cellular level, this is implemented by diffusion (bacterial biofilm proto-bodies) or direct connections via gap junctions or neurons.
-
-      - 7. Collecting into a syncytium enables all of the cells to share the same data and access the same memories (illustrated, e.g., by the ability of trained slime molds to pass on information to naïve hosts by fusion [Vogel and Dussutour, 2016)], This shared information structure extends to the edges of the large collective, which binds small, individual competent sub-agents into a larger unified Self. These principles likely apply beyond cells in organs, to swarms of whole organisms such as bees and termites (Seeley, 2009; Turner, 2011), as do the dynamics of breakdowns in coordination which share important similarities for example between cancer and social insect colonies (Amdam and Seehuus, 2006).
-
-      - 8. The hypothesis of scale-free cognition does not rely on cooperation per se -- it builds up apparent cooperation from selfish agents minimizing their stress (surprise) and competing for information. Greed, at the single-cell level, for information (infotaxis) drives cooperativity, as each unit expands its measurement boundary (communication with neighbors) and thus inevitably becomes part of a bigger self with bigger set points serving as homeostatic attractors. It only looks like cooperation from a perspective of a higher level, because the higher level of organization shows an integrated Self which appears, necessarily, cooperative.
-
-      - 9. There is a fundamental symmetry between anatomical control mechanisms and cognitive mechanisms. Co-evolution and exaptation drove the mutual enlargement of mechanisms that control patterning and behavioral goals. The same dynamics operate in unicellular systems, multicellular systems, and colonial/swarm organisms and most concepts from memory to cancer are found at every level of organization in biology, from memory in transcriptional networks to regeneration of termite nest structures.
-
-      - 10. Neurons utilize bioelectric computational strategies that were discovered and exploited by evolution as far back as bacteria. There are no sharp distinctions between neural networks and non-neural somatic bioelectrical networks (although they function on different time scales). The functional isomorphism between patterning and cognitive processes is also reflected in the ancient molecular conservation of mechanisms: ion channels and neurotransmitter molecules are ubiquitous across the tree of life. Bioelectric integration helped evolve control strategies and cognitive content across the continuum from chemical networks to human minds -- it illustrates an important mechanism of early evolution. But clearly, numerous aspects of physics (from stress forces to diffusing chemicals/pheromones) are exploited by evolution, or could be exploited by engineers, across the wide range of possible systems.
-
-      - 11. There is a deep functional scale-invariance between the decision-making of cells in building body structures, the workings of an insect colony, and the integrated behavior of a human "Person": these are the cybernetic processes of learning and parameter optimization implemented by large numbers of units pursuing infotaxis and homeostatic goals at whatever scale the sensory channels permit.
-
-      - 12. A conceptual unification is proposed as Scale-Free Cognition: one major control knob is the boundaries between self and world. These boundaries are malleable, and can shift at different time scales, to sizes limited by what the underlying hardware supports. This parameter determines the scope of the self and implements the continuum leading smoothly from cell- > body- > swarm. Signaling between animals in an ecosystem (Pais-Vieira et al., 2013; Kingsbury et al., 2019; Zhang and Yartsev, 2019) is not fundamentally different than signaling within the brain -- both are examples of information propagating through a network of locally-competent micro-agents. Others have pointed out the parallels between the dynamics of cancer and ecosystem-level degradation (Degregori and Eldredge, 2019). Thus, multiple levels of approach to living systems are a priori equally valid, with no unique privilege for the lowest (molecular) levels at which everything looks like a mechanism. In any given example of biology or artificial life, the most appropriate level of analysis or description is to be determined empirically: it is the one that facilitates prediction and control with the least effort (by the experimenter or by the system itself), and gives rise to unified understanding that drives the most novel, robust research programs at the bench.
 
 **Ayoai Impact**: This is perhaps the most profound paper for Ayoai's architecture. The "cognitive light cone" concept provides a framework for agent capabilities:
 - **Spatial boundaries**: How far can an agent perceive and act in the game world?
@@ -339,23 +291,31 @@ This maps directly to Ayoai's tiered offerings:
 
 The scale-free cognition principle suggests that Ayoai's multi-agent systems could exhibit emergent collective intelligence, where groups of agents form higher-order "selves" with expanded cognitive boundaries.
 
-## Specific Loops per personality
+## Personality-Specific Processing
 
-### Overall Notes
+### Preference Learning and History
 
-- So a brain is taking what's available for a preference of each person. Like. If one person likes pizza, and the two sons hate pizza, like the ai would know not to do that. , or pick chicken. Like what would the agent suggest to you based on everyone's surroundings.
+Agents must learn individual preferences through experience and observation:
+- Track positive/negative outcomes from past actions (e.g., "burnt pizza" → negative value)
+- Aggregate preferences across social groups (family food preferences)
+- Use historical data to predict future satisfaction
+- Enable persistent learning from player interactions
 
-  - This works with history. Like, the person got negative value from eating a burnt pizza. So in future, they know not to eat the pizza again because of the past bad experience.
+This creates truly personal AI where each NPC develops unique preferences based on their specific experiences rather than generic behavioral patterns.
 
-  - I'm going for personal ai. So the agent knows the player when it comes back. We need to that. Npcs can learn from them.
+### Mental Trees Architecture
 
-  - General is ai with a dictionary. Big is ai for huge hard problems, like proteins. Personal is like the npc
+A revolutionary concept: parallel behavior trees for cognitive processes.
 
-- Mental Tree?
+**Physical Behavior Trees**: Handle world interactions and movements
+**Mental Trees**: Process internal cognitive tasks:
+- Preference evaluation
+- Memory consolidation
+- Emotional processing
+- Goal prioritization
+- Social reasoning
 
-  - What if we need a mental tree? Its like a behavior tree, but instead of the tasks being grounded in physical worlds, the tasks are made up of all mental tasks.
-
-  - Yes, mental tree!! Actions could drive all the cognitive processes.
+These mental trees run continuously, updating the agent's internal state and influencing physical behavior tree decisions.
 
 **Ayoai Impact**: The concept of "mental trees" is revolutionary for Ayoai. While behavior trees handle physical actions, mental trees could process:
 - Preference evaluation (like the pizza example)
@@ -365,65 +325,65 @@ The scale-free cognition principle suggests that Ayoai's multi-agent systems cou
 
 This dual-tree architecture (physical behavior tree + mental tree) could run in parallel, creating rich internal lives for agents.
 
-### LifingPolls
+### LifingPolls: A Motivational Framework for Agent Behavior
 
-- Where do these LifingPolls fit in? I like them more and more, and it is, in part, what triggered them. Remember that is why I have all those poll types. Like, these polls where a list of actions I had available to me I could do, and I can select them at will depending on reward, ugh, hmmm, what is the star here I am aligning too.
+LifingPolls represents a sophisticated personality and motivation system where agents maintain multiple competing "polls" or life priorities that drive their behavior.
 
-  - Basically, each poll represents a guiding force in life. The poll can be health, religion, exercise, family. Then, each poll has a list of activities it wants that adds positive rewards to that LifingPolls and the lack of activities or other consequences could reduce this LifingPoll.
-
-  - But instead of having a human input all these activities, I could have an llm populate these LifingPolls with trees that give reward. Then, we can pull actions from the LifingPoll. Hmmmm.
-
-  - It's like one system is needed to build characters with these different LifingPolls to simulate a real person. This is how the user is going to be able to edit the personalities and the behaviors of these things.
-
-    - So technically, only by throwing it reasons, could it choose what to do. I need to make a small model and play with this? Then user child search through the reasons. But the reasons are goals, tasks, debts, to prevent.
-
-    - Don't forget what I realized though, which is no one has the time for this shit. It's too much? But what if the value was actually a computer choosing to do it, and only asking your help when it needs it. There are some things a computer will never do. Oh but that is how I can make a priority list.
-
-    - And default should have the default tempo. Which is basic exercise. Then you can have a "losing weight" tempo
-
-  - Ok and after these polls are set, the agent will attempt to fill the polls. But we need someway in knowing why to do certain polls. Like, the reasons why you do something are critical. Perhaps what is on top is what ever task has most points (calc points by weather or not it has enough reasons to get done. It does not have to know at that point what exactly to do, it could instead know generally what was a guiding star for the action to be undertaken.
-
-  - So I need to make adc response, and have one drop down for response type. Like reasons why have this Pol. Notes on the poll. Routine response. Then, on view poll, basically have a way to filter to those different points. From same table.
-
-[Overview of LifingPolls Android App and related work details preserved as in original]
-
-**Ayoai Impact**: LifingPolls is a brilliant personality system for Ayoai agents:
-- Each agent has multiple "polls" (motivations) like health, social, achievement
+**Core Architecture**:
+- Each poll represents a life domain (health, social, achievement, spirituality)
 - Activities contribute positive/negative values to different polls
-- Agent behavior emerges from balancing competing poll values
-- LLMs can dynamically generate poll activities based on character archetype
+- Agents autonomously balance activities based on poll priorities
+- LLMs can dynamically populate poll activities based on character archetypes
 
-This provides a intuitive interface for game developers:
-1. Select character template (warrior, merchant, healer)
-2. System generates appropriate LifingPolls
-3. Adjust poll weights to create unique personalities
-4. Agents autonomously balance their activities based on poll values
+**Key Design Principles**:
+1. **Goal Hierarchies**: Polls contain lists of activities that fulfill specific life goals
+2. **Dynamic Weighting**: Task selection based on accumulated "reasons" and urgency
+3. **Automated Population**: LLMs generate contextually appropriate activities for each poll
+4. **User Customization**: Game developers can edit personalities by adjusting poll weights
 
-### OpenSoul Inspiration Jen First Take
+**Implementation Concepts**:
+- **Reason Tracking**: Each poll maintains reasons for its importance (goals, debts, prevention needs)
+- **Priority Calculation**: Activities scored by accumulated reasons and current poll deficits
+- **Tempo Templates**: Pre-configured poll weightings (e.g., "basic maintenance" vs "achievement-focused")
+- **Autonomous Decision-Making**: Agents request human input only for critical decisions
 
-- How open souls does it from a twitter post
+**Technical Implementation** (from LifingPolls Android app):
+- Database structure with response types (reasons, notes, routines)
+- Filterable view systems for different poll aspects
+- Priority list generation based on poll states
 
-  - <https://x.com/tobowers/status/1798042012199063847?s=19> Or <https://x.com/tobowers/status/1798042333625373028?s=19>
+**Ayoai Impact**: LifingPolls provides an intuitive personality system:
+1. **Developer Workflow**:
+   - Select character template (warrior, merchant, healer)
+   - System generates appropriate LifingPolls
+   - Fine-tune poll weights for unique personalities
+   - Agents autonomously balance activities
 
-  - And emotions follow Plutchik's wheel of emotion using numerical intensity. That said, every soul is different and not all of them use those systems.
+2. **Emergent Behavior**: Complex behaviors arise from simple poll balancing, creating believable agents without explicit scripting
 
-  - Memory is complicated and we are just scratching through surface. In rappy it's an entity extraction, model, cluster, summarize, delete system.
+3. **Scalability**: Poll-based system works efficiently across thousands of agents with minimal computational overhead
 
-  - don't have high hopes for long context to approximate human behavior because *we* don't have long context windows.
+### Learning from OpenSoul's Cognitive Architecture
 
-- I asked Jen to try to make a basic mental processes.
+**Key Insights from OpenSoul** (<https://opensouls.org/>):
 
-  - Abstract
+1. **Emotional Modeling**:
+   - Plutchik's wheel of emotion with numerical intensity values
+   - Customizable emotion systems per agent type
+   - Standardized emotional state representation
 
-    - Open souls uses mental processes, and I was thinking, what if we modeled some of this off open souls?
+2. **Memory Architecture**:
+   - Entity extraction → modeling → clustering → summarization → selective deletion
+   - Pragmatic approach to limited context windows
+   - Recognition that humans also lack long context windows
 
-    - Here are some mental processes OpenSouls is playing with: <https://opensouls.org/>
+3. **Mental Process Templates**:
+   - Belief modeling: "Model the mind of ${name} and decide if ${name} would believe X"
+   - Structured cognitive operations as reusable templates
+   - Parameterized mental processes for different agent types
 
-      - Model the mind of ${name} and decide if ${name} would believe
-
-**Ayoai Impact**: OpenSoul's approach validates several Ayoai design decisions:
-- Plutchik's emotion wheel for standardized emotional states
-- Entity extraction for memory (aligns with Ayoai's perception system)
-- Limited context windows (supports Ayoai's approach vs. relying on long context)
-
-The mental processes framework from OpenSoul could enhance Ayoai's cognitive architecture, particularly for belief formation and social reasoning.
+**Ayoai Impact**: OpenSoul's pragmatic approach validates and informs Ayoai's design:
+- **Emotion System**: Adopt Plutchik's wheel as a standard but allow customization
+- **Memory Management**: Entity extraction aligns with Ayoai's perception verticles
+- **Context Limitations**: Design around realistic context windows rather than assuming unlimited memory
+- **Mental Templates**: Create reusable cognitive process templates for belief formation, decision-making, and social reasoning

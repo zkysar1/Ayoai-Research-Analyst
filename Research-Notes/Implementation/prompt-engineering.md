@@ -8,11 +8,9 @@
 
     - Generative Artificial Intelligence (GenAI) systems are being increasingly deployed across all parts of industry and research settings. Developers and end users interact with these systems through the use of prompting or prompt engineering. While prompting is a widespread and highly researched concept, there exists conflicting terminology and a poor ontological understanding of what constitutes a prompt due to the area's nascency. This paper establishes a structured understanding of prompts, by assembling a taxonomy of prompting techniques and analyzing their use. We present a comprehensive vocabulary of 33 vocabulary terms, a taxonomy of 58 text-only prompting techniques, and 40 techniques for other modalities. We further present a meta-analysis of the entire literature on natural language prefix-prompting.
 
-  - Zak Thoughts
+### Key Findings
 
-    - Wow, need to read all these prompt strategies!!
-
-    - https://x.com/learnprompting/status/1800931910404784380?s=19
+The report provides a comprehensive taxonomy of prompting strategies that are critical for NPC dialogue quality. https://x.com/learnprompting/status/1800931910404784380?s=19
 
     - ![A diagram of a text based techniques Description automatically generated](../images/media/image342.tmp)
 
@@ -28,12 +26,12 @@
 
     - ![A diagram of a structure Description automatically generated](../images/media/image348.tmp)
 
-**Ayoai Impact**: Comprehensive prompt taxonomy:
-- 58 text-only techniques
-- Multi-modal prompting
-- Structured vocabulary
-- Evidence-based approaches
-- Critical for NPC dialogue quality
+**Ayoai Impact**: This comprehensive taxonomy provides:
+- 58 distinct text-only prompting techniques for varied NPC responses
+- Multi-modal prompting capabilities for richer interactions
+- Structured vocabulary for consistent implementation
+- Evidence-based approaches validated through research
+- Foundation for sophisticated NPC dialogue systems
 
 ## Prompt Builders
 
@@ -47,9 +45,9 @@
 
 - Gemini flash has free finetuning. Maybe check it out via the google ai studio? https://aistudio.google.com/app/prompts/new_chat
 
-### Random Paper's Python Prompt Builder
+### Python-Based Prompt Builders
 
-- This one was cool! What was it? It was one I had working on my computer.
+Python implementations for automated prompt generation enable programmatic construction of complex prompts based on context and requirements.
 
 **Ayoai Impact**: Automated prompt generation tools:
 - Anthropic's metaprompt approach
@@ -147,13 +145,11 @@ For each data point that remains null, continue to ask the user for each data po
 
 ![Standard Prompting Model Input Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now? A: The answer is 11. Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have? Model ut x A: The answer is 27. Chain-of-Thought Prompting Model Input Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now? The answer is 11. Q: The cafeteria had 23 apples. If they used 20 to make lunch and bought 6 more, how many apples do they have? Model Output A: théZåféféHa app es ongnay. ey us O to make lunch. So they had 23 - 20 = 3. The The answer is 9.](../images/media/image351.jpeg)
 
-> Wow great example of chaon of thought
->
-> There is a cool prompt deep dive here:
->
-> https://x.com/NerorityAI/status/1751486793793372645?s=09
->
-> https://github.com/nerority/Prompt-Engineering-Mastery
+This example demonstrates the power of chain-of-thought prompting for mathematical reasoning and step-by-step problem solving.
+
+**Additional Resources**:
+- Prompt engineering deep dive: https://x.com/NerorityAI/status/1751486793793372645?s=09
+- Comprehensive guide: https://github.com/nerority/Prompt-Engineering-Mastery
 
 ### Plan-and-Solve Prompting
 
@@ -188,10 +184,10 @@ https://twitter.com/mattshumer_/status/1766520388308160894?s=19
 
 ### Additional Resources
 
-- Cool prompt deep dive: https://github.com/nerority/Prompt-Engineering-Mastery
-- Communicative Agents for Software Development (https://arxiv.org/abs/2307.07924): awesome pipeline of Agents that each have roles
-- Tree of Thoughts prompts: https://github.com/kyegomez/tree-of-thoughts/blob/main/prompts.txt
-- Research linked in todoist: https://app.todoist.com/app/project/llms-research-2317721789
+- **Prompt Engineering Mastery**: Comprehensive guide to advanced prompting techniques - https://github.com/nerority/Prompt-Engineering-Mastery
+- **Communicative Agents for Software Development**: Multi-agent pipeline with specialized roles - https://arxiv.org/abs/2307.07924
+- **Tree of Thoughts Prompts**: Implementation examples for tree-based reasoning - https://github.com/kyegomez/tree-of-thoughts/blob/main/prompts.txt
+- **LLM Research Collection**: Curated research papers and resources - https://app.todoist.com/app/project/llms-research-2317721789
 
 **Ayoai Impact**: Rich prompt engineering resources:
 - Chain-of-thought for reasoning

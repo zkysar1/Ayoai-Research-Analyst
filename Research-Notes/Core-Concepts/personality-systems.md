@@ -2,15 +2,11 @@
 
 This document covers research on personality types, cognitive biases, belief systems, and how to create diverse, believable character personalities for autonomous agents.
 
-## OpenSoul Inspiration Jen First Take (continued from consciousness-and-cognition.md)
+## OpenSoul Mental Process Architecture
 
-### Mental Processes Implementation
+### Overview
 
-- I asked Jen to try to make a basic mental processes.
-
-  - Abstract
-    - Open souls uses mental processes, and I was thinking, what if we modeled some of this off open souls?
-    - Here are some mental processes OpenSouls is playing with: <https://opensouls.org/>
+OpenSoul (<https://opensouls.org/>) provides a sophisticated framework for implementing mental processes in autonomous agents. Their approach offers valuable patterns for structuring agent cognition through modular, composable mental states.
 
   - Mental Process Examples:
     - Model the mind of ${name} and decide if ${name} would believe the following statement is true or false: ${statement}. Please choose true if ${name} believes the statement is true, or false if ${name} believes the statement is false.
@@ -59,57 +55,44 @@ This document covers research on personality types, cognitive biases, belief sys
 
       - Example - In this example, we'll use the soul memory to update the name of the interlocutor if it's available (presumably set in a different MentalProcess).
 
-  - Zak thoughts --
-    - These processes are the way, but there needs to be many running at one time.
-    - I think Jennifer's example needs to start much, much smaller, no? Like, perhaps with only health?
+### Implementation Considerations
 
-**Ayoai Impact**: OpenSoul's mental process architecture provides a blueprint for Ayoai's cognitive system:
-- State machine design aligns with behavior tree structure
-- Subprocess concept could enable parallel personality traits
-- Perception processor maps to Ayoai's perception verticles
-- The modular approach allows easy personality customization through different mental process configurations
+**Parallel Processing Requirements**: Multiple mental processes must run simultaneously to create realistic agent behavior. Starting with basic processes (like health monitoring) allows for incremental complexity addition.
 
-### Jennifer's Health Check Flow Chart
+**Ayoai Impact**: OpenSoul's architecture provides a cognitive blueprint:
+- **State Machine Integration**: Mental processes as states align with behavior tree nodes
+- **Parallel Subprocesses**: Enable concurrent personality traits and background cognition
+- **Perception Processing**: Maps directly to Ayoai's perception verticle architecture
+- **Modular Customization**: Different mental process configurations create unique personalities
+- **Scalable Complexity**: Start simple (health only) and layer additional processes
 
-This was Jennifer's take on a basic health monitoring system:
+### Health Monitoring System Design
 
-- Self Health Check Flow Chart
+**Basic Health Check Flow**:
 
-- 1. **Start**
-- - ↓
-- 2. **Does my body feel different?**
-- - Yes → Go to 3
-- - No → Continue with current activities, then reassess later (End)
-- 3. **Does my body hurt, feel hungry, feel dizzy, feel thirsty, feel itchy, feel good, can see and can hear?**
-- - **Hurt** → Go to 4
-- - **Hungry** → Eat something, then reassess (Go to 2)
-- - **Dizzy** → Sit down, drink water, then reassess (Go to 2)
-- - **Thirsty** → Drink water, then reassess (Go to 2)
-- - **Itchy** → Check for rashes or insect bites, then reassess (Go to 2)
-- - **Good** → Continue with current activities, then reassess later (End)
-- - **Can't see or hear properly** → Seek medical help immediately
-- 4. **What on the body hurts?**
-- - Arm → Go to 5
-- - Leg → Go to 5
-- - Head → Go to 5
-- - Stomach → Go to 5
-- - Back → Go to 5
-- - Other → Go to 5
-- 5. **Can you see the area and do you see any visible injuries?**
-- - Yes → Go to 6
-- - No → Go to 7
-- 6. **Visible injury present?**
-- - Yes → Treat the injury (clean, bandage, etc.), then reassess (Go to 2)
-- - No → Monitor the pain, apply ice if swollen, rest, then reassess (Go to 2)
-- 7. **Is the pain severe or persistent?**
-- - Yes → Seek medical attention
-- - No → Rest, monitor the pain, then reassess (Go to 2)
+1. **Initial Assessment**: "Does my body feel different?"
+   - No → Continue current activities
+   - Yes → Proceed to symptom evaluation
 
-**Ayoai Impact**: This health monitoring flowchart provides a template for basic agent self-awareness. In Ayoai:
-- Could be implemented as a behavior tree for health monitoring
-- Each condition maps to a perception check
-- Actions (eat, drink, rest) integrate with the environment
-- Provides foundation for more complex self-care behaviors
+2. **Symptom Evaluation**:
+   - **Hunger** → Seek food → Reassess
+   - **Thirst** → Find water → Reassess
+   - **Pain** → Localize injury → Determine treatment
+   - **Dizziness** → Rest and hydrate → Reassess
+   - **Sensory Issues** → Seek immediate help
+
+3. **Pain Management Protocol**:
+   - Identify location (arm, leg, head, stomach, back)
+   - Check for visible injury
+   - Apply appropriate treatment
+   - Monitor severity for escalation
+
+**Ayoai Impact**: This health system demonstrates fundamental self-awareness:
+- **Behavior Tree Implementation**: Each decision point becomes a tree node
+- **Perception Integration**: Symptoms map to perception checks
+- **Environmental Actions**: Treatments require world interaction
+- **Escalation Logic**: Severity assessment drives urgency
+- **Foundation for Complexity**: Basic health leads to comprehensive self-care
 
 ### AI NPC Self-Check Categories
 
@@ -166,34 +149,41 @@ Jennifer also created this comprehensive list of what an AI NPC can self-check:
 - Enables realistic, context-aware agent behaviors
 - Foundation for emergent gameplay through agent autonomy
 
-### Visual Flow Examples
+### Visual System Architectures
 
-- Jennifer also drew this as a flow trying to mimic a green light red light game.
-  - ![A diagram of a red square with green squares and black text Description automatically generated](../images/media/image29.png)
+**Game State Flow Diagrams**:
+- Red Light/Green Light state machine (![State diagram](../images/media/image29.png))
+- Decision tree architectures (![Decision flow](../images/media/image30.png))
+- Mental process visualizations (![Process diagram](../images/media/image31.tmp))
+- Cognitive architecture layouts (![Architecture](../images/media/image32.png))
 
-- I was thinking this at one point:
-  - ![A black screen with text and arrows Description automatically generated](../images/media/image30.png)
+These diagrams illustrate various approaches to structuring agent decision-making, from simple state machines to complex cognitive architectures.
 
-- And this:
-  - ![A screenshot of a computer Description automatically generated](../images/media/image31.tmp)
+## Cognitive Biases in Agent Design
 
-- And this:
-  - ![A screenshot of a computer screen Description automatically generated](../images/media/image32.png)
+### The 188 Cognitive Biases
 
-## Every Cognitive Bias in One Infographic
+The comprehensive infographic from DesignHacks.co categorizes all known cognitive biases (<https://www.visualcapitalist.com/every-single-cognitive-bias/>), providing a framework for creating believably flawed agents.
 
-- Infographic from DesignHacks.co is particularly handy. It shows and groups each of the 188 known confirmation biases in existence. <https://www.visualcapitalist.com/every-single-cognitive-bias/>
+![Cognitive bias infographic](../images/media/image33.png)
 
-- How should these be built into our process? Should these influence LifingPolls?
+### Implementation Strategy
 
-![A diagram of a brain Description automatically generated](../images/media/image33.png)
+**Key Biases for Agent Behavior**:
+1. **Confirmation Bias**: Agents seek information confirming existing beliefs
+2. **Availability Heuristic**: Recent events disproportionately influence decisions
+3. **Anchoring Bias**: First information heavily weights subsequent judgments
+4. **Dunning-Kruger Effect**: Low-skill agents overestimate abilities
+5. **Loss Aversion**: Agents fear losses more than they value gains
 
-**Ayoai Impact**: Cognitive biases are crucial for believable agent behavior. Instead of perfect rational actors, Ayoai agents could:
-- Exhibit confirmation bias when evaluating situations
-- Show availability heuristic by overweighting recent events
-- Display anchoring bias in negotiations or value assessments
-- Different personality types could have different bias profiles
-This makes agents feel more human and creates interesting emergent behaviors.
+**Integration with LifingPolls**: Biases could modify how agents weight different polls, creating personality-specific decision distortions.
+
+**Ayoai Impact**: 
+- **Believable Imperfection**: Agents make human-like errors in judgment
+- **Personality Profiles**: Different bias combinations create unique characters
+- **Emergent Behaviors**: Biases interact to produce unexpected actions
+- **Player Engagement**: Predictably irrational agents are more interesting
+- **Educational Value**: Players learn to recognize and exploit NPC biases
 
 ## Belief Trees
 
@@ -202,8 +192,7 @@ This makes agents feel more human and creates interesting emergent behaviors.
   - Abstract
     - In this paper, we propose Belief Behavior Trees (BBTs), an extension to Behavior Trees (BTs) that allows to automatically create a policy that controls a robot in partially observable environments. We extend the semantic of BTs to account for the uncertainty that affects both the conditions and action nodes of the BT. The tree gets synthesized following a planning strategy for BTs proposed recently: from a set of goal conditions we iteratively select a goal and find the action, or in general the subtree, that satisfies it. Such action may have preconditions that do not hold. For those preconditions, we find an action or subtree in the same fashion. We extend this approach by including, in the planner, actions that have the purpose to reduce the uncertainty that affects the value of a condition node in the BT (for example, turning on the lights to have better lighting conditions). We demonstrate that BBTs allows task planning with non-deterministic outcomes for actions. We provide experimental validation of our approach in a real robotic scenario and - for sake of reproducibility - in a simulated one.
 
-  - Zak thoughts
-    - ?
+  - **Key Insight**: Incorporating uncertainty and belief states into behavior trees enables more realistic agent behavior in partially observable environments
 
 **Ayoai Impact**: Belief Behavior Trees are perfect for Ayoai's partially observable game environments:
 - Agents maintain beliefs about world state (not perfect knowledge)
@@ -218,26 +207,29 @@ This makes agents feel more human and creates interesting emergent behaviors.
   - Abstract
     - Both Myers and Briggs were fascinated by Jung's theory of psychological types and recognized that the theory could have real-world applications. During World War II, they began researching and developing an indicator that could be utilized to help understand individual differences. By helping people understand themselves, Myers and Briggs believed that they could help people select occupations that were best suited to their personality types and lead healthier, happier lives. Myers created the first pen-and-pencil version of the inventory during the 1940s, and the two women began testing the assessment on friends and family. They continued to fully develop the instrument over the next two decades.
 
-  - Zak thoughts
-    - I think we can use this in some way to make behavior more dynamic.
+### Implementation Strategies
 
-    - ![A couple of cartoon characters Description automatically generated](../images/media/image34.tmp)
-    - ![A cartoon of women in different poses Description automatically generated with medium confidence](../images/media/image35.tmp)
-    - ![A person and person cartoon characters Description automatically generated](../images/media/image36.tmp)
-    - ![A cartoon characters of two people Description automatically generated](../images/media/image37.tmp)
+**Visual Personality Representations**:
+- ![MBTI visual guide 1](../images/media/image34.tmp)
+- ![MBTI visual guide 2](../images/media/image35.tmp)
+- ![MBTI visual guide 3](../images/media/image36.tmp)
+- ![MBTI visual guide 4](../images/media/image37.tmp)
 
-    - If 16 is too much, I could think about a higher layer abstraction layer. . . The concept of two opposite personality types can be interpreted in various ways depending on the psychological framework used. Here are two commonly referenced pairs from well-known personality theories:
+**Simplified Personality Dimensions**:
 
-      - Introversion vs. Extraversion (Jungian and Big Five Theory)
-        - Introversion: People who are more focused on internal thoughts and feelings. They often prefer solitary activities and require time alone to recharge.
-        - Extraversion: People who are more oriented towards the external world. They are energized by social interactions and often seek out social activities.
+For easier implementation, personality can be reduced to key opposing pairs:
 
-      - Type A vs. Type B (Friedman and Rosenman)
-        - Type A Personality: Characterized by high levels of competitiveness, self-driven behavior, impatience, and a sense of urgency. People with Type A personalities are often ambitious and proactive but may also be prone to stress.
-        - Type B Personality: Characterized by a relaxed, patient, and easy-going nature. Type B individuals are generally more adaptable, less stressed, and often have a more balanced approach to life and work.
+1. **Introversion vs. Extraversion**:
+   - **Introverts**: Internal focus, energy from solitude, deep processing
+   - **Extraverts**: External focus, energy from interaction, broad engagement
 
-    - Personality disorder? <https://twitter.com/algekalipso/status/1772381561180274935?s=19>
-      - ![Image](../images/media/image38.jpeg)
+2. **Type A vs. Type B**:
+   - **Type A**: Competitive, urgent, achievement-oriented, stress-prone
+   - **Type B**: Relaxed, patient, process-oriented, adaptable
+
+**Advanced Considerations**:
+- Personality disorders as extreme configurations ([Reference](https://twitter.com/algekalipso/status/1772381561180274935?s=19))
+- ![Personality disorder spectrum](../images/media/image38.jpeg)
 
 **Ayoai Impact**: The 16 personality types provide a robust framework for agent diversity:
 - Game developers can select from predefined personality archetypes
@@ -253,14 +245,24 @@ This makes agents feel more human and creates interesting emergent behaviors.
   - Abstract
     - The Internal Family Systems Model (IFS) is an integrative approach to individual psychotherapy developed by Richard C. Schwartz in the 1980s.[1][2] It combines systems thinking with the view that the mind is made up of relatively discrete subpersonalities, each with its own unique viewpoint and qualities. IFS uses systems psychology, particularly as developed for family therapy, to understand how these collections of subpersonalities are organized.[3]
 
-  - Zak Thoughts
-    - In the IFS model, there are three general types of parts:[4]
+### IFS Parts in Agent Psychology
 
-      - Exiles represent psychological trauma, often from childhood, and they carry the pain and fear. Exiles may become isolated from the other parts and polarize the system. Managers and Firefighters try to protect a person's consciousness by preventing the Exiles' pain from coming to awareness.[5]
+The IFS model defines three types of internal parts that shape behavior:
 
-      - Managers take on a preemptive, protective role. They influence the way a person interacts with the external world, protecting the person from harm and preventing painful or traumatic experiences from flooding the person's conscious awareness.
+1. **Exiles**: 
+   - Carry psychological trauma and emotional pain
+   - Become isolated from consciousness
+   - Drive underlying fears and vulnerabilities
 
-      - Firefighters emerge when Exiles break out and demand attention. They work to divert attention away from the Exile's hurt and shame, which leads to impulsive and/or inappropriate behaviors like overeating, drug use, and/or violence. They can also distract a person from pain by excessively focusing attention on more subtle activities such as overworking or overmedicating.
+2. **Managers**:
+   - Preemptive protective systems
+   - Control external interactions
+   - Prevent traumatic memories from surfacing
+
+3. **Firefighters**:
+   - Emergency response systems
+   - Activate during emotional breakthroughs
+   - Create distracting or impulsive behaviors
 
 **Ayoai Impact**: IFS provides a sophisticated model for internal agent psychology:
 - Agents could have internal "parts" that compete for control
@@ -276,9 +278,9 @@ This makes agents feel more human and creates interesting emergent behaviors.
   - Abstract
     - Despite the many use cases for large language models (LLMs) in creating personalized chatbots, there has been limited research on evaluating the extent to which the behaviors of personalized LLMs accurately and consistently reflect specific personality traits. We consider studying the behavior of LLM-based agents which we refer to as LLM personas and present a case study with GPT-3.5 and GPT-4 to investigate whether LLMs can generate content that aligns with their assigned personality profiles. To this end, we simulate distinct LLM personas based on the Big Five personality model, have them complete the 44-item Big Five Inventory (BFI) personality test and a story writing task, and then assess their essays with automatic and human evaluations. Results show that LLM personas' self-reported BFI scores are consistent with their designated personality types, with large effect sizes observed across five traits. Additionally, LLM personas' writings have emerging representative linguistic patterns for personality traits when compared with a human writing corpus. Furthermore, human evaluation shows that humans can perceive some personality traits with an accuracy of up to 80%. Interestingly, the accuracy drops significantly when the annotators were informed of AI authorship.
 
-  - Zak thoughts
-    - ![A diagram of a story writing Description automatically generated](../images/media/image39.tmp)
-    - ![A screenshot of a paper Description automatically generated](../images/media/image40.tmp)
+  - **Research Validation**:
+    - ![PersonaLLM methodology](../images/media/image39.tmp)
+    - ![PersonaLLM results](../images/media/image40.tmp)
 
 **Ayoai Impact**: PersonaLLM validates that LLMs can consistently express personality traits:
 - Proves LLMs can maintain consistent personality profiles

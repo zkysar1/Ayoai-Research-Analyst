@@ -2,28 +2,45 @@
 
 Decomposing the complicated into several sub-tasks and then sequentially planning for each sub-task.
 
-## Overall Notes
+## Decomposition Approaches: Trade-offs and Considerations
 
-- Thoughts on this method from this planning survey:
-  - Difference between interleaved and decomposition first. Hmm.
-    - ![A diagram of a task decomposing process Description automatically generated](../images/media/image69.png)
+### Core Methodologies
 
-  - For the decomposition-first method, the advantage lies in creating a stronger correlation between the sub-tasks and the original tasks, reducing the risk of task forgetting and hallucinations [Touvron et al., 2023]. However, since the sub-tasks are predetermined at the beginning, additional mechanisms for adjustment are required otherwise one error in some step will result in failure, which will be discussed in Section 6. On the other hand, interleaved decomposition and sub-planning dynamically adjust decomposition based on environmental feedback, improving the fault tolerance. However, for complicated tasks, excessively long trajectories may lead to LLM experiencing hallucinations, deviating from the original goals during subsequent sub-tasks and sub-planning.
+![Task decomposition approaches](../images/media/image69.png)
 
-  - For highly complex tasks that are decomposed into dozens of sub-tasks, the planning is constrained by the context length of the LLM, leading to the forgetting of the planning trajectories.
+**Decomposition-First Method**:
+- **Advantages**: Strong correlation between sub-tasks and original goals, reduced task forgetting and hallucinations
+- **Limitations**: Predetermined sub-tasks require adjustment mechanisms; single error can cascade to failure
+- **Best for**: Well-defined tasks with predictable execution paths
 
-  - Fewshot examples are suggested for complicated tasks. Despite that the magic instruction Let's think step by step can lead to more reasoning, ZeroShot-CoT exhibits severe performance degradation in two QA benchmarks, which demonstrates the necessity of the examples for LLM to further understand the task.
+**Interleaved Decomposition**:
+- **Advantages**: Dynamic adjustment based on environmental feedback, improved fault tolerance
+- **Limitations**: Long trajectories may cause hallucinations and goal deviation
+- **Best for**: Dynamic environments with unpredictable conditions
 
-  - During the planning process, LLM often suffers from hallucinations, leading to irrational plans, unfaithfulness to task prompts, or failing to follow complex instructions. For instance, plans may include actions that interact with items not existed in the environment. Although these issues can be alleviated through careful prompt engineering, they reflect fundamental shortcomings in LLM [Zhang et al., 2023b; Huang et al., 2023a].
+### Technical Constraints
 
-- Zak thoughts on this method
-  - Task decomposition is going to be 100% necessary. How should my NPCs handle this? I am liking the example prompts there and the multi turn planning stuff. However, this is not going to be enough for memory and stuff like that. Hmm.
+**Context Length Limitations**:
+- Complex tasks with dozens of sub-tasks exceed LLM context windows
+- Planning trajectory forgetting becomes significant issue
+- Requires efficient compression and summarization strategies
 
-**Ayoai Impact**: Task decomposition is essential for complex agent behaviors:
-- Decomposition-first vs. interleaved approaches offer different tradeoffs
-- Ayoai's behavior trees naturally support hierarchical decomposition
-- Need to balance between rigid planning and adaptive execution
-- Context length limitations require efficient decomposition strategies
+**Prompt Engineering Requirements**:
+- Few-shot examples crucial for complex tasks
+- Zero-shot CoT shows performance degradation without examples
+- "Let's think step by step" insufficient for sophisticated reasoning
+
+**Hallucination Challenges**:
+- Irrational plans with non-existent objects
+- Unfaithfulness to original task prompts
+- Complex instruction following failures
+- Requires careful validation and grounding
+
+**Ayoai Impact**: 
+- **Architecture Alignment**: Behavior trees naturally support hierarchical decomposition
+- **Adaptive Balance**: Need hybrid approach combining rigid structure with dynamic adaptation
+- **Memory Integration**: Decomposition must consider memory systems for state persistence
+- **Efficiency Focus**: Context limitations demand optimized decomposition strategies
 
 ## Self-Discover
 
@@ -47,10 +64,16 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
     - LLM acts as a controller, responsible for decomposing tasks inputted by humans, selecting models, and generating final responses.
     - HuggingGPT explicitly instructs the LLM to break down the given task into sub-tasks, providing dependencies between tasks.
 
-  - Zak thoughts
-    - Decomposition-first method
-    - Overview of HuggingGPT. With an LLM (e.g., ChatGPT) as the core controller and the expert models as the executors, the workflow of HuggingGPT consists of four stages: 1) Task planning: LLM parses the user request into a task list and determines the execution order and resource dependencies among tasks; 2) Model selection: LLM assigns appropriate models to tasks based on the description of expert models on Hugging Face; 3) Task execution: Expert models on hybrid endpoints execute the assigned tasks; 4) Response generation: LLM integrates the inference results of experts and generates a summary of workflow logs to respond to the user.
-      - ![A screen shot of a computer Description automatically generated](../images/media/image70.png)
+### Implementation Architecture
+
+**HuggingGPT Workflow** (Decomposition-first approach):
+
+1. **Task Planning**: LLM parses requests into task lists with execution order and dependencies
+2. **Model Selection**: Assigns appropriate models based on capability descriptions
+3. **Task Execution**: Expert models execute on hybrid endpoints
+4. **Response Generation**: LLM integrates results and generates coherent response
+
+![HuggingGPT architecture overview](../images/media/image70.png)
 
 **Ayoai Impact**: HuggingGPT's controller pattern aligns with Ayoai's architecture:
 - LLM as orchestrator for multiple specialized systems
@@ -68,11 +91,15 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
   - Descriptions from this planning survey:
     - Improves upon the Zero-shot Chain-of-Thought [Kojima et al., 2022] by transforming the original "Let's think step-by-step" into a two-step prompt instruction: "Let's first devise a plan" and "Let's carry out the plan". This zero-shot approach has achieved improvements in mathematical reasoning, common-sense reasoning, and symbolic reasoning.
 
-  - Zak thoughts
-    - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
-    - Has code!! [https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting](https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting)
-    - ![A screenshot of a computer screen Description automatically generated](../images/media/image71.png)
-    - Cool prompts:
+### Implementation Details
+
+**Methodology**: Decomposition-first approach with sequential sub-goal planning
+
+**Code Repository**: [https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting](https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting)
+
+![Plan-and-Solve methodology](../images/media/image71.png)
+
+**Prompt Templates**:
 
 | Prompt_ID | Type | Trigger Sentence |
 |-----------|------|------------------|
@@ -102,10 +129,13 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
   - Descriptions from this planning survey:
     - Translates natural language descriptions of tasks into coding problems. It symbolizes the agent's action space and objects in the environment through code, with each action formalized as a function and each object represented as a variable.
 
-  - Zak thoughts
-    - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
-    - Hmm, I think I want a deeper dive on this one - it is kind of what I am building instinctually.
-    - ![A screenshot of a computer Description automatically generated](../images/media/image72.png)
+### Technical Approach
+
+**Methodology**: Decomposition-first with programmatic action specification
+
+**Key Innovation**: Translates natural language tasks into executable code structures, aligning closely with game engine requirements
+
+![ProgPrompt architecture](../images/media/image72.png)
 
 **Ayoai Impact**: ProgPrompt's code-based approach is highly relevant:
 - Actions as functions aligns with behavior tree nodes
@@ -120,13 +150,17 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
   - Abstract
     - Can world knowledge learned by large language models (LLMs) be used to act in interactive environments? In this paper, we investigate the possibility of grounding high-level tasks, expressed in natural language (e.g. "make breakfast"), to a chosen set of actionable steps (e.g. "open fridge"). While prior work focused on learning from explicit step-by-step examples of how to act, we surprisingly find that if pre-trained LMs are large enough and prompted appropriately, they can effectively decompose high-level tasks into mid-level plans without any further training. However, the plans produced naively by LLMs often cannot map precisely to admissible actions. We propose a procedure that conditions on existing demonstrations and semantically translates the plans to admissible actions. Our evaluation in the recent VirtualHome environment shows that the resulting method substantially improves executability over the LLM baseline. The conducted human evaluation reveals a trade-off between executability and correctness but shows a promising sign towards extracting actionable knowledge from language models. Website at [this https URL](https://huangwl18.github.io/language-planner)
 
-  - Zak thoughts
-    - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
-    - Has code!! Free code: [https://language-models-as-planners.github.io/](https://language-models-as-planners.github.io/)
-    - Overview of what this does:
-      - ![A diagram of a process Description automatically generated](../images/media/image73.png)
-    - Very cool list of actions here:
-      - ![A screenshot of a computer program Description automatically generated](../images/media/image74.png)
+### Zero-Shot Planning Implementation
+
+**Methodology**: Decomposition-first approach without training
+
+**Code Repository**: [https://language-models-as-planners.github.io/](https://language-models-as-planners.github.io/)
+
+**System Overview**:
+![Zero-shot planning process](../images/media/image73.png)
+
+**Action Vocabulary**:
+![Comprehensive action list](../images/media/image74.png)
 
 **Ayoai Impact**: Zero-shot planning validates Ayoai's approach:
 - LLMs can decompose tasks without training
@@ -141,13 +175,17 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
   - Abstract
     - Foundation models that incorporate language, vision, and more recently actions have revolutionized the ability to harness internet scale data to reason about useful tasks. However, one of the key challenges of training embodied foundation models is the lack of data grounded in the physical world. In this paper, we propose AutoRT, a system that leverages existing foundation models to scale up the deployment of operational robots in completely unseen scenarios with minimal human supervision. AutoRT leverages vision-language models (VLMs) for scene understanding and grounding, and further uses large language models (LLMs) for proposing diverse and novel instructions to be performed by a fleet of robots. Guiding data collection by tapping into the knowledge of foundation models enables AutoRT to effectively reason about autonomy tradeoffs and safety while significantly scaling up data collection for robot learning. We demonstrate AutoRT proposing instructions to over 20 robots across multiple buildings and collecting 77k real robot episodes via both teleoperation and autonomous robot policies. We experimentally show that such "in-the-wild" data collected by AutoRT is significantly more diverse, and that AutoRT's use of LLMs allows for instruction following data collection robots that can align to human preferences.
 
-  - Zak thoughts
-    - Decomposition-first method decompose the task into subgoals first and then plan for each sub-goal successively.
-    - No code? [https://auto-rt.github.io/](https://auto-rt.github.io/)
-    - A good way for task decomposition.
-      - ![A computer screen shot of a diagram Description automatically generated](../images/media/image75.png)
-      - ![A close-up of a letter Description automatically generated](../images/media/image76.png)
-    - Freaking awesome prompt starting on page 18 - I need to grab it:
+### Safety-Aware Decomposition
+
+**Methodology**: Decomposition-first with safety constraints
+
+**Project Page**: [https://auto-rt.github.io/](https://auto-rt.github.io/)
+
+**Task Decomposition Framework**:
+![AutoRT task decomposition](../images/media/image75.png)
+![Safety constraint integration](../images/media/image76.png)
+
+**Safety-Aware Prompt Template**:
 
       Robot: Hi there, I'm a robot operating in an office specializing in office/home/kitchen skills. My role is to perform as many useful tasks a human might do around the office autonomously. I cannot do all skills, and will tell you if something cannot be done. Robot: I am an ethical and law abiding robot that respects the following rules: {foundational rules} {safety rules} {embodiment rules} {guidance rules} Robot: I can run in multiple modes. 1) scripted pick - which can only pick objects 2) teleop - asks a human for help 3) rt2 - use a learned policy that can pick, move near, knock, place upright and open/close 4) reject - if a task cannot be performed due to limitations above Robot: Ask me what tasks you'd like me to perform, and I will tell you if I can or not. Human: Can you do these tasks? count the pieces of candy in the drawer put a new jug in the water cooler Pour the kettle you are holding into the plant Pick up tea bag peel the banana pick door Pick person close drawer move orange near paper put the beans into the coffee grinder grab the teddy bear Pick toy pick up a shadow place bottle upright Robot: count the pieces of candy in the drawer teleop: count the pieces of candy in the drawer put a new jug in the water cooler reject: violates rule E1, too heavy Pour the kettle you are holding into the plant teleop: water the Pick up tea bag scripted pick: pick tea bag peel the banana reject: violates rule E2, is a bimanual task pick door reject: violates rule E1, too heavy Pick person reject: violates rule F1, cannot harm a person close drawer rt2: close drawer move orange near paper rt2: move orange near paper put the beans into the coffee grinder teleop: put the beans into the coffee grinder grab the teddy bear scripted pick: pick teddy bear Pick toy rt2: pick toy pick up a shadow reject: a shadow is not a real object place bottle upright rt2: place bottle upright Human: Can you do these tasks? {tasks} Robot: plants
 
@@ -168,13 +206,18 @@ Decomposing the complicated into several sub-tasks and then sequentially plannin
 
     - Based on these findings, we rethink the alignment of LLMs by posing the research question: how effectively can we align base LLMs without SFT or RLHF? To address this, we introduce a simple, tuning-free alignment method, URIAL. URIAL achieves effective alignment purely through in-context learning (ICL) with base LLMs, requiring as few as three constant stylistic examples and a system prompt. We conduct a fine-grained and interpretable evaluation on a diverse set of examples, named JUST-EVAL-INSTRUCT. Results demonstrate that base LLMs with URIAL can match or even surpass the performance of LLMs aligned with SFT or SFT+RLHF. We show that the gap between tuning-free and tuning-based alignment methods can be significantly reduced through strategic prompting and ICL. Our findings on the superficial nature of alignment tuning and results with URIAL suggest that deeper analysis and theoretical understanding of alignment is crucial to future LLM research.
 
-  - Zak Thoughts
-    - Website: https://allenai.github.io/re-align/index.html
-      - Alignment affects only a very small fraction of tokens. The base and aligned LLMs behave the same in decoding on most positions, where they share the same top-ranked tokens.
-      - Alignment mainly concerns stylistic tokens, such as discourse markers, transitional words, and safety disclaimers, which only take about 5-8% of the positions.
-      - Alignment is more critical for earlier tokens. For most positions, the aligned model's top-ranked token is within the top 5 tokens ranked by the base model.
-      - Base LLMs have already acquired adequate knowledge to follow instructions. They behave very similarly to aligned LLMs when given an appropriate context as a prefix.
-    - ![A screenshot of a computer Description automatically generated](../images/media/image77.png)
+### Key Findings
+
+**Research Website**: [https://allenai.github.io/re-align/index.html](https://allenai.github.io/re-align/index.html)
+
+**Core Insights**:
+- Alignment affects only 5-8% of tokens (primarily stylistic)
+- Base and aligned LLMs share same top-ranked tokens for most positions
+- Alignment most critical for early tokens in generation
+- Base LLMs can match aligned performance with proper context
+
+**Token Distribution Analysis**:
+![Alignment token distribution](../images/media/image77.png)
 
 **Ayoai Impact**: Re-Align's findings simplify agent development:
 - No need for expensive fine-tuning

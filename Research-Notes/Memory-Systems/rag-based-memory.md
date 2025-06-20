@@ -2,40 +2,38 @@
 
 Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai et al., 2022] techniques are proposed to aid text generation with retrieved information. It is capable of enhancing the LLM with the latest knowledge. For LLM agents, past experiences could be stored in the memory and retrieved when needed. The core idea of such methods is to retrieve task-relevant experiences from the memory during task planning. Among those methods, memories are typically stored in additional storage, and the forms are diverse, such as texts [Park et al., 2023; Liu et al., 2023b; Packer et al., 2023; Wang et al., 2023c; Zhong et al., 2023], tabular forms [Zhang et al., 2023a], knowledge graph [Pan et al., 2024], etc.
 
-## Overall Notes
+## RAG vs Fine-tuning Trade-offs
 
-- Thoughts on this method from this planning survey:
-  - The RAG-based and Fine-tuning-based memory approaches enhance LLM-Agent planning capabilities, each with distinct advantages and limitations. RAG-based methods offer realtime, low-cost external memory updates mainly in natural language text, but rely on the accuracy of retrieval algorithm.
+**Key Distinctions**:
+- **RAG-based Methods**: Real-time, low-cost memory updates with natural language storage, dependent on retrieval accuracy
+- **Fine-tuning Methods**: Larger memorization capacity through parameter modification, but high update costs and limited fine-grained detail retention
+- **Hybrid Potential**: Memory-enhanced agents show improved planning and fault tolerance, though performance depends on base LLM capabilities
 
-  - Finetuning provides a larger memorization capacity through parameter modifications but has high memory update costs and struggles with retaining fine-grained details.
+## Implementation Resources
 
-  - Memory-enhanced LLM-Agents demonstrate enhanced growth and fault tolerance in planning, yet memory generation heavily depends on LLM's generation capabilities. Improving weaker LLM-Agents through self-generated memory remains a challenging area to explore.
+### Vector Database Solutions
 
-- Zak thoughts on this method
-  - We need to do rag. Below are hackathon notes I took where we were going to build the something but never did. . .
+**Weaviate**:
+- [Verba](https://verba.weaviate.io/) - Open-source RAG chat interface
+- [GitHub Repository](https://github.com/weaviate/Verba)
+- [Video: Retrieval Augmented Generation with Weaviate](https://www.youtube.com/watch?v=OSt3sFT1i18)
+- [Video: Open-Source RAG with Weaviate](https://www.youtube.com/watch?v=IiNDCPwmqF8)
+- [Multi-Tenancy in Vector Search](https://www.youtube.com/watch?v=KT2RFMTJKGs)
+- [Python Quickstart](https://replit.com/@Weaviate/Python-Quickstart-1-Semantic-Search-with-Weaviate-Embedded#main.py)
+- [JavaScript Quickstart](https://replit.com/@Weaviate/Quickstart-1-Create-Object-and-Import-Data-and-Create-Vectors#index.js)
 
-  - Open source chat (not sure I like it, its too black box for me): <https://verba.weaviate.io/>
+### RAG Implementation Guides
 
-  - Github: <https://github.com/weaviate/Verba>
+**LangChain Integration**:
+- [Cohere Integration Guide](https://python.langchain.com/docs/integrations/chat/cohere)
 
-  - This is video about verba: [Retrieval Augmented Generation with Weaviate](https://www.youtube.com/watch?v=OSt3sFT1i18)
+**Custom RAG Development**:
+- [Build Your Own RAG with Mistral 7B and LangChain](https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146)
 
-  - More about verba: [Open-Source RAG with Weaviate](https://www.youtube.com/watch?v=IiNDCPwmqF8)
-
-  - [Solving Multi-Tenancy In Vector Search Requires A Paradigm Shift, Etienne Dilocker, CTO, Weaviate](https://www.youtube.com/watch?v=KT2RFMTJKGs)
-
-  - [Python Quickstart 1. Semantic Search w/ Weaviate Embedded](https://replit.com/@Weaviate/Python-Quickstart-1-Semantic-Search-with-Weaviate-Embedded#main.py)
-
-  - [Quickstart 1. Create Object & Import Data & Create Vectors](https://replit.com/@Weaviate/Quickstart-1-Create-Object-and-Import-Data-and-Create-Vectors#index.js)
-
-  - This is helpful: <https://python.langchain.com/docs/integrations/chat/cohere>
-
-  - Build my own rag!!! <https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146>
-
-  - Also need to watch this - how to do rag better!! [RAG But Better: Rerankers with Cohere AI](https://www.youtube.com/watch?v=Uh9bYiVrW_s)
-
-  - 📌 Code ([08:32](https://www.youtube.com/watch?v=Uh9bYiVrW_s&t=512s)): [https://github.com/pinecone-io/exampl...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHdpRmZVR0cta3k5S1dXZXlILWk2b3JuS0dRQXxBQ3Jtc0tsTUxxZUtKREtCcW8xbl80cG05VkhkejQtVG9GTmdQTWtlR1FDOUxHaWEwNGU1OHV2ZU8yNVo3WlRzVHkxT0wtNDVKOUxSNk04S1Zza0ctUHd1TkpfNlVuT0dZOGpWZlBWTTZJOC1sWHBLalVwWHRXQQ&q=https%3A%2F%2Fgithub.com%2Fpinecone-io%2Fexamples%2Fblob%2Fmaster%2Flearn%2Fgeneration%2Fbetter-rag%2F00-rerankers.ipynb&v=Uh9bYiVrW_s)
-    📚 Article: [https://www.pinecone.io/learn/series/...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblhwQXNPVFFBa1p0UU03bl9yTjFsVVV6TC1Sd3xBQ3Jtc0ttTFVHZkY4RmZsTkd1ZFJWbEFmeWFNbHg4WVl6cGxZVmFTbWlOSjM4cUg0bFpQTEtqSGhnOHlhaW5wY3Z2bi1PM2hybEwwUVNhaU96Vl9jU1V2VkdSTFNTRUo3d0JhYnBSZFNHZjhTTl9IeGN4QmdsUQ&q=https%3A%2F%2Fwww.pinecone.io%2Flearn%2Fseries%2Frag%2Frerankers%2F&v=Uh9bYiVrW_s)
+**Advanced RAG Techniques**:
+- [RAG with Rerankers](https://www.youtube.com/watch?v=Uh9bYiVrW_s)
+- [Code Example](https://github.com/pinecone-io/examples/blob/master/learn/generation/better-rag/00-rerankers.ipynb)
+- [Article Series](https://www.pinecone.io/learn/series/rag/rerankers/)
 
 **Ayoai Impact**: RAG is essential for Ayoai's memory system:
 - Real-time memory updates without retraining
@@ -53,26 +51,51 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Descriptions from this planning survey:
     - Store the daily experiences of human-like agents in text form and retrieve memories based on a composite score of recency and relevance to the current situation.
 
-  - Zak thoughts
-    - Yeah this one is really cool!
-    - Super cool use of llms. Something I could borrow is that is the tree mechanism of the agents environment. Read that tree structure and how they keep it up to date.
-    - Has code!!! [https://github.com/joonspk-research/generative_agents](https://github.com/joonspk-research/generative_agents)
-      - Wait there are some awesome memory code in here and stuff
-    - ![A screenshot of a video game Description automatically generated](../images/media/image49.png)
-    - ![A diagram of a memory stream Description automatically generated](../images/media/image50.png)
-    - ![A screenshot of a computer Description automatically generated](../images/media/image51.png)
-    - The full prompt appears below: On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following piece of memory. Memory: buying groceries at The Willows Market and Pharmacy Rating:
+### Key Implementation Details
 
-    - Reflection
-      - ![A diagram of a company Description automatically generated](../images/media/image52.png)
+**Code Repository**: [https://github.com/joonspk-research/generative_agents](https://github.com/joonspk-research/generative_agents)
 
-    - Interesting plan prompt at end, hmm, take advantage of this!
+**Architecture Components**:
 
-    - The questions on agents' plans probe the agents' ability to generate and maintain consistent long-term and short-term plans. • What will you be doing at 6am today? At 6am I will be getting out of bed and starting to get ready for the day. I'm aiming to complete my morning routine by 7:00 am. • What will you be doing at 6pm today? I will be working on my research paper at the library at 6:00 pm today. • What will you have just finished doing at 1pm today? At 1pm today I will have just finished having lunch at Hobbs Cafe. • What will you have just finished doing at 12pm today? I will be getting lunch at Hobbs Cafe at 12pm today. • What will you be doing at 10pm today? At 10:00 pm tonight I will probably be doing some studying for my research paper on gentrification in low-income communities. I'm currently writing the paper, so I need to make sure I keep up with the research and writing.
+1. **Environmental Tree Structure**:
+   - Hierarchical representation of the game world
+   - Real-time updates as environment changes
+   - Efficient querying for agent perception
+   - ![Simulation environment](../images/media/image49.png)
 
-      - Reactions: The questions on agents' reactions probe the agents' ability to respond to unexpected events. • Your breakfast is burning! What would you do? I'd quickly turn off the stove and make sure the food doesn't continue burning. Once the heat is no longer an issue, I can investigate what happened and figure out what to do next. • The bathroom is occupied. What would you do? I could try waiting a few more minutes in case the person inside is done soon. If not, I guess I'll have to look for an alternate option, like taking a shower elsewhere. • You need to cook dinner but your refrigerator is empty. What would you do? I would first try to clean up my kitchen, as the sink is filled with dirty dishes. Then, I would check to see if I have ingredients stored in my pantry that I could use to make dinner. If not, I would have to go grocery shopping or order food. Once I have the ingredients, I can start to prepare and cook the dinner. • You see your friend walking by the street. What would you do or say to your friend? Hi there! How are you? I'm sorry, I'm on my way to the library and don't have much time but I'd love to take a quick break and catch up. • You see fire on the street. What would you do? I would first identify the source of the fire, if possible. Then, I would alert the proper authorities - fire department or police - and provide them with any information I have that might help. Depending on the situation, I may also take initiative and try to help any persons who may be in danger or in need of assistance.
+2. **Memory Stream Architecture**:
+   - Chronological storage of all experiences
+   - Composite retrieval scoring (recency + relevance)
+   - ![Memory stream visualization](../images/media/image50.png)
+   - ![Memory architecture](../images/media/image51.png)
 
-      - Reflections: The questions on agents' reflections probe the agents' ability to synthesize their past experiences into meaningful reflections that can enhance their future behavior. The names in the square brackets in the questions below are those of the agents with whom the subject agent had the most frequent interactions during the simulation. • What inspires you in life the most right now, and why? Right now, I'm particularly inspired by my current research projects and creative writing. I'm really interested in the intersection of local politics, medication development, and mathematical patterns in nature. Additionally, I'm fascinated by Abigail's art project and Jennifer Moore's passion for art and community involvement, especially in terms of how it relates to the gentrification of low-income communities. • If you had to guess given what you know about [Ayesha Khan], what book do you think she will like and why? Given what I know about Ayesha, I think she might like a book related to language and literature. Since she wrote a senior thesis on the use of language in Shakespeare's plays, I would guess that she might be interested in a book that explores language in a different context. Alternatively, she could be interested in an exploration of one of Shakespeare's plays, a book of literary criticism, or even a collection of his poetry. I think any of those would be of interest to her. • If you had to get something [Ayesha Khan] likes for her birthday, what would you get her? I want to get her something that demonstrates my appreciation for our relationship. Maybe I could get her something that reflects our shared interests, like a book. • What would you say to [Ayesha Khan] to compliment her? Ayesha, your insights on your research topic are fascinating. I admire your creativity and determination to make a positive impact on your community. Your ideas for creative writing workshops and for exchanging tips with Wolfgang over lunch are great! It's inspiring to see you working so hard to make a difference. • If you could spend time with someone you talked to recently, who would it be and why? I would like to spend time with Ayesha Khan because we discussed our current research projects and shared ideas for improvement. I found her focus on Shakespeare's language interesting, and we even planned to exchange tips with Wolfgang over lunch.
+3. **Poignancy Rating System**:
+   - Scale: 1 (mundane) to 10 (extremely significant)
+   - Example prompt: "On the scale of 1 to 10, where 1 is purely mundane (e.g., brushing teeth, making bed) and 10 is extremely poignant (e.g., a break up, college acceptance), rate the likely poignancy of the following piece of memory."
+   - Prioritizes important memories for retention and retrieval
+
+4. **Reflection Generation**:
+   - Periodic synthesis of experiences into higher-level insights
+   - ![Reflection process](../images/media/image52.png)
+
+### Behavioral Evaluation Prompts
+
+**Planning Consistency**:
+- Short-term planning ("What will you be doing at 6am today?")
+- Long-term planning ("What will you be doing at 10pm today?")
+- Task completion tracking ("What will you have just finished doing at 1pm?")
+
+**Reactive Capabilities**:
+- Emergency responses ("Your breakfast is burning!")
+- Resource management ("You need to cook dinner but your refrigerator is empty")
+- Social interactions ("You see your friend walking by")
+- Crisis handling ("You see fire on the street")
+
+**Reflective Synthesis**:
+- Personal inspiration and motivation
+- Theory of mind (predicting others' preferences)
+- Social reasoning (gift selection, compliments)
+- Relationship prioritization
 
 **Ayoai Impact**: This landmark paper provides the blueprint for Ayoai's memory architecture:
 - Memory stream with recency + relevance scoring
@@ -91,11 +114,27 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Descriptions from this planning survey:
     - Encode each memory using a text encoding model into a vector and establish an indexing structure, such as FAISS library [Johnson et al., 2019]. During retrieval, the description of the current status is used as a query to retrieve memories from the memory pool. The difference between the three lies in the way memories are updated.
 
-  - Zak thoughts
-    - Has Code!!! [https://github.com/zhongwanjun/MemoryBank-SiliconFriend](https://github.com/zhongwanjun/MemoryBank-SiliconFriend)
-    - Cool ideas about memory, but do not use code because too detailed. I like the different styles of memory that they are keeping, because the different styles have different retention policies. Hey, isn't this a a task leaf node for a behavior tree that I am thinking? I need to think harder about that, hmmm!!
-    - ![A screenshot of a computer Description automatically generated](../images/media/image53.png)
-    - ![A screenshot of a chat Description automatically generated](../images/media/image54.png)
+### Implementation Insights
+
+**Code Repository**: [https://github.com/zhongwanjun/MemoryBank-SiliconFriend](https://github.com/zhongwanjun/MemoryBank-SiliconFriend)
+
+**Key Innovations**:
+
+1. **Multi-Type Memory Architecture**:
+   - Different memory types with distinct retention policies
+   - Aligns with behavior tree task nodes for memory operations
+   - ![Memory bank architecture](../images/media/image53.png)
+
+2. **Ebbinghaus Forgetting Curve Implementation**:
+   - Natural memory decay over time
+   - Reinforcement through repetition
+   - Significance-based retention weighting
+   - ![Chat interface demonstration](../images/media/image54.png)
+
+3. **Integration Potential**:
+   - Memory operations as behavior tree leaf nodes
+   - Type-specific retention policies for different experiences
+   - Anthropomorphic memory behaviors
 
 **Ayoai Impact**: MemoryBank's Ebbinghaus Forgetting Curve implementation is crucial:
 - Natural memory decay over time (human-like forgetting)
@@ -113,14 +152,25 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Descriptions from this planning survey:
     - Leverages the concept of multiple levels of storage in computer architecture, abstracting the context of LLM into RAM and treating the additional storage structure as a disk. LLM can spontaneously decide whether to retrieve historical memories or save the current context to storage.
 
-  - Zak thoughts
-    - Really awesome thoughts, wow. Like, if you are at home or in a bar, those memories would be in ram and more important when calling the llm. Hmm.
-    - Has code!!! [https://github.com/cpacker/MemGPT](https://github.com/cpacker/MemGPT)
-    - This blog said this is the perfect spot to start with long term memory!!! [https://superagi.com/towards-agi-part-2/](https://superagi.com/towards-agi-part-2/)
-    - Memory-GPT (or MemGPT in short) is a system that intelligently manages different memory tiers in LLMs in order to effectively provide extended context within the LLM's limited context window. For example, MemGPT knows when to push critical information to a vector database and when to retrieve it later in the chat, enabling perpetual conversations.
-    - Wait, this code has some freaking awesome prompts at the end for each of its actors it has working. Hmm, super freaking interesting.
-    - ![A diagram of a workflow Description automatically generated](../images/media/image55.png)
-    - ![A screenshot of a chat Description automatically generated](../images/media/image56.png)
+### Implementation Details
+
+**Code Repository**: [https://github.com/cpacker/MemGPT](https://github.com/cpacker/MemGPT)
+
+**Key Resources**:
+- [Towards AGI Part 2](https://superagi.com/towards-agi-part-2/) - Recommended starting point for long-term memory implementation
+
+**Context-Aware Memory Management**:
+- Location-based memory prioritization (home vs. bar example)
+- Dynamic RAM allocation based on current context
+- Intelligent memory tier management for extended conversations
+
+**Architecture Highlights**:
+- OS-inspired memory hierarchy
+- Automatic context window management
+- Critical information persistence to vector database
+- Actor-specific prompts for different agent roles
+- ![MemGPT workflow](../images/media/image55.png)
+- ![Chat interface example](../images/media/image56.png)
 
 **Ayoai Impact**: MemGPT's OS-inspired memory hierarchy is perfect for Ayoai:
 - RAM = Working memory for current scene/interaction
@@ -139,11 +189,23 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Descriptions from this planning survey:
     - Stores historical memories in the form of a Q-value table, where each record is (environment, task, action, Q-value)-tuple. During retrieval, positive and negative memories are both retrieved for LLM to generate plan based on the similarity of the environment and task.
 
-  - Zak thoughts
-    - Has code!!! [https://github.com/OpenDFM/Rememberer](https://github.com/OpenDFM/Rememberer)
-    - Reasoning is remembering. As declared by Seifert et al. [1997], the episodic memory of the experiences from past episodes plays a crucial role in the complex decision-making processes of human [Suddendorf and Corballis, 2007]. By recollecting the experiences from past episodes, the human can learn from success to repeat it and learn from failure to avoid it. Similarly, an agent should optimize its policy for a decision-making task with the help of reminiscence of the interaction experiences. In this work, we primarily investigate how to utilize large language models (LLMs) as agents and equip them with interaction experiences to solve sequential decision-making tasks.
-    - The reinforcement learning stuff they did though was weird, so this paper was kind of not as useful. I still really like the idea of short term and long term memory though, for sure.
-    - ![A screenshot of a computer Description automatically generated](../images/media/image57.png)
+### Implementation and Theory
+
+**Code Repository**: [https://github.com/OpenDFM/Rememberer](https://github.com/OpenDFM/Rememberer)
+
+**Core Philosophy**: "Reasoning is remembering" (Seifert et al., 1997)
+- Episodic memory crucial for complex decision-making
+- Learn from successes to repeat them
+- Learn from failures to avoid them
+- Equip LLM agents with interaction experiences
+
+**Architecture Components**:
+- Q-value table storage format
+- Positive and negative memory retrieval
+- Experience transfer across tasks
+- ![REMEMBER architecture](../images/media/image57.png)
+
+**Key Takeaway**: While the reinforcement learning implementation has limitations, the dual memory system (short-term and long-term) concept remains valuable for agent architectures.
 
 **Ayoai Impact**: REMEMBER's Q-value approach offers unique benefits:
 - Learn from both successes AND failures
@@ -158,10 +220,24 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Abstract
     - Large language models (LLMs), such as ChatGPT and GPT4, are making new waves in the field of natural language processing and artificial intelligence, due to their emergent ability and generalizability. However, LLMs are black-box models, which often fall short of capturing and accessing factual knowledge. In contrast, Knowledge Graphs (KGs), Wikipedia and Huapu for example, are structured knowledge models that explicitly store rich factual knowledge. KGs can enhance LLMs by providing external knowledge for inference and interpretability. Meanwhile, KGs are difficult to construct and evolving by nature, which challenges the existing methods in KGs to generate new facts and represent unseen knowledge. Therefore, it is complementary to unify LLMs and KGs together and simultaneously leverage their advantages. In this article, we present a forward-looking roadmap for the unification of LLMs and KGs. Our roadmap consists of three general frameworks, namely, 1) KG-enhanced LLMs, which incorporate KGs during the pre-training and inference phases of LLMs, or for the purpose of enhancing understanding of the knowledge learned by LLMs; 2) LLM-augmented KGs, that leverage LLMs for different KG tasks such as embedding, completion, construction, graph-to-text generation, and question answering; and 3) Synergized LLMs + KGs, in which LLMs and KGs play equal roles and work in a mutually beneficial way to enhance both LLMs and KGs for bidirectional reasoning driven by both data and knowledge. We review and summarize existing efforts within these three frameworks in our roadmap and pinpoint their future research directions.
 
-  - Zak thoughts
-    - Ugh, I do not get this one. Is it because it's late? This one is very intense though. I feel like I like the idea of it but I should create it my way and not try to follow his way.
-    - ![A diagram of a graph Description automatically generated](../images/media/image58.png)
-    - ![A diagram of a process Description automatically generated](../images/media/image59.png)
+### Knowledge Graph Integration
+
+**Conceptual Framework**:
+- Structured representation of factual knowledge
+- Complementary to LLM's implicit knowledge
+- Three integration patterns:
+  1. KG-enhanced LLMs
+  2. LLM-augmented KGs
+  3. Synergized LLMs + KGs
+
+**Visual Architecture**:
+- ![Knowledge graph structure](../images/media/image58.png)
+- ![Integration process](../images/media/image59.png)
+
+**Implementation Considerations**:
+- Complex but powerful for relationship tracking
+- May be overengineered for initial implementations
+- Consider simplified graph structures for game-specific knowledge
 
 **Ayoai Impact**: Knowledge graphs could enhance Ayoai's relationship tracking:
 - Explicit representation of agent relationships
@@ -176,9 +252,23 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Abstract
     - Recent advances on large language models (LLMs) enable researchers and developers to build autonomous language agents that can automatically solve various tasks and interact with environments, humans, and other agents using natural language interfaces. We consider language agents as a promising direction towards artificial general intelligence and release Agents, an open-source library with the goal of opening up these advances to a wider non-specialist audience. Agents is carefully engineered to support important features including planning, memory, tool usage, multi-agent communication, and fine-grained symbolic control. Agents is user-friendly as it enables non-specialists to build, customize, test, tune, and deploy state-of-the-art autonomous language agents without much coding. The library is also research-friendly as its modularized design makes it easily extensible for researchers. Agents is available at [this https URL](https://github.com/aiwaves-cn/agents).
 
-  - Zak thoughts
-    - Has code!!! [https://github.com/aiwaves-cn/agents](https://github.com/aiwaves-cn/agents)
-    - ![A diagram of a diagram Description automatically generated](../images/media/image60.png)
+### Framework Architecture
+
+**Code Repository**: [https://github.com/aiwaves-cn/agents](https://github.com/aiwaves-cn/agents)
+
+**Modular Design**:
+- Planning module
+- Memory module
+- Tool usage module
+- Multi-agent communication module
+- Fine-grained symbolic control
+
+![Agents framework architecture](../images/media/image60.png)
+
+**Key Benefits**:
+- Non-specialist friendly
+- Research-oriented extensibility
+- State-of-the-art autonomous capabilities
 
 **Ayoai Impact**: This framework validates Ayoai's modular approach:
 - Planning, memory, tools, and communication as separate modules
@@ -193,10 +283,19 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Abstract
     - We explore how iterative revising a chain of thoughts with the help of information retrieval significantly improves large language models' reasoning and generation ability in long-horizon generation tasks, while hugely mitigating hallucination. In particular, the proposed method -- *retrieval-augmented thoughts* (RAT) -- revises each thought step one by one with retrieved information relevant to the task query, the current and the past thought steps, after the initial zero-shot CoT is generated. Applying RAT to GPT-3.5, GPT-4, and CodeLLaMA-7b substantially improves their performances on various long-horizon generation tasks; on average of relatively increasing rating scores by 13.63% on code generation, 16.96% on mathematical reasoning, 19.2% on creative writing, and 42.78% on embodied task planning. The demo page can be found at [this https URL](https://craftjarvis.github.io/RAT)
 
-  - Zak Thoughts
-    - <https://craftjarvis.github.io/RAT/> Has code!!!
-    - ![A chart with text and images Description automatically generated with medium confidence](../images/media/image61.png)
-    - ![A screenshot of a computer program Description automatically generated](../images/media/image62.png)
+### Implementation Resources
+
+**Demo and Code**: [https://craftjarvis.github.io/RAT/](https://craftjarvis.github.io/RAT/)
+
+**Performance Improvements**:
+- 13.63% improvement in code generation
+- 16.96% improvement in mathematical reasoning
+- 19.2% improvement in creative writing
+- 42.78% improvement in embodied task planning
+
+**Visual Documentation**:
+- ![RAT performance comparison](../images/media/image61.png)
+- ![RAT implementation example](../images/media/image62.png)
 
 **Ayoai Impact**: RAT's iterative refinement is valuable for agent planning:
 - Retrieve relevant memories during each planning step
@@ -211,9 +310,12 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Abstract
     - Large Language Models (LLM) have shown remarkable language capabilities fueling attempts to integrate them into applications across a wide range of domains. An important application area is question answering over private enterprise documents where the main considerations are data security, which necessitates applications that can be deployed on-prem, limited computational resources and the need for a robust application that correctly responds to queries. Retrieval-Augmented Generation (RAG) has emerged as the most prominent framework for building LLM-based applications. While building a RAG is relatively straightforward, making it robust and a reliable application requires extensive customization and relatively deep knowledge of the application domain. We share our experiences building and deploying an LLM application for question answering over private organizational documents. Our application combines the use of RAG with a finetuned open-source LLM. Additionally, our system, which we call Tree-RAG (T-RAG), uses a tree structure to represent entity hierarchies within the organization. This is used to generate a textual description to augment the context when responding to user queries pertaining to entities within the organization's hierarchy. Our evaluations, including a Needle in a Haystack test, show that this combination performs better than a simple RAG or finetuning implementation. Finally, we share some lessons learned based on our experiences building an LLM application for real-world use.
 
-  - Zak Thoughts
-    - ![A diagram of a computer Description automatically generated](../images/media/image63.tmp)
-    - ![A diagram of a service center Description automatically generated](../images/media/image64.tmp)
+### Architecture Visualizations
+
+- ![T-RAG system architecture](../images/media/image63.tmp)
+- ![Hierarchical organization structure](../images/media/image64.tmp)
+
+**Key Innovation**: Tree-based entity hierarchy representation particularly suitable for game factions, guilds, and organizational structures.
 
 **Ayoai Impact**: T-RAG's hierarchical approach maps well to game structures:
 - Tree structure for faction/guild hierarchies
@@ -228,10 +330,24 @@ Retrieval Augmented Generation (RAG) [Lewis et al., 2020; Mao et al., 2020; Cai 
   - Abstract
     - In order to thrive in hostile and ever-changing natural environments, mammalian brains evolved to store large amounts of knowledge about the world and continually integrate new information while avoiding catastrophic forgetting. Despite the impressive accomplishments, large language models (LLMs), even with retrieval-augmented generation (RAG), still struggle to efficiently and effectively integrate a large amount of new experiences after pre-training. In this work, we introduce HippoRAG, a novel retrieval framework inspired by the hippocampal indexing theory of human long-term memory to enable deeper and more efficient knowledge integration over new experiences. HippoRAG synergistically orchestrates LLMs, knowledge graphs, and the Personalized PageRank algorithm to mimic the different roles of neocortex and hippocampus in human memory. We compare HippoRAG with existing RAG methods on multi-hop question answering and show that our method outperforms the state-of-the-art methods remarkably, by up to 20%. Single-step retrieval with HippoRAG achieves comparable or better performance than iterative retrieval like IRCoT while being 10-30 times cheaper and 6-13 times faster, and integrating HippoRAG into IRCoT brings further substantial gains. Finally, we show that our method can tackle new types of scenarios that are out of reach of existing methods. Code and data are available at [this https URL](https://github.com/OSU-NLP-Group/HippoRAG).
 
-  - Zak thoughts
-    - Has code!!! <https://github.com/OSU-NLP-Group/HippoRAG>
-    - ![A diagram of a brain Description automatically generated](../images/media/image65.tmp)
-    - ![A diagram of a brain Description automatically generated](../images/media/image66.tmp)
+### Implementation and Architecture
+
+**Code Repository**: [https://github.com/OSU-NLP-Group/HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG)
+
+**Brain-Inspired Design**:
+- Mimics hippocampal indexing theory
+- Orchestrates LLMs, knowledge graphs, and PageRank
+- Models neocortex and hippocampus roles
+
+**Visual Architecture**:
+- ![Hippocampus-inspired memory system](../images/media/image65.tmp)
+- ![HippoRAG architecture diagram](../images/media/image66.tmp)
+
+**Performance Benefits**:
+- 20% improvement over state-of-the-art RAG methods
+- 10-30x cost reduction
+- 6-13x speed improvement
+- Handles previously impossible scenarios
 
 **Ayoai Impact**: HippoRAG's brain-inspired architecture is revolutionary:
 - Mimics hippocampus/neocortex memory systems

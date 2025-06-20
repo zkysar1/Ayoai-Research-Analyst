@@ -168,8 +168,7 @@ This enables Ayoai to:
   - Abstract
     - This paper introduces LLM-MARS, first technology that utilizes a Large Language Model based Artificial Intelligence for Multi-Agent Robot Systems. LLM-MARS enables dynamic dialogues between humans and robots, allowing the latter to generate behavior based on operator commands and provide informative answers to questions about their actions.
 
-  - Zak thoughts
-    - ?
+**Implementation Status**: Demonstrates LLM-based behavior tree generation for multi-agent systems
 
 **Ayoai Impact**: Multi-agent behavior coordination:
 - Dynamic behavior generation from commands
@@ -183,8 +182,7 @@ This enables Ayoai to:
   - Abstract
     - Nowadays, the behavior tree is gaining popularity as a representation for robot tasks due to its modularity and reusability. Designing behavior-tree tasks manually is time-consuming for robot end-users, thus there is a need for investigating automatic behavior-tree-based task generation.
 
-  - Zak thoughts
-    - ?
+**Key Contribution**: Automatic generation reduces manual design overhead
 
 **Ayoai Impact**: Automatic behavior tree generation:
 - Reduces manual design time
@@ -198,8 +196,7 @@ This enables Ayoai to:
   - Abstract
     - Robots need task planning to sequence and execute actions toward achieving their goals. On the other hand, Behavior Trees provide a mathematical model for specifying plan execution in an intrinsically composable, reactive, and robust way. PDDL (Planning Domain Definition Language) has become the standard description language for most planners. In this paper, we present a novel algorithm to systematically create behavior trees from PDDL plans to execute them. This approach uses the execution graph of the plan to generate a behavior tree.
 
-  - Zak thoughts
-    - ?
+**Technical Approach**: Uses execution graphs for systematic tree creation
 
 **Ayoai Impact**: PDDL to behavior tree conversion:
 - Bridges planning and execution
@@ -208,11 +205,21 @@ This enables Ayoai to:
 
 ## GDC Behavior Tree Notes
 
-Behavior Trees: Three Ways of Cultivating Strong AI
+**Behavior Trees: Three Ways of Cultivating Strong AI**
 
-<https://www.gdcvault.com/play/1012416/Behavior-Trees-Three-Ways-of>
+**Reference**: [GDC Vault](https://www.gdcvault.com/play/1012416/Behavior-Trees-Three-Ways-of)
 
-At the higher level you have the above pic, on the top few layers. But the below low level sequences will be at bottom of tree. To have the tree more like states, like cover, you could get locked into the tree . . . Its not trying to figure out if anything broke or whatever. So for each behavior , it it monitors if assumptions have changed. You want your nodes forward looking.  
+### Architecture Principles
+
+**Hierarchical Structure**:
+- High-level strategic decisions at top layers
+- Low-level action sequences at bottom layers
+
+**Key Design Considerations**:
+- Avoid state-based tree locking
+- Monitor assumption changes for each behavior
+- Implement forward-looking nodes
+- Enable dynamic adaptation  
 
 ![A white text on a black background Description automatically generated](../images/media/image198.png)
 

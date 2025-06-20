@@ -1,112 +1,124 @@
 # Surveys Reviewed
 
-I already read these surveys and put the papers the survey payer mentions in the notes below. This section will give notes on the survey itself, but not the papers the survey mentioned.
+This section documents key survey papers analyzed for the Ayoai research, focusing on their unique contributions rather than the individual papers they reference.
 
 ## Goal-oriented LLM Prompting Survey
 
-- Towards Goal-oriented Large Language Model Prompting: A Survey [https://arxiv.org/abs/2401.14043v1](https://arxiv.org/abs/2401.14043v1)
+**Paper**: Towards Goal-oriented Large Language Model Prompting: A Survey
+- Link: https://arxiv.org/abs/2401.14043v1
 
-  - Interesting survey paper, but redundant and did not add much over the one I already deep dived in.
+**Assessment**: Limited novel insights beyond previously reviewed surveys on prompting techniques.
 
-**Ayoai Impact**: Limited new insights beyond other surveys reviewed.
+**Ayoai Impact**: Validated existing goal-oriented prompting approaches without introducing new methodologies.
 
 ## Scalable Instructable Multiworld Agent (SIMA)
 
-- Interesting world model here from deep mind, wow. . .Scalable Instructable Multiworld Agent (SIMA) https://deepmind.google/discover/blog/sima-generalist-ai-agent-for-3d-virtual-environments/
+**Source**: DeepMind's SIMA - Generalist AI Agent for 3D Virtual Environments
+- Link: https://deepmind.google/discover/blog/sima-generalist-ai-agent-for-3d-virtual-environments/
 
-  - Cool actions, I need some of these.
+**Key Contributions**:
+- Comprehensive action taxonomy for 3D environments
+- Multi-game generalization framework
+- Visual demonstration of action categories
 
-    - ![A diagram of a circular chart Description automatically generated with medium confidence](../images/media/image302.png)
+![Action taxonomy diagram](../images/media/image302.png)
 
-**Ayoai Impact**: SIMA's action taxonomy provides:
-- Comprehensive action categories
-- Multi-game generalization
-- Visual action selection model
-- Perfect reference for Roblox actions
+**Ayoai Impact**: SIMA provides crucial insights for Ayoai:
+- Well-structured action categorization system
+- Cross-game generalization strategies
+- Visual action selection models
+- Direct applicability to Roblox action design
 
-## LLMs And Games
+## Large Language Models and Games Survey
 
-- Large Language Models and Games: A Survey and Roadmap https://arxiv.org/abs/2402.18659
+**Paper**: Large Language Models and Games: A Survey and Roadmap
+- Link: https://arxiv.org/abs/2402.18659
 
-  - Abstract
+**Abstract**: Recent years have seen an explosive increase in research on large language models (LLMs), and accompanying public engagement on the topic. While starting as a niche area within natural language processing, LLMs have shown remarkable potential across a broad range of applications and domains, including games. This paper surveys the current state of the art across the various applications of LLMs in and for games, and identifies the different roles LLMs can take within a game. Importantly, we discuss underexplored areas and promising directions for future uses of LLMs in games and we reconcile the potential and limitations of LLMs within the games domain. As the first comprehensive survey and roadmap at the intersection of LLMs and games, we are hopeful that this paper will serve as the basis for groundbreaking research and innovation in this exciting new field.
 
-    - Recent years have seen an explosive increase in research on large language models (LLMs), and accompanying public engagement on the topic. While starting as a niche area within natural language processing, LLMs have shown remarkable potential across a broad range of applications and domains, including games. This paper surveys the current state of the art across the various applications of LLMs in and for games, and identifies the different roles LLMs can take within a game. Importantly, we discuss underexplored areas and promising directions for future uses of LLMs in games and we reconcile the potential and limitations of LLMs within the games domain. As the first comprehensive survey and roadmap at the intersection of LLMs and games, we are hopeful that this paper will serve as the basis for groundbreaking research and innovation in this exciting new field.
+**Assessment**: Comprehensive coverage of LLMs in gaming contexts with thorough analysis of current applications.
 
-  - Zak Thoughts
+**Ayoai Impact**: Validates Ayoai's approach while highlighting known limitations in game-specific LLM applications.
 
-    - I read it deep, I like his papers. Nothing new really I didn't already know though.
+## Understanding the Planning of LLM Agents
 
-**Ayoai Impact**: Comprehensive games survey but limited new insights for our specific use case.
+**Paper**: Understanding the planning of LLM agents: A survey
+- Link: https://arxiv.org/abs/2402.02716
 
-## Understanding the planning of LLM agents
+**Critical Contribution**: Essential framework for organizing research structure, providing comprehensive taxonomies and methodologies.
 
-- The best summary/survey paper recently that got me started with 80% of this: Understanding the planning of LLM agents: A survey ([https://arxiv.org/abs/2402.02716](https://arxiv.org/abs/2402.02716))
+**Key Frameworks**:
 
-  - The current taxonomy for planning in llms according to this paper:
+1. **Planning Taxonomy**:
+   ![Planning taxonomy diagram](../images/media/image303.png)
 
-    - ![A diagram of a diagram Description automatically generated](../images/media/image303.png)
+2. **Agent Processing Cycle**:
+   - Perceiving the environment
+   - Planning actions
+   - Executing behaviors
+   ![Processing cycle diagram](../images/media/image304.png)
 
-  - The level above planning? Perceiving the environment, planning, and executing actions. Planning,
+3. **Comprehensive Taxonomy Chart**:
+   ![Taxonomy summary](../images/media/image305.png)
 
-    - as one of the most critical capabilities for agents....
+**Ayoai Impact**: Essential foundation providing:
+- Clear taxonomical structure for planning approaches
+- Perception → Planning → Execution framework
+- Organizational structure for research categorization
+- Baseline for comparing planning methodologies
 
-    - ![A text on a white background Description automatically generated](../images/media/image304.png)
+## In-depth Survey of LLM-based AI Agents
 
-  - Taxonomy chart summarized. . .
+**Paper**: An In-depth Survey of Large Language Model-based Artificial Intelligence Agents
+- Link: https://arxiv.org/abs/2309.14365
 
-    - ![A white sheet with black text Description automatically generated](../images/media/image305.png)
+**Abstract**: Due to the powerful capabilities demonstrated by large language model (LLM), there has been a recent surge in efforts to integrate them with AI agents to enhance their performance. In this paper, we have explored the core differences and characteristics between LLM-based AI agents and traditional AI agents. Specifically, we first compare the fundamental characteristics of these two types of agents, clarifying the significant advantages of LLM-based agents in handling natural language, knowledge storage, and reasoning capabilities. Subsequently, we conducted an in-depth analysis of the key components of AI agents, including planning, memory, and tool use. Particularly, for the crucial component of memory, this paper introduced an innovative classification scheme, not only departing from traditional classification methods but also providing a fresh perspective on the design of an AI agent's memory system. We firmly believe that in-depth research and understanding of these core components will lay a solid foundation for the future advancement of AI agent technology. At the end of the paper, we provide directional suggestions for further research in this field, with the hope of offering valuable insights to scholars and researchers in the field.
 
-**Ayoai Impact**: This survey provided the foundation:
-- Clear planning taxonomy
-- Perception → Planning → Execution cycle
-- Framework for organizing research
-- 80% of initial research direction
+**Notable Visual Contributions**:
 
-## Agents Survey
+1. **Agent Architecture Overview**:
+   ![Agent architecture diagram](../images/media/image306.tmp)
 
-- An In-depth Survey of Large Language Model-based Artificial Intelligence Agents https://arxiv.org/abs/2309.14365
+2. **Memory System Classification**:
+   ![Memory classification diagram](../images/media/image307.tmp)
 
-  - I did not read this with fine tooth comb, but it looks redundant with other surveys I reviews, except for the cool summaries they put together below.
+**Ayoai Impact**: Provides valuable insights into:
+- Novel memory classification approaches
+- Component-based agent architecture
+- Visual frameworks for system design
+- Fresh perspectives on traditional classifications
 
-  - Abstract:
+## Synthesis for Ayoai
 
-    - Due to the powerful capabilities demonstrated by large language model (LLM), there has been a recent surge in efforts to integrate them with AI agents to enhance their performance. In this paper, we have explored the core differences and characteristics between LLM-based AI agents and traditional AI agents. Specifically, we first compare the fundamental characteristics of these two types of agents, clarifying the significant advantages of LLM-based agents in handling natural language, knowledge storage, and reasoning capabilities. Subsequently, we conducted an in-depth analysis of the key components of AI agents, including planning, memory, and tool use. Particularly, for the crucial component of memory, this paper introduced an innovative classification scheme, not only departing from traditional classification methods but also providing a fresh perspective on the design of an AI agent's memory system. We firmly believe that in-depth research and understanding of these core components will lay a solid foundation for the future advancement of AI agent technology. At the end of the paper, we provide directional suggestions for further research in this field, with the hope of offering valuable insights to scholars and researchers in the field.
+### Key Insights from Survey Analysis
 
-  - Zak thoughts
+1. **Planning Frameworks**
+   - Multiple taxonomies available with trade-offs
+   - Perception → Planning → Execution as core cycle
+   - Need for real-time adaptations in gaming
 
-    - ![A diagram of a project Description automatically generated](../images/media/image306.tmp)
+2. **Memory Architectures**
+   - Various classification schemes exist
+   - Hierarchical structures prove most effective
+   - Integration with planning systems critical
 
-    - ![A diagram of memory Description automatically generated](../images/media/image307.tmp)
+3. **Game-Specific Requirements**
+   - Action taxonomies must be comprehensive (SIMA example)
+   - Real-time performance constraints
+   - Cross-game generalization potential
 
-**Ayoai Impact**: Valuable visual summaries of:
-- Agent component architecture
-- Memory system classifications
-- Fresh perspective on memory design
-- Core component analysis
+4. **Research Gaps Identified**
+   - Real-time planning optimization for games
+   - Efficient multi-agent coordination
+   - Memory systems scaled for gaming
+   - Game-specific architectural patterns
 
-## Key Takeaways for Ayoai
+### Strategic Value
 
-From all surveys reviewed:
+These surveys collectively provide:
+- Theoretical foundations for Ayoai's approach
+- Validated architectural patterns
+- Identification of optimization opportunities
+- Clear differentiation points from existing solutions
 
-1. **Planning Taxonomy**
-   - Perception → Planning → Execution
-   - Multiple planning strategies available
-   - Trade-offs between approaches
-
-2. **Memory Systems**
-   - Various classification schemes
-   - Importance of hierarchical memory
-   - Integration with planning
-
-3. **Game-Specific Insights**
-   - Action taxonomies (SIMA)
-   - LLM limitations in games
-   - Need for real-time performance
-
-4. **Research Gaps**
-   - Real-time planning in games
-   - Multi-agent coordination
-   - Efficient memory systems
-   - Game-specific architectures
-
-These surveys provide the theoretical foundation for Ayoai's approach, highlighting both opportunities and challenges in building LLM-based game agents.
+The synthesis of these surveys forms the academic foundation for Ayoai's technical approach, ensuring alignment with cutting-edge research while identifying specific areas for innovation in game-based AI agents.

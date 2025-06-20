@@ -4,15 +4,22 @@ This document covers practical implementation aspects of agent capabilities incl
 
 ## Communications (agent-agent and agent-player)
 
-How will communication work?
+### Architecture Overview
 
-### Overall Notes
+**Communication as Behavior**:
+- Chat actions integrated as behavior tree nodes
+- Decision-making for when and what to communicate
+- Mental behavior trees guide conversation initiation
 
-- Sending chats is not a problem, but how do individual souls decide to chat. I think chatting should be a action to choose from for the mental behavior tree?
+**Server-Side Processing**:
+- Communication logic runs on Ayoai servers, not in game engine
+- LLM-generated behavior trees for conversation flow
+- Separation of reasoning (server) from execution (client)
 
-- Wait though, they need to talk to each other, but this all happens on ayoAI and not on roblox that is why it is not a behavior tree on roblox. HOWEVER!!! It is a behavior tree on ayo ai that llms can create for us!
-
-- AyoChatResponseBuilderVerticle - recieve history and other things?
+**Response Generation**:
+- AyoChatResponseBuilderVerticle handles conversation processing
+- History-aware context management
+- Multi-agent conversation coordination
 
 **Ayoai Impact**: Communication design considerations:
 - Chat as a behavior tree action node
@@ -22,7 +29,9 @@ How will communication work?
 
 ## Tool Use
 
-How has not many papers involved tool use and planning? We need to add this section.
+### Research Gap
+
+Despite the importance of tool use in agent systems, there's limited research combining tool use with planning frameworks. This section addresses this critical intersection.
 
 ### What are tools anyway?
 
@@ -31,10 +40,10 @@ How has not many papers involved tool use and planning? We need to add this sect
   - Abstract
     - Language models (LMs) are powerful yet mostly for text generation tasks. Tools have substantially enhanced their performance for tasks that require complex skills. However, many works adopt the term "tool" in different ways, raising the question: What is a tool anyway? Subsequently, where and how do tools help LMs? In this survey, we provide a unified definition of tools as external programs used by LMs, and perform a systematic review of LM tooling scenarios and approaches. Grounded on this review, we empirically study the efficiency of various tooling methods by measuring their required compute and performance gains on various benchmarks, and highlight some challenges and potential future research in the field.
 
-  - Zak Thoughts
-    - H
-    - ![A screenshot of a computer Description automatically generated](../images/media/image67.png)
-    - ![A screenshot of a computer program Description automatically generated](../images/media/image68.png)
+### Visual Framework
+
+![Tool use framework diagram](../images/media/image67.png)
+![Tool implementation example](../images/media/image68.png)
 
 **Ayoai Impact**: Tool use is essential for game agent capabilities:
 - Tools = external programs/functions agents can invoke
