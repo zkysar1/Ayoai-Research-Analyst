@@ -84,7 +84,6 @@ This repository embodies an exploratory approach to understanding autonomous age
 - Market research informs feasibility and competitive positioning
 
 ### For Contributors
-- See `Research-Notes/MIGRATION_GUIDE.md` for information on organizing research
 - Follow established formatting patterns when adding new research
 - Maintain focus on autonomous agent behavior applications
 
