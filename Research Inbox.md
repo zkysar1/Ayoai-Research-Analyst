@@ -960,3 +960,11 @@ And that's called non-stationarity.
   > 📝 [GitHub - topoteretes/cognee: Memory for AI Agents in 5 lines of code](https://github.com/topoteretes/cognee)
   
 # Newly added after June 2025. . . 
+
+- [ ] Notes from keen: plasticity vs generalizations  `This is hard, because we really don't have strong theories of either, but it feels like there might be an intrinsic conflict that should be actively addressed instead of passively accepted. Generalization is an ignoring of details, while plasticity involves recognizing new patterns that are currently meaningless to you. Primacy bias, recency bias Facts versus understanding -- the products of reinforcement learning in policies and value functions are sort of fundamentally different from simple traces of environment interactions. You mine facts for understanding Generalization is not well founded. CNNs have some helpful induct`
+
+- [ ] Agents Play Thousands of 3D Video Games
+  - I need to review this research - this is the guy that built that behavior tree thing!! The TenCent thing. 
+  - https://arxiv.org/abs/2503.13356
+  
+- [ ] 
