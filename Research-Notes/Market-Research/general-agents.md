@@ -193,10 +193,14 @@ Practical implementation guide with detailed code examples.
 
 ## Additional Resources
 
-### Development Tools
+#
+## Development Tools
+
 - **Claude Code usage tracking**: `npx ccusag3@latest`
 
-### Development Workflows
+#
+## Development Workflows
+
 - **Agent flow patterns**: https://x.com/ryancarson/status/1934346688753492283?s=19
 
 ### Open Source Agent Implementations

@@ -132,13 +132,17 @@ Combining goal-oriented layer with HDDL foundation:
 - **Tasks**: Compound behaviors using methods
 - **Goals**: High-level states driving task selection
 
-### Benefits
+#
+## Benefits
+
 1. **Scalability**: Organized framework for complex scenarios
 2. **Reusability**: Tasks/methods shared across goals
 3. **Realistic Behavior**: Dynamic goal switching
 4. **Modularity**: Easy addition of new elements
 
-### Implementation Considerations
+#
+## Implementation Considerations
+
 - Simple, fast Roblox actions
 - Lightweight real-time planning
 - Modular goal/task definitions
@@ -146,7 +150,9 @@ Combining goal-oriented layer with HDDL foundation:
 
 ## Final Architecture Plan (November 2024)
 
-### 1. Character State Service
+#
+## 1. Character State Service
+
 **Purpose**: Maintain conflated world state for decision-making
 
 **Key Features**:
@@ -156,7 +162,9 @@ Combining goal-oriented layer with HDDL foundation:
 - Dynamic feature list management
 - Perception-based filtering
 
-### 2. Behavior Tree Manager
+#
+## 2. Behavior Tree Manager
+
 **Purpose**: Execute behavior trees and coordinate with Roblox
 
 **Key Features**:
@@ -166,7 +174,9 @@ Combining goal-oriented layer with HDDL foundation:
 - Archive completed trees
 - Trigger replanning on completion
 
-### 3. Intent Engine
+#
+## 3. Intent Engine
+
 **Purpose**: Manage character goals and priorities
 
 **Key Features**:
@@ -176,7 +186,9 @@ Combining goal-oriented layer with HDDL foundation:
 - Maintain problem queue
 - Coordinate with find-cause alerts
 
-### 4. Completed Trees Service
+#
+## 4. Completed Trees Service
+
 **Purpose**: Archive and analyze behavior history
 
 **Key Features**:
@@ -185,7 +197,9 @@ Combining goal-oriented layer with HDDL foundation:
 - Discrepancy detection for similar actions
 - Alert intent engine of anomalies
 
-### 5. Seed Maker
+#
+## 5. Seed Maker
+
 **Purpose**: Generate new behavior trees based on intent
 
 **Methods**:
@@ -208,7 +222,9 @@ Combining goal-oriented layer with HDDL foundation:
 4. **Incremental Learning**: Add one predicate at a time for clear causation
 5. **Shared Tree Storage**: One copy per unique tree across all agents
 
-### Open Questions
+#
+## Open Questions
+
 - How to handle unknown causation (e.g., health lowering without clear cause)
 - Balance between exploration and exploitation in seed generation
 - Optimal frequency for goal reevaluation

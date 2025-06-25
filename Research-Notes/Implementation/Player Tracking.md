@@ -1,4 +1,4 @@
-## Player Tracking
+# Player Tracking
 
 Player actions and their behavior trees are essential for enabling meaningful multi-agent interaction. Tracking player behavior serves dual purposes: driving more realistic NPC responses and potentially training large action models for commercial use or internal optimization.
 

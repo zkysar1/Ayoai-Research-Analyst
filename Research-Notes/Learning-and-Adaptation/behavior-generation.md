@@ -17,7 +17,6 @@ Trees are the way! Mind trees, Behavior trees, Binary trees, etc.
       - How to make these level elastic?
   - Who controls this brain?
 
-
 - Random notes
   - You should be able to give someone else a tree, buy a tree, trade a tree.
   - I like starting with R2D2 behaviors: we demonstrate results using an R2D2 robot

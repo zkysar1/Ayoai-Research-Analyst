@@ -1,3 +1,5 @@
+# Dave Mark Prompt
+
 ------------------------------------------------------------------------
 
 # First Research Request
@@ -8756,7 +8758,9 @@ if (!runningTrees.isEmpty()) {
 
 if (logLevel\>=1)
 vertx.eventBus().publish(\"log\",\"#################################Trees
-Running### Do nothing,1,IntentEngineVerticle,Intent
+Running
+### Do nothing,1,IntentEngineVerticle,Intent
+
 Thinking,\"+uniqueAyoUnitServerId);
 
 //Trees running, evaluate if i should interrupt.
@@ -8797,7 +8801,9 @@ based on current self intent
 
 if (logLevel\>=1)
 vertx.eventBus().publish(\"log\",\"##############################No
-Trees Running### Use current intent,1,IntentEngineVerticle,Intent
+Trees Running
+### Use current intent,1,IntentEngineVerticle,Intent
+
 Thinking,\"+uniqueAyoUnitServerId);
 
 //testing - turning off the go explore algo . . .
@@ -8825,7 +8831,9 @@ build a tree, so count it here.
 
 if (logLevel\>=1)
 vertx.eventBus().publish(\"log\",\"##############################No
-Trees Running### Use Player Intent,1,IntentEngineVerticle,Intent
+Trees Running
+### Use Player Intent,1,IntentEngineVerticle,Intent
+
 Thinking,\"+uniqueAyoUnitServerId);
 
 //The intent is being given to us by a player, so simply run this tree

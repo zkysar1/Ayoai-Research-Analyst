@@ -1,4 +1,4 @@
-**Parameterizing Behavior Trees**
+# Parameterizing Behavior Trees
 
 Alexander Shoulson, Francisco M. Garcia, Matthew Jones, Robert Mead, and
 Norman I. Badler
@@ -10,45 +10,48 @@ University of Pennsylvania
 Philadelphia, PA 19104-6389, USA
 {shoulson,fgarcia,majo,robmead,badler}@seas.upenn.edu
 
-> **Abstract.** This paper introduces and motivates the application of
-> parameterization to behavior trees. As a framework, behavior trees are
-> becoming more commonly used for agent controllers in interactive game
-> environments. We describe a way by which behavior trees can be
-> authored for acting upon functions with arguments, as opposed to being
-> limited to nonparametric tasks. We expand upon this idea to provide a
-> method by which a subtree itself can be encapsulated with an exposed
-> parameter interface through a lookup node, which enables code reuse in
-> a manner already exploited by object oriented programming languages.
-> Parameterization also allows us to recast Smart Events (a mechanism
-> for co-opting agents to perform a desired activity) as behavior trees
-> that can act generically upon groups of typed agents. Finally, we
-> introduce a tool called Topiary, which enables the
-> graphically-oriented authoring of behavior trees with this
-> functionality as part of a broader testbed for agent simulation.
->
-> **Keywords:** Behavior Trees, Smart Events, Behavioral AI, Agents.
+**Abstract**
+```text
+This paper introduces and motivates the application of
+parameterization to behavior trees. As a framework, behavior trees are
+becoming more commonly used for agent controllers in interactive game
+environments. We describe a way by which behavior trees can be
+authored for acting upon functions with arguments, as opposed to being
+limited to nonparametric tasks. We expand upon this idea to provide a
+method by which a subtree itself can be encapsulated with an exposed
+parameter interface through a lookup node, which enables code reuse in
+a manner already exploited by object oriented programming languages.
+Parameterization also allows us to recast Smart Events (a mechanism
+for co-opting agents to perform a desired activity) as behavior trees
+that can act generically upon groups of typed agents. Finally, we
+introduce a tool called Topiary, which enables the
+graphically-oriented authoring of behavior trees with this
+functionality as part of a broader testbed for agent simulation.
+```
+
+**Keywords:** Behavior Trees, Smart Events, Behavioral AI, Agents.
 
 # Introduction
 
 While traditionally known for use in industrial and commercial
-environments for describing large-scale projects \[4\], behavior trees
+environments for describing large-scale projects [4], behavior trees
 are garnering attention in the computer gaming industry for use in
 designing the artificial intelligence logic for environmental agents. In
 particular, they have been applied in sophisticated, popular games
-requiring intelligent teammates and adversaries such as Spore \[2\],
-Halo 2 \[5\], and Halo 3 \[6\], among others. This formalism is a
+requiring intelligent teammates and adversaries such as Spore [2],
+Halo 2 [5], and Halo 3 [6], among others. This formalism is a
 natural choice for game AI, as behavior trees lend themselves well to
-behavior-oriented design for complex systems \[3\]. The paradigm enables
+behavior-oriented design for complex systems [3]. The paradigm enables
 sophisticated sequences of actions and contingencies to be represented
 as a concise graphical structure following a set of very simple rules
 with equivalent representations as Communicating Sequential Processes
 (CSPs). The notation allows task requirements and specifications,
 normally conceptualized in natural language, to be captured and
-expressed in an actionable format \[12\] that can be converted to code
-or data streams \[7\].
+expressed in an actionable format [12] that can be converted to code
+or data streams [7].
 
 One of the most appealing aspects of behavior trees is their simplicity.
-As part of this, we recognize that Millington and Funge \[9, p. 361\]
+As part of this, we recognize that Millington and Funge [9, p. 361]
 insist, "We certainly don't want to pass data into tasks as parameters
 to their run method"
 
@@ -61,7 +64,7 @@ when a leaf node calls a subroutine. This follows a guideline of
 building behavior trees that can invoke tasks solely as if they were
 functions with no explicit parameters. However, lexicalized parameter
 sequences are a powerful feature of object-oriented programming
-languages \[8\], and avoiding them results in opaque and confusing data
+languages [8], and avoiding them results in opaque and confusing data
 flow. Making each node aware of the parameters of its associated agent
 member function is a simple task given a description of that agent, and
 streamlines the way in which these functions are invoked. With the
@@ -71,7 +74,7 @@ certain action using just that node on the behavior tree itself.
 
 For communication between nodes and with invoked functions, behavior
 trees traditionally rely on a *blackboard*, which is a centralized, flat
-repository of data to which all interested parties have access \[9\].
+repository of data to which all interested parties have access [9].
 This approach does not lend itself well to encapsulation and, as a
 result, frustrates subtree reuse. The behavior tree structure itself can
 make it difficult to track what and where data is stored where in the
@@ -101,7 +104,7 @@ parameterize subtrees themselves -- encapsulating them as nodes with
 their own allocated parameter scope that is exposed to the parent tree
 as an interface. Parameters are now given to these wrapped subtree nodes
 without a blackboard, and can be clearly represented in the tree. We
-draw this idea from Parameterized Action Representations (PARs) \[1\],
+draw this idea from Parameterized Action Representations (PARs) [1],
 but generalize it further into any behavior tree that provides a
 parameter interface at its topmost level.
 
@@ -109,7 +112,7 @@ Introducting the notion of parameterization to the structure of behavior
 trees enables new opportunities for code flexibility. We gain the
 ability to parameterize not only the way in which tasks are executed,
 but also which agents are executing the tasks, which also allows us to
-revisit the Smart Event \[11\] formalism from a behavior tree
+revisit the Smart Event [11] formalism from a behavior tree
 perspective. In the remainder of this paper we discuss the various
 methods we employ to recast PARs and Smart Events within a behavior tree
 framework that exploits a new, reasoned approach to subtree
@@ -171,8 +174,7 @@ PAR arguments serve as parameters to the scope of specific subtree. They
 can be created as needed by the tree designer and can be reused in
 multiple places for the parameters to multiple tree leaf nodes. For
 example, we can designate an
-*arg*![](../images/media3/image1.jpg){width="4.3333333333333335e-2in"
-height="6.666666666666667e-3in"}*tiredness* PAR argument, and pass that
+*arg*![](../images/media3/image1.jpg)*tiredness* PAR argument, and pass that
 same argument with respect to both the volume for a yawning sound, and
 the speed at which an agent should walk for two distinct nodes in a
 single behavior tree.
@@ -213,7 +215,7 @@ programming languages.
 
 Smart Events provide an event-centric behavior authoring approach in
 which desired or scheduled occurrences in the environment contain all of
-the information the agent requires in order to participate \[11\]. This
+the information the agent requires in order to participate [11]. This
 is especially useful for behaviors requiring the simultaneous control of
 multiple agents. Rather than designing agents to react to one another
 when, say, taking turns in a conversation, the entire interplay of the
@@ -299,39 +301,36 @@ pot on the ground. Upon purchase, the seller will permit the buyer to
 pick the object up and leave. First, we define a very simple human agent
 model as follows:
 
-class HumanAgent { \[Traits\] name : String strength : Int tiredness :
-Int
+class HumanAgent {
+  [Traits]
+  name : String
+  strength : Int
+  tiredness : Int
 
-> \[Capabilities\] function perform(act_name : String) { // Perform the
-> named animation and/or sound \...
->
-> return Success
->
-> }
->
-> function Grasp(item_reference : Item) { // Reach out and grab the
-> referenced item \...
->
-> return Success
->
-> }
->
-> function WalkTo(location_name : String) {
->
-> // Walk towards the named location in the environment \...
->
-> return Success
->
-> }
->
-> function Wander() {
->
-> // Wander around the environment \...
->
-> return Success
->
-> }
+  [Capabilities]
+  function perform(act_name : String) {
+    // Perform the named animation and/or sound
+    ...
+    return Success
+  }
 
+  function Grasp(item_reference : Item) {
+    // Reach out and grab the referenced item
+    ...
+    return Success
+  }
+
+  function WalkTo(location_name : String) {
+    // Walk towards the named location in the environment
+    ...
+    return Success
+  }
+
+  function Wander() {
+    // Wander around the environment
+    ...
+    return Success
+  }
 }
 
 Obviously, problems such as locomotion and hand positioning for grasping
@@ -344,8 +343,7 @@ into the larger structure. For instance, we encapsulate a 'pick up' PAR
 tree for bending over and grabbing an item from the ground in Fig. 1. On
 the left, we create a
 
-> ![](../images/media3/image2.png){width="4.656667760279965in"
-> height="1.0866666666666667in"}
+![](../images/media3/image2.png)
 
 **Fig.1.** An encapsulation of a parameterized subtree as a PAR tree
 with one argument
@@ -381,11 +379,10 @@ seller will randomly alternate between tapping his foot, checking his
 watch, or idly waiting, as he does not want to walk away and leave the
 flower pot unguarded (the *φ*-sequence node is a stochastic sequence,
 which performs its children in random order). This is a distant analogue
-of CAROSA's aleatoric actions \[10\], though here simplified to
+of CAROSA's aleatoric actions [10], though here simplified to
 triviality for the sake of illustration. Note
 
-> ![](../images/media3/image3.png){width="3.2933333333333334in"
-> height="1.4033333333333333in"}
+![](../images/media3/image3.png)
 
 **Fig.2.** The two agent trees for when each agent is not involved in an
 event
@@ -432,7 +429,8 @@ assertion will succeed, so the selector will succeed and skip over its
 second child (i.e., the buyer will not pick up the flower pot and
 leave). At this point, the event terminates. If
 
-> ![](../images/media3/image4.png){width="4.65in" height="2.54in"}
+```text
+![](../images/media3/image4.png)
 
 **Fig.3.** The PAR tree for the haggling event
 
@@ -475,8 +473,8 @@ etc.). Actions and assertions, gleaned from the tagged function
 signatures and data types in the agent model class, can be parameterized
 accordingly (using hardcoded values, data from agents or the world, or
 
-> ![](../images/media3/image5.jpg){width="4.35674978127734in"
-> height="2.3904997812773403in"}
+![](../images/media3/image5.jpg)
+```
 
 **Fig.4.** Building a PAR tree in Topiary
 
@@ -582,7 +580,8 @@ other authorized documents. Citation of manufacturers or trade names
 does not constitute an official endorsement or approval of the use
 thereof. The U.S. Government is authorized to reproduce and distribute
 reprints for Government purposes notwithstanding any copyright notation
-heron. **References**
+heron. 
+## References
 
 1.  Badler, N.I., Bindiganavale, R., Allbeck, J., Schuler, W., Zhao, L.,
     Palmer, M.: Parameterized action representation for virtual human

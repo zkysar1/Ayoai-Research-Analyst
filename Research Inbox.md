@@ -49,6 +49,7 @@
   > 📝 [\[2406.14228\] EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms](https://arxiv.org/abs/2406.14228)
 
 - [ ] **You member things more that they are closer to you.  Like, if you watch someone get stabbed on TV pg 13, vs r, vs real wife, vs your wife,  vs your self.   Escalating things off memory**
+
   🏷️ COMPUTER, EVENING
 
 - [ ] **Cool prompt**
@@ -125,7 +126,7 @@
 
 - [ ] **Altera framework**
   > 📝 https://openai.com/index/altera/
-  
+
   <details>
   <summary>💬 Comments (1)</summary>
   
@@ -134,7 +135,7 @@
   </details>
 
 - [ ] **Look at this scenario selector!  Interesting chart in how to selector scenario?**
-  
+
   <details>
   <summary>💬 Comments (1)</summary>
   
@@ -147,7 +148,7 @@
 
 - [ ] **Different agent frameworks to review in a picture**
   > 📝 [Eduardo Ordax (@ordax) on X](https://x.com/ordax/status/1843006110074274148?s=19)
-  
+
   <details>
   <summary>💬 Comments (1)</summary>
   
@@ -157,7 +158,7 @@
 
 - [ ] **Omg, check out the entangled brain!!  Free book here**
   > 📝 [Inês Hipólito (@ineshipolito) on X](https://x.com/ineshipolito/status/1645002923573747712?s=19)
-  
+
   <details>
   <summary>💬 Comments (2)</summary>
   
@@ -269,6 +270,7 @@
   > 📝 [Sumanth (@Sumanth_077) on X](https://x.com/Sumanth_077/status/1870834042473709572?s=19)
 
 - [ ] **Read this text to sql, hmmm.  Share this with work.**
+
   🏷️ COMPUTER
   > 📝 [Harrison Chase (@hwchase17) on X](https://x.com/hwchase17/status/1873042087240974366?s=19)
 
@@ -377,12 +379,11 @@
 
 - [ ] **Altera opened sourced some Minecraft agent!! This is just the open sourced side, not the behavior side.**
   > 📝 [GitHub - FundamentalLabs/minecraft-mcp: MCP server for minecraft](https://github.com/FundamentalLabs/minecraft-mcp)
-  
+
   - [ ] **Why did Jack mention this research about a replacement to alpha evolve or something?**
   > 📝 [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954)
   > 📝 [Video breaking down the paper.](https://www.youtube.com/watch?si=nvIwKLTvBndm6DD4&v=cMbGmdy2sfM&feature=youtu.be)
   > 📝 Then that one guy at work mentioned openevolve, which is open source brain of alpha evolve!
-  
   
 # 📋 AyoAi Text-to-World
 
@@ -429,7 +430,7 @@
 
 - [ ] **PyTorch is a MetaAi based company, that says it is free for experimental stuff.  It looks tempting, but I would not be able to use it long term.  Maybe I should just build something internally, that looks at correlations and call it day.**
   > 📝 [PyTorch](https://ai.facebook.com/tools/pytorch/)
-  
+
   <details>
   <summary>💬 Comments (2)</summary>
   
@@ -442,18 +443,16 @@
 - [ ] **Maybe I need to review that AI learning class again,  And review some of the code and see if I can get it working,etc.  Then my feet will be wet with ideas.  I need to do this before I move back to my model.**
 
 - [ ] **Google this:  recurrent networks classification**
-  
+
   <details>
   <summary>💬 Comments (1)</summary>
   
   **Comment 1:** And yikes, Wharton about this way of catahorizing sequences?!  Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras
 
-
-  
   </details>
 
 - [ ] **best way to explain a neural network classification**
-  
+
   <details>
   <summary>💬 Comments (1)</summary>
   
@@ -463,7 +462,7 @@
 
 - [ ] **Dang, this game AI from black and white looks super cool!!!**
   > 📝 https://www.cs.rochester.edu/~brown/242/assts/termprojs/games.pdf
-  
+
   <details>
   <summary>💬 Comments (7)</summary>
   
@@ -521,7 +520,7 @@ object.natural.rock->0.1
   </details>
 
 - [ ] **Notes on white board**
-  
+
   <details>
   <summary>💬 Comments (2)</summary>
   
@@ -541,7 +540,7 @@ object.natural.rock->0.1
 
 - [ ] **Awesome take from tesla**
   > 📝 Idealism is the main atecedant?!
-  
+
   <details>
   <summary>💬 Comments (1)</summary>
   
@@ -569,7 +568,7 @@ Dr. Nikola Tesla. 🧔🏻‍♂️❤️🌍
 
 - [ ] **Julian Togelius is an Associate Professor of Computer Science and Engineering at NYU, and Cofounder and research director at modl.ai**
   > 📝 [‎TalkRL: The Reinforcement Learning Podcast: Julian Togelius on Apple Podcasts](https://podcasts.apple.com/us/podcast/julian-togelius/id1478198107?i=1000622243973)
-  
+
   <details>
   <summary>💬 Comments (9)</summary>
   
@@ -595,7 +594,7 @@ Dr. Nikola Tesla. 🧔🏻‍♂️❤️🌍
 
 - [ ] **Jakob Foerster on Multi-Agent learning, Cooperation vs Competition, Emergent Communication, Zero-shot coordination, Opponent Shaping, agents for Hanabi and Prisoner's Dilemma, and more.**
   > 📝 [‎TalkRL: The Reinforcement Learning Podcast: Julian Togelius on Apple Podcasts](https://podcasts.apple.com/us/podcast/julian-togelius/id1478198107?i=1000622243973)
-  
+
   <details>
   <summary>💬 Comments (18)</summary>
   
@@ -803,10 +802,12 @@ And that's called non-stationarity.
   > 📝 [The Craft of Behavior Trees](https://medium.com/@sion_denis/the-craft-of-behavior-trees-ab6b181ce21a)
 
 - [ ] **Github to file?!**
+
   🏷️ EVENING
   > 📝 [Eric Hartford (@erhartford) on X](https://twitter.com/erhartford/status/1767284737788514724?s=19)
 
 - [ ] **Wow what is this?!  Meta gpt?**
+
   🏷️ EVENING
   > 📝 [MetaGPT (@MetaGPT_) on X](https://twitter.com/MetaGPT_/status/1767965444579692832?s=19)
 
@@ -924,6 +925,7 @@ And that's called non-stationarity.
   > 📝 [Matt Shumer (@mattshumer_) on X](https://x.com/mattshumer_/status/1913282296557224431?s=19)
 
 - [ ] **Read this from nous research, new research [Nous Research (@NousResearch) on X](https://x.com/NousResearch/status/1917299865060794484?s=19)**
+
   🏷️ COMPUTER
   > 📝 Like, I could hook up my environment to their environment and train something?   What are the other other llms, like the maze?
 
@@ -946,7 +948,7 @@ And that's called non-stationarity.
 
 - [ ] **Wait,  Holy crap, read this! New open source code to "evolve" - hell yeah**
   > 📝 [Jeff Clune (@jeffclune) on X](https://x.com/jeffclune/status/1928291576129933595?s=19)
-  
+
   <details>
   <summary>💬 Comments (2)</summary>
   
@@ -958,12 +960,13 @@ And that's called non-stationarity.
 
 - [ ] **Free open source graph memory**
   > 📝 [GitHub - topoteretes/cognee: Memory for AI Agents in 5 lines of code](https://github.com/topoteretes/cognee)
-  
+
 # Newly added after June 2025. . . 
 
 - [ ] Notes from keen: plasticity vs generalizations  `This is hard, because we really don't have strong theories of either, but it feels like there might be an intrinsic conflict that should be actively addressed instead of passively accepted. Generalization is an ignoring of details, while plasticity involves recognizing new patterns that are currently meaningless to you. Primacy bias, recency bias Facts versus understanding -- the products of reinforcement learning in policies and value functions are sort of fundamentally different from simple traces of environment interactions. You mine facts for understanding Generalization is not well founded. CNNs have some helpful induct`
 
 - [ ] Agents Play Thousands of 3D Video Games
+
   - I need to review this research - this is the guy that built that behavior tree thing!! The TenCent thing. 
   - https://arxiv.org/abs/2503.13356
   
