@@ -1,2 +1,12 @@
 ### Claude ###
 .claude/
+
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
