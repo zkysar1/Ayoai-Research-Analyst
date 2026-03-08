@@ -37,6 +37,7 @@ Check out learning to continually learn!!  Jeff Clune does it again.
 arxiv: https://arxiv.org/pdf/2602.07755
 github: https://github.com/zksha/alma
 website: https://yimingxiong.me/alma
+Review this research and ask yourself how you could improve your current system with some of the approaches outlined here. 
 ```
 ```
 Check out HindSight: https://github.com/vectorize-io/hindsight! Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
