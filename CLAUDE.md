@@ -1,212 +1,102 @@
-# CLAUDE.md
+## What This Does
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Research documentation repository for AyoAI's autonomous agent behavior systems. Contains organized research notes, academic paper analysis, competitive intelligence, and technical investigation into cognitive architectures, memory systems, and behavioral modeling for intelligent NPCs in game environments (Roblox). This is a knowledge base — no production code, no deployable artifacts.
 
-## Repository Purpose
+Safety Tier 4 — Non-Lambda. Test circuit: `syntax-only`. Does not participate in an invocation chain.
 
-This is a research documentation repository for Ayoai, focusing on autonomous agent behavior research for game environments (particularly Roblox). The repository contains organized research notes, academic papers analysis, competitive research, and technical implementation details for building intelligent NPCs.
+## Verification
 
-## Repository Architecture
+Documentation-only repository. No code, no build, no tests.
 
-### Research Organization Structure
+```bash
+# Syntax check — verify all markdown files parse cleanly
+find . -name "*.md" -not -path "./.git/*" | head -5
+```
 
-The repository is organized around a multi-disciplinary research approach:
+## Quick Reference
 
-**Core-Concepts/**: Fundamental cognitive and behavioral frameworks
-- Perception systems and world understanding
-- Consciousness models and cognitive architectures  
-- Personality systems and psychological models
+| Field | Value |
+|-------|-------|
+| Language | Markdown (documentation only) |
+| Build | None |
+| Tests | None |
+| Deploy | None — push to main |
+| CI/CD | None |
+| Env vars | None |
+| Entry point | `Research-Notes/` directory |
 
-**Implementation/**: Technical implementation details and frameworks
-- ABC (Antecedent-Behavior-Consequence) behavioral modeling
-- 22-verticle cognitive architecture with 97 processes
-- Decision augmentation and behavioral analytics systems
-- NPC experience tracking and journaling systems
+## Architecture
 
-**Memory-Systems/**: Various memory architectures for agents
-- RAG-based memory implementations
-- Hierarchical memory networks
-- Long-term and working memory systems
+```
+Research-Notes/
+  Core-Concepts/           # Perception, consciousness, personality frameworks
+  Implementation/          # ABC method, cognitive architecture, decision augmentation
+  Memory-Systems/          # RAG, hierarchical memory, temporal memory
+  Planning-and-Reasoning/  # Task decomposition, MCTS, PDDL, utility theory
+  Learning-and-Adaptation/ # Reflection, behavior generation
+  Market-Research/         # Competitors, monetization, Roblox worlds
+  images/                  # media/, media2/, media3/ — sequential image###.png
+```
 
-**Planning-and-Reasoning/**: Decision-making and planning algorithms
-- Task decomposition strategies
-- Multi-plan selection (MCTS, A*, etc.)
-- Planner-aided planning (PDDL integration)
+Root-level files:
+- `Research Inbox.md` — unprocessed links and ideas queue
+- `Listen to.md` — talks and videos to review
+- `Official Intelligence Modules.md` — plug-and-play NPC behavior module notes
 
-**Learning-and-Adaptation/**: Self-improvement mechanisms
-- Reflection and refinement systems
-- Behavior generation and intrinsic motivation
+## Key Files
 
-**Market-Research/**: Competitive analysis and industry research
-- Competitor analysis (Altera, Inworld, Soul Machines)
-- General agent frameworks
-- Monetization models and business strategies
+| File | Purpose |
+|------|---------|
+| `Research-Notes/Implementation/abc-method.md` | ABC (Antecedent-Behavior-Consequence) behavioral framework |
+| `Research-Notes/Implementation/cognitive-architecture.md` | 22-verticle, 97-process cognitive architecture |
+| `Research-Notes/Implementation/decision-augmentation.md` | Evidence-based NPC decision making |
+| `Research-Notes/Market-Research/competitors.md` | Altera, Inworld, Soul Machines analysis |
+| `Research-Notes/Memory-Systems/memory-overview.md` | Memory architecture survey |
+| `Research Inbox.md` | Incoming research items to process |
 
-### Key Technical Concepts
+## Integration Points
 
-**ABC Framework**: The central behavioral model where NPCs learn through Antecedent-Behavior-Consequence chains, enabling observational learning and autonomous decision-making.
+This research feeds into implementation repositories:
+- **Ayoai-Environment-Server** — Java AI engine using these cognitive architectures
+- **Ayoai-Public-Web-App** — Dashboard for monitoring NPC behavior
+- **Ayoai-Roblox-Integration** — Game integration using ABC frameworks
+- **Lambda functions** — Microservices implementing behavioral components
 
-**Cognitive Architecture**: A 22-verticle system with 97 processes operating in 5 phases:
-1. Disperse Clean Input (5 processes)
-2. Analyze Input (42 processes) 
-3. Generalize Perceptions (18 processes)
-4. React to Perceptions (29 processes)
-5. Planning Goal Actions (3 processes)
+## Constraints
 
-**Purpose Bars System**: NPC motivational framework inspired by personal life tracking, where NPCs maintain goals across categories like health, social, learning, lifestyle, and professional development.
+Research-only scope. This repository must NOT:
+- Write production code or technical specifications
+- Make product/business strategy decisions
+- Deploy, manage infrastructure, or handle operations
+- Design UI/UX or create user documentation
+- Manage API keys, billing, or platform operations
 
-**Decision Augmentation**: Evidence-based decision making where NPCs accumulate reasons and data before taking action, creating thoughtful and believable character behaviors.
+This repository SHOULD:
+- Research AI behaviors, cognitive architectures, and agent systems
+- Analyze competitors and market trends
+- Document findings with Ayoai relevance and implementation ideas
+- Support other repos with research backing
 
-## Common Research Tasks
+Consult Product Manager when research suggests new features or strategic pivots.
+Consult Business Analyst when research needs translation to requirements.
 
-### Adding New Research
-1. **Categorize**: Determine which directory fits the research topic
-2. **Check existing files**: See if it belongs in an existing file or needs a new one
-3. **Follow the format**:
-   ```markdown
-   ## Paper/Tool/Concept Name
-   
-   **Source**: [URL or citation]
-   **Date Added**: [YYYY-MM-DD]
-   
-   ### Overall Notes
-   - Key insights
-   - **Ayoai Relevance**: How this helps autonomous agent behavior
-   
-   ### Details
-   [Research content, analysis]
-   
-   ### Screenshots/Figures
-   ![Description](../images/media/imageXXX.png)
-   ```
+### Research Entry Format
 
-### Image Management
-- Images are stored in `Research-Notes/images/media/` directory
-- Use sequential naming: `image###.png`
-- Reference from markdown files using relative paths: `../images/media/imageXXX.png`
+```markdown
+## Paper/Tool/Concept Name
 
-### Research Migration from Large Files
-When extracting content from large research files:
-1. Identify content blocks by topic
-2. Preserve all formatting (lists, code blocks, etc.)
-3. Update image paths from old to new structure
-4. Add contextual headers explaining relevance to Ayoai
+**Source**: [URL or citation]
+**Date Added**: [YYYY-MM-DD]
 
-## Research Quality Standards
+### Overall Notes
+- Key insights
+- **Ayoai Relevance**: How this helps autonomous agent behavior
 
-### Required Elements for Research Entries
-- **Ayoai Relevance**: Every research item must explain connection to autonomous agent behavior
-- **Implementation Ideas**: How concepts could be used in Ayoai
-- **Visual Documentation**: Include screenshots and diagrams where helpful
-- **Cross-References**: Link to related research in other files
-
-### Tagging System
-Use consistent tags for actionable items:
-- `[TODO]` - Needs investigation
-- `[IMPLEMENT]` - Ready to prototype  
-- `[QUESTION]` - Open questions
-- `[IDEA]` - Potential features
-
-## File Organization Principles
-
-### When to Create New Files
-- A topic becomes too large (>500 lines)
-- Distinct subtopic with 5+ research items
-- Would improve navigation and clarity
+### Details
+[Research content]
+```
 
 ### Naming Conventions
 - Files: `specific-topic-name.md` (lowercase, hyphens)
 - Directories: `Title-Case-With-Hyphens/`
-- Images: `image###.png` (sequential numbering)
-
-## Integration with Ayoai Ecosystem
-
-This research repository feeds into several implementation repositories:
-- **Ayoai-Environment-Server**: Java-based AI engine using these cognitive architectures
-- **Ayoai-Public-Web-App**: Dashboard for monitoring NPC behavior and analytics
-- **Ayoai-Roblox-Integration**: Game integration using ABC frameworks and purpose bars
-- **Lambda Functions**: Microservices implementing specific behavioral components
-
-The research directly informs technical implementation of autonomous NPCs that can learn, adapt, and exhibit believable behaviors in game environments.
-
-## Research Maintenance
-
-### Review Schedule
-- **Daily**: Add new research to appropriate files
-- **Weekly**: Review and organize recent additions  
-- **Monthly**: Consolidate related entries, update cross-references
-- **Quarterly**: Major reorganization if categories become too large
-
-### Quality Maintenance
-- Ensure all research connects back to autonomous agent behavior goals
-- Maintain visual documentation with screenshots and diagrams
-- Keep cross-references updated as content evolves
-- Archive outdated research to maintain relevance
-
-## Repository Guardrails
-
-### What This Repository (Research Analyst) MUST NOT Do:
-
-**❌ Product & Business Decisions**
-- Do NOT make product strategy decisions (Product Manager does this)
-- Do NOT define business requirements (Business Analyst does this)
-- Do NOT set pricing or revenue targets
-- Do NOT create product roadmaps or timelines
-
-**❌ Implementation Work**
-- Do NOT write production code (developers do this)
-- Do NOT create technical specifications (Business Analyst does this)
-- Do NOT design system architectures without BA coordination
-- Do NOT implement features or fixes
-
-**❌ Operations & Infrastructure**
-- Do NOT deploy code or manage servers
-- Do NOT handle AWS infrastructure
-- Do NOT manage databases or user data
-- Do NOT create or modify Lambda functions
-
-**❌ User-Facing Activities**
-- Do NOT design UI/UX interfaces
-- Do NOT communicate with end users
-- Do NOT handle support tickets
-- Do NOT create user documentation
-
-**❌ Platform Management**
-- Do NOT manage API keys or authentication
-- Do NOT process game state or logic
-- Do NOT handle billing or payments
-- Do NOT send emails or notifications
-
-### ✅ What This Repository SHOULD Do:
-
-- Conduct research on AI behaviors and cognitive architectures
-- Document findings on autonomous agent systems
-- Analyze competitive solutions and market trends
-- Provide insights to Product Manager for feature planning
-- Support Business Analyst with technical research backing
-- Maintain organized research notes and references
-- Explore new frameworks and behavioral models
-
-### Required Consultations:
-
-**Always consult Product Manager when:**
-- Research findings suggest new product features
-- Market analysis reveals competitive opportunities
-- User behavior patterns indicate product gaps
-- Strategic pivots seem warranted by research
-
-**Always consult Business Analyst when:**
-- Research needs to be translated to requirements
-- Technical implementation approaches are needed
-- Architecture decisions require research backing
-- Cross-repository coordination is involved
-
-**Research Independence:**
-- You have autonomy to explore new research areas
-- You can investigate emerging technologies
-- You can analyze academic papers and industry trends
-- You should follow curiosity within AI/behavior domain
-
-## Verification
-
-Documentation-only repository. No code verification needed.
+- Images: `image###.png` (sequential numbering in `Research-Notes/images/media/`)
