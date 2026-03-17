@@ -215,7 +215,7 @@ Check out Hermes: https://github.com/NousResearch/hermes-agent. Review this rese
 Check out Memex: https://arxiv.org/pdf/2603.04257. Review this research and ask yourself how you could improve this current repo's system with some of the approaches outlined here.
 ```
 ```
-Check out Reasoning Bank: https://arxiv.org/pdf/2509.25140. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
+Check out Reasoning Bank: https://github.com/volcengine/OpenViking. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
 ```
 ```
 Check out Reasoning Bank: https://arxiv.org/pdf/2509.25140. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
