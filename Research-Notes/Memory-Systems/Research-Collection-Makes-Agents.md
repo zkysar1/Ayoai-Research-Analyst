@@ -218,12 +218,17 @@ Check out Memex: https://arxiv.org/pdf/2603.04257. Review this research and ask 
 Check out Reasoning Bank: https://github.com/volcengine/OpenViking. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
 ```
 ```
-Check out Reasoning Bank: https://arxiv.org/pdf/2509.25140. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
+Check out HyperAgents: https://arxiv.org/abs/2603.19461. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
 ```
 ```
-Check out Reasoning Bank: https://arxiv.org/pdf/2509.25140. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
+Check out Meta-Reinforcement Learning with Self-Reflection for Agentic Search: https://arxiv.org/html/2603.11327v2. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
 ```
-
-
-
-
+```
+Check out AutoContext: https://github.com/greyhaven-ai/autocontext. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
+```
+```
+Check out SkillNet: https://arxiv.org/html/2603.04448v1. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
+```
+```
+Check out MemCollab: https://arxiv.org/abs/2603.23234. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
+```
