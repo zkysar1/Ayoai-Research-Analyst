@@ -232,3 +232,6 @@ Check out SkillNet: https://arxiv.org/html/2603.04448v1. Review this research an
 ```
 Check out MemCollab: https://arxiv.org/abs/2603.23234. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
 ```
+```
+Check out Ayo from Nvida: https://arxiv.org/html/2603.24517v1. Review this research and ask yourself how you could improve your current system with some of the approaches outlined here.
+```
